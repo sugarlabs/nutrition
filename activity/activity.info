@@ -1,0 +1,8 @@
+[Activity]
+name = ImageID
+activity_version = 1
+license = GPLv3
+bundle_id = org.sugarlabs.ImageIDActivity
+exec = sugar-activity ImageIDActivity.ImageIDActivity
+icon = activity-imageid
+show_launcher = yes
