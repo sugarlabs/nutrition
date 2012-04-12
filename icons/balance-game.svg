@@ -49,11 +49,11 @@
     </linearGradient>
   </defs>
   <path
-     d="m 20.14499,52.5 14.71002,0 -7.300529,-12.217131 z"
+     d="m 22.14499,52.5 14.71002,0 -7.300529,-12.217131 z"
      id="path4692"
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <g
-     transform="matrix(0.07892226,0,0,0.07892226,1.4302676,18.653795)"
+     transform="matrix(0.07892226,0,0,0.07892226,1.800638,17.20935)"
      id="g3780"
      style="fill:#e0e0e0;fill-opacity:1;stroke:#000000;stroke-width:8.49186516;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
     <path
@@ -90,8 +90,12 @@
        id="path2987-2"
        style="fill:none;stroke:#000000;stroke-width:7.73337317;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   </g>
-  <path
-     d="M 7.0370368,44.814815 47.962963,30 l 0,0 0,0"
-     id="path3264"
-     style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <rect
+     width="47.222221"
+     height="4.4444447"
+     x="-8.3835573"
+     y="41.757477"
+     transform="matrix(0.94806242,-0.31808435,0.31808435,0.94806242,0,0)"
+     id="rect2997"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
 </svg>
