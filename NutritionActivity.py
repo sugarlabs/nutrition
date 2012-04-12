@@ -51,7 +51,8 @@ class NutritionActivity(activity.Activity):
         self.path = activity.get_bundle_path()
 
         self._setup_toolbars()
-        self._new_food_image_path = None
+        self._custom_food_jobject = None
+        self._custom_food_counter = 0
 
         # Create a canvas
         canvas = gtk.DrawingArea()
@@ -62,6 +63,26 @@ class NutritionActivity(activity.Activity):
         self.show_all()
 
         self._game = Game(canvas, parent=self, path=self.path)
+
+        if 'counter' in self.metadata:
+            self._custom_food_counter = int(self.metadata['counter'])
+            _logger.debug(self._custom_food_counter)
+            for i in range(self._custom_food_counter):
+                try:
+                    name = self.metadata['name-%d' % (i)]
+                    _logger.debug(name)
+                    calories = int(self.metadata['calories-%d' % (i)])
+                    pyramid = int(self.metadata['pyramid-%d' % (i)])
+                    jobject = datastore.get(self.metadata['jobject-%d' % (i)])
+                    _logger.debug(jobject.file_path)
+                    GAME_DEFS.append([name, calories, pyramid, 'apple.png'])
+                    self._game.word_card_append()
+                    self._game.picture_append(jobject.file_path)
+                    self._game.small_picture_append(jobject.file_path)
+                except:
+                    _logger.debug('Could not reload saved food item %d' % (i))
+        else:
+            _logger.debug('Counter not found in metadata.')
         self._game.new_game()
 
     def _setup_toolbars(self):
@@ -153,7 +174,7 @@ class NutritionActivity(activity.Activity):
         create_button = button_factory(
             'new-food',
             tools_toolbar,
-            self._create_new_food_cb,
+            self._create_custom_food_cb,
             tooltip=_('Add a new food item.'))
 
     def _level_cb(self, button, level):
@@ -168,7 +189,7 @@ class NutritionActivity(activity.Activity):
     def _load_image_cb(self, button):
         chooser = None
         name = None
-        self._new_food_image_path = None
+        self._custom_food_jobject = None
         if hasattr(mime, 'GENERIC_TYPE_IMAGE'):
             # See SL bug #2398
             if 'image/svg+xml' not in \
@@ -198,10 +219,10 @@ class NutritionActivity(activity.Activity):
                 chooser.destroy()
                 del chooser
             if name is not None:
-                self._new_food_image_path = jobject.file_path
+                self._custom_food_jobject = jobject
         return
 
-    def _create_new_food_cb(self, button):
+    def _create_custom_food_cb(self, button):
 
         def _notification_alert_response_cb(alert, response_id, self):
             self.remove_alert(alert)
@@ -231,7 +252,7 @@ item.')
             self.add_alert(alert)
             alert.show()
             return
-        elif self._new_food_image_path is None:
+        elif self._custom_food_jobject is None:
             alert = NotifyAlert()
             alert.props.title = _('Add a new food item.')
             alert.connect('response', _notification_alert_response_cb, self)
@@ -241,11 +262,11 @@ item.')
             alert.show()
             return
 
-        _logger.debug(self._new_food_image_path)
+        _logger.debug(self._custom_food_jobject.file_path)
         GAME_DEFS.append([name, calories, pyramid, 'apple.png'])
         self._game.word_card_append()
-        self._game.picture_append(self._new_food_image_path)
-        self._game.small_picture_append(self._new_food_image_path)
+        self._game.picture_append(self._custom_food_jobject.file_path)
+        self._game.small_picture_append(self._custom_food_jobject.file_path)
         alert = NotifyAlert()
         alert.props.title = _('Add a new food item.')
         alert.connect('response', _notification_alert_response_cb, self)
@@ -254,8 +275,15 @@ item.')
         alert.show()
         self.name_entry.set_text(_('food name'))
         self.calories_entry.set_text(_('calories'))
-        self._new_food_image_path = None
+        self._custom_food_image_path = None
         self._game.new_game()
+        self.metadata['name-%d' % (self._custom_food_counter)] = name
+        self.metadata['calories-%d' % (self._custom_food_counter)] = \
+            str(calories)
+        self.metadata['pyramid-%d' % (self._custom_food_counter)] = str(pyramid)
+        self.metadata['jobject-%d' % (self._custom_food_counter)] = \
+            self._custom_food_jobject.object_id
+        self._custom_food_counter += 1
+        _logger.debug('writing %d to counter' % (self._custom_food_counter))
+        self.metadata['counter'] = str(self._custom_food_counter)
         return
-
-    # TODO: Implement read and write file methods

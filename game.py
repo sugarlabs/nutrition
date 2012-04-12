@@ -75,11 +75,6 @@ class Game():
 
         self.level = 0
 
-        # Fill the Food Pyramid
-        self._food_pyramid = [[], [], [], []]
-        for i, f in enumerate(GAME_DEFS):
-            self._food_pyramid[f[2]].append(i)
-
         # Generate the sprites we'll need...
         self._sprites = Sprites(self._canvas)
         self._backgrounds = []
@@ -218,6 +213,12 @@ class Game():
         self._picture_cards[self._list[self._target]].set_layer(100)
 
     def _games_4(self):
+        ''' A well-balanced meal '''
+        # Fill the Food Pyramid
+        self._food_pyramid = [[], [], [], []]
+        for i, f in enumerate(GAME_DEFS):
+            self._food_pyramid[f[2]].append(i)
+
         x = 10  # some small offset from the left edge
         y = 10  # some small offset from the top edge
         dx, dy = self._word_cards[0].get_dimensions()
