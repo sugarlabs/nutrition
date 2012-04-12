@@ -31,7 +31,8 @@ SERVICE = 'org.sugarlabs.NutritionActivity'
 IFACE = SERVICE
 LABELS = [_('Match the food to its name.'),
           _('How many calories are there?'),
-          _('How much should you eat?')]
+          _('How much should you eat?'),
+          _('Is this a well-balanced meal?')]
 
 
 class NutritionActivity(activity.Activity):
@@ -73,27 +74,34 @@ class NutritionActivity(activity.Activity):
         toolbox.show()
         self.toolbar = toolbox.toolbar
 
-        self.beginner_button = radio_factory(
-            'beginner',
+        name_game_button = radio_factory(
+            'name-game',
             toolbox.toolbar,
             self._level_cb,
             cb_arg=0,
             tooltip=_(LABELS[0]),
             group=None)
-        self.intermediate_button = radio_factory(
-            'intermediate',
+        calorie_game_button = radio_factory(
+            'calorie-game',
             toolbox.toolbar,
             self._level_cb,
             cb_arg=1,
             tooltip=_(LABELS[1]),
-            group=self.beginner_button)
-        self.expert_button = radio_factory(
-            'expert',
+            group=name_game_button)
+        pyramid_game_button = radio_factory(
+            'pyramid-game',
             toolbox.toolbar,
             self._level_cb,
             cb_arg=2,
             tooltip=_(LABELS[2]),
-            group=self.beginner_button)
+            group=name_game_button)
+        balance_game_button = radio_factory(
+            'balance-game',
+            toolbox.toolbar,
+            self._level_cb,
+            cb_arg=3,
+            tooltip=_(LABELS[3]),
+            group=name_game_button)
 
         separator_factory(toolbox.toolbar, False, True)
         self._label = label_factory(toolbox.toolbar, LABELS[0])
