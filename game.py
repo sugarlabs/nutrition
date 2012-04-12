@@ -138,6 +138,7 @@ class Game():
                 os.path.join(self._path, 'images', 'smiley_good.png'),
                 int(self._width / 2),
                 int(self._height / 2)))
+        self._smile.set_label_attributes(36)
 
         self._frown = Sprite(self._sprites,
                              int(self._width / 4),
@@ -267,6 +268,9 @@ class Game():
         if self.level in [0, 1]:
             if i == self._list[self._target]:
                 self._smile.set_layer(200)
+                if self.level == 0:
+                    self._smile.set_label('%d calories' % (
+                            GAME_DEFS[self._list[self._target]][1]))
             else:
                 self._frown.set_layer(200)
                 self._frown.set_label(
