@@ -1,8 +1,8 @@
 [Activity]
-name = ImageID
+name = Nutrition
 activity_version = 1
 license = GPLv3
-bundle_id = org.sugarlabs.ImageIDActivity
-exec = sugar-activity ImageIDActivity.ImageIDActivity
-icon = activity-imageid
+bundle_id = org.sugarlabs.NutritionActivity
+exec = sugar-activity NutritionActivity.NutritionActivity
+icon = activity-nutrition
 show_launcher = yes
