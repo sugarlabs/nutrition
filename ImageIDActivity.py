@@ -1,4 +1,4 @@
-#Copyright (c) 2011 Walter Bender
+#Copyright (c) 2011,12 Walter Bender
 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,20 +14,14 @@ import gtk
 
 from sugar.activity import activity
 from sugar import profile
-try:
-    from sugar.graphics.toolbarbox import ToolbarBox
-    _have_toolbox = True
-except ImportError:
-    _have_toolbox = False
-
-if _have_toolbox:
-    from sugar.activity.widgets import ActivityToolbarButton
-    from sugar.activity.widgets import StopButton
+from sugar.graphics.toolbarbox import ToolbarBox
+from sugar.activity.widgets import ActivityToolbarButton
+from sugar.activity.widgets import StopButton
 
 from gettext import gettext as _
 
 from game import Game
-from toolbar_utils import separator_factory
+from toolbar_utils import separator_factory, radio_factory, label_factory
 
 import logging
 _logger = logging.getLogger('imageid-activity')
@@ -35,6 +29,9 @@ _logger = logging.getLogger('imageid-activity')
 
 SERVICE = 'org.sugarlabs.ImageIDActivity'
 IFACE = SERVICE
+LABELS = [_('Match the food to its name.'),
+          _('How many calories are there?'),
+          _('How much should you eat?')]
 
 
 class ImageIDActivity(activity.Activity):
@@ -46,7 +43,7 @@ class ImageIDActivity(activity.Activity):
 
         self.path = activity.get_bundle_path()
 
-        self._setup_toolbars(_have_toolbox)
+        self._setup_toolbars()
 
         # Create a canvas
         canvas = gtk.DrawingArea()
@@ -59,37 +56,56 @@ class ImageIDActivity(activity.Activity):
         self._game = Game(canvas, parent=self, path=self.path)
         self._game.new_game()
 
-    def _setup_toolbars(self, have_toolbox):
+    def _setup_toolbars(self):
         """ Setup the toolbars. """
 
         self.max_participants = 1  # No collaboration
 
-        if have_toolbox:
-            toolbox = ToolbarBox()
+        toolbox = ToolbarBox()
 
-            # Activity toolbar
-            activity_button = ActivityToolbarButton(self)
+        # Activity toolbar
+        activity_button = ActivityToolbarButton(self)
 
-            toolbox.toolbar.insert(activity_button, 0)
-            activity_button.show()
+        toolbox.toolbar.insert(activity_button, 0)
+        activity_button.show()
 
-            self.set_toolbar_box(toolbox)
-            toolbox.show()
-            self.toolbar = toolbox.toolbar
+        self.set_toolbar_box(toolbox)
+        toolbox.show()
+        self.toolbar = toolbox.toolbar
 
-        else:
-            # Use pre-0.86 toolbar design
-            games_toolbar = gtk.Toolbar()
-            toolbox = activity.ActivityToolbox(self)
-            self.set_toolbox(toolbox)
-            toolbox.add_toolbar(_('Game'), games_toolbar)
-            toolbox.show()
-            toolbox.set_current_toolbar(1)
-            self.toolbar = games_toolbar
+        self.beginner_button = radio_factory(
+            'beginner',
+            toolbox.toolbar,
+            self._level_cb,
+            cb_arg=0,
+            tooltip=_('Name the food'),
+            group=None)
+        self.intermediate_button = radio_factory(
+            'intermediate',
+            toolbox.toolbar,
+            self._level_cb,
+            cb_arg=1,
+            tooltip=_('How many calories?'),
+            group=self.beginner_button)
+        self.expert_button = radio_factory(
+            'expert',
+            toolbox.toolbar,
+            self._level_cb,
+            cb_arg=2,
+            tooltip=_('Where in the food pyramid?'),
+            group=self.beginner_button)
 
-        if _have_toolbox:
-            separator_factory(toolbox.toolbar, True, False)
-            stop_button = StopButton(self)
-            stop_button.props.accelerator = '<Ctrl>q'
-            toolbox.toolbar.insert(stop_button, -1)
-            stop_button.show()
+        separator_factory(toolbox.toolbar, False, True)
+        self._label = label_factory(toolbox.toolbar, LABELS[0])
+
+        separator_factory(toolbox.toolbar, True, False)
+        stop_button = StopButton(self)
+        stop_button.props.accelerator = '<Ctrl>q'
+        toolbox.toolbar.insert(stop_button, -1)
+        stop_button.show()
+
+    def _level_cb(self, button, level):
+        ''' Switch between levels '''
+        self._game.level = level
+        self._label.set_text(LABELS[level])
+        self._game.new_game()
