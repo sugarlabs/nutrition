@@ -33,19 +33,22 @@ from sprites import Sprites, Sprite
 LEVELS = [_('minimum'), _('moderate'), _('most'), _('unlimited')]
 GAME_DEFS = [[_('banana'), 105, 2, 'banana.png'],
              [_('apple'), 72, 2, 'apple.png'],
-             [_('fish'), 100, 1, 'fish.png'],
+             [_('fish'), 58, 1, 'fish.png'],
              [_('corn'), 96, 2, 'corn.png'],
-             [_('broccoli'), 100, 2, 'broccoli.png'],
-             [_('chicken'), 100, 1, 'chicken.png'],
-             [_('cheese'), 100, 1, 'cheese.png'],
+             [_('broccoli'), 55, 2, 'broccoli.png'],
+             [_('chicken'), 262, 1, 'chicken.png'],
+             [_('cheese'), 114, 1, 'cheese.png'],
              [_('orange'), 62, 2, 'orange.png'],
              [_('potato'), 159, 2, 'potato.png'],
              [_('water'), 0, 3, 'water.png'],
              [_('tomato'), 150, 2, 'tomato.png'],
              [_('cookie'), 68, 0, 'cookie.png'],
-             [_('beef'), 100, 1, 'beef.png'],
-             [_('egg'), 100, 1, 'egg.png'],
+             [_('beef'), 284, 1, 'beef.png'],
+             [_('egg'), 77, 1, 'egg.png'],
              [_('sweetpotato'), 169, 2, 'sweetpotato.png'],
+             [_('tamale'), 126, 2, 'nacatamal.png'],
+             [_('bread'), 69, 2, 'bread.png'],
+             [_('rice and beans'), 411, 2, 'rice-and-beans.png'],
              [_('cake'), 387, 0, 'cake.png']]
 NCARDS = 4
 
