@@ -95,41 +95,18 @@ class Game():
 
         self._picture_cards = []
         for i in GAME_DEFS:
-            self._picture_cards.append(
-                Sprite(self._sprites,
-                       int(self._width / 2.),
-                       int(self._height / 4.),
-                       gtk.gdk.pixbuf_new_from_file_at_size(
-                        os.path.join(self._path, 'images', i[-1]),
-                        int(self._width / 3.),
-                        int(9 * self._width / 12.))))
-            self._picture_cards[-1].type = 'picture'
+            self.picture_append(os.path.join(self._path, 'images', i[-1]))
 
         self._small_picture_cards = []
         for i in GAME_DEFS:
-            x = int(self._width / 3.)
-            y = int(self._height / 6.)
-            for j in range(6):  # up to 6 of each card
-                self._small_picture_cards.append(
-                    Sprite(self._sprites, x, y,
-                           gtk.gdk.pixbuf_new_from_file_at_size(
-                            os.path.join(self._path, 'images', i[-1]),
-                            int(self._width / 6.),
-                            int(3 * self._width / 8.))))
-                self._small_picture_cards[-1].type = 'picture'
-                x += int(self._width / 6.)
-                if j == 2:
-                    x = int(self._width / 3.)
-                    y += int(3 * self._width / 16.)
+            self.small_picture_append(os.path.join(self._path, 'images', i[-1]))
 
         self._word_cards = []
         pixbuf = gtk.gdk.pixbuf_new_from_file_at_size(
             os.path.join(self._path, 'images', 'word-box.png'),
             int(350 * self._scale), int(100 * self._scale))
         for i in GAME_DEFS:
-            self._word_cards.append(Sprite(self._sprites, 10, 10, pixbuf))
-            self._word_cards[-1].set_label_attributes(36)
-            self._word_cards[-1].type = 'word'
+            self.word_card_append(pixbuf=pixbuf)
 
         self._smile = Sprite(self._sprites,
                              int(self._width / 4),
@@ -150,6 +127,40 @@ class Game():
         self._frown.set_label_attributes(36)
 
         self._all_clear()
+
+    def word_card_append(self, pixbuf=None):
+        if pixbuf is None:
+            pixbuf = gtk.gdk.pixbuf_new_from_file_at_size(
+                os.path.join(self._path, 'images', 'word-box.png'),
+                int(350 * self._scale), int(100 * self._scale))
+        self._word_cards.append(Sprite(self._sprites, 10, 10, pixbuf))
+        self._word_cards[-1].set_label_attributes(36)
+        self._word_cards[-1].type = 'word'
+
+    def picture_append(self, path):
+        self._picture_cards.append(
+            Sprite(self._sprites,
+                   int(self._width / 2.),
+                   int(self._height / 4.),
+                   gtk.gdk.pixbuf_new_from_file_at_size(
+                    path, int(self._width / 3.), int(9 * self._width / 12.))))
+        self._picture_cards[-1].type = 'picture'
+
+    def small_picture_append(self, path):
+        x = int(self._width / 3.)
+        y = int(self._height / 6.)
+        for j in range(6):  # up to 6 of each card
+            self._small_picture_cards.append(
+                Sprite(self._sprites, x, y,
+                       gtk.gdk.pixbuf_new_from_file_at_size(
+                        path,
+                        int(self._width / 6.),
+                        int(3 * self._width / 8.))))
+            self._small_picture_cards[-1].type = 'picture'
+            x += int(self._width / 6.)
+            if j == 2:
+                x = int(self._width / 3.)
+                y += int(3 * self._width / 16.)
 
     def _all_clear(self):
         ''' Things to reinitialize when starting up a new game. '''
@@ -176,6 +187,8 @@ class Game():
             self._games_123()
         else:
             self._games_4()
+        self._frown.set_label('')
+        self._smile.set_label('')
 
     def _games_123(self):
         x = 10  # some small offset from the left edge
