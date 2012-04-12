@@ -78,21 +78,21 @@ class ImageIDActivity(activity.Activity):
             toolbox.toolbar,
             self._level_cb,
             cb_arg=0,
-            tooltip=_('Name the food'),
+            tooltip=_(LABELS[0]),
             group=None)
         self.intermediate_button = radio_factory(
             'intermediate',
             toolbox.toolbar,
             self._level_cb,
             cb_arg=1,
-            tooltip=_('How many calories?'),
+            tooltip=_(LABELS[1]),
             group=self.beginner_button)
         self.expert_button = radio_factory(
             'expert',
             toolbox.toolbar,
             self._level_cb,
             cb_arg=2,
-            tooltip=_('Where in the food pyramid?'),
+            tooltip=_(LABELS[2]),
             group=self.beginner_button)
 
         separator_factory(toolbox.toolbar, False, True)
