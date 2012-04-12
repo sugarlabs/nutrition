@@ -269,7 +269,7 @@ class Game():
             if i == self._list[self._target]:
                 self._smile.set_layer(200)
                 if self.level == 0:
-                    self._smile.set_label('%d calories' % (
+                    self._smile.set_label(_('%d calories') % (
                             GAME_DEFS[self._list[self._target]][1]))
             else:
                 self._frown.set_layer(200)
