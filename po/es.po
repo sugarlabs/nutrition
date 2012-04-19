@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-14 07:11-0400\n"
+"PO-Revision-Date: 2012-04-14 23:33+0200\n"
+"Last-Translator: AlanJAS <alanjas@hotmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: activity/activity.info:2
+msgid "Nutrition"
+msgstr "Nutrición"
+
+#: NutritionActivity.py:38
+msgid "Match the food to its name."
+msgstr "Relacione la comida con su nombre."
+
+#: NutritionActivity.py:39
+msgid "How many calories are there?"
+msgstr "¿Cuántas calorías hay ahí?"
+
+#: NutritionActivity.py:40
+msgid "How much should you eat?"
+msgstr "¿Cuánto deberías comer?"
+
+#: NutritionActivity.py:41
+msgid "Is this a well-balanced meal?"
+msgstr "¿Es ésta una comida bien balanceada?"
+
+#: NutritionActivity.py:42
+msgid "sweets"
+msgstr "dulces"
+
+#: NutritionActivity.py:42
+msgid "meat and dairy"
+msgstr "carne y lácteos"
+
+#: NutritionActivity.py:42
+msgid "fruits and grains"
+msgstr "frutas y cereales"
+
+#: NutritionActivity.py:152 NutritionActivity.py:238 NutritionActivity.py:276
+msgid "food name"
+msgstr "nombre del alimento"
+
+#: NutritionActivity.py:154
+msgid "Enter a name for the new food item."
+msgstr "Ingrese un nombre para el alimento nuevo."
+
+#: NutritionActivity.py:157 NutritionActivity.py:277
+msgid "calories"
+msgstr "calorías"
+
+#: NutritionActivity.py:159
+msgid "Enter the calories in for the new food item."
+msgstr "Ingrese las calorías del alimento nuevo."
+
+#: NutritionActivity.py:166
+msgid "Select level in the Food Pyramid."
+msgstr "Seleccione el nivel en la Pirámide de Alimentos."
+
+#: NutritionActivity.py:171
+msgid "Load a picture of the new food item."
+msgstr "Cargar una foto del alimento nuevo."
+
+#: NutritionActivity.py:178 NutritionActivity.py:240 NutritionActivity.py:248
+#: NutritionActivity.py:257 NutritionActivity.py:271
+msgid "Add a new food item."
+msgstr "Agregar un alimento nuevo."
+
+#: NutritionActivity.py:242
+msgid "You must enter a name for the new food item."
+msgstr "Debes ingresar un nombre para el alimento nuevo."
+
+#: NutritionActivity.py:250
+msgid "You must enter calories for the new food item."
+msgstr "Debes introducir las calorías para el alimento nuevo."
+
+#: NutritionActivity.py:259
+msgid "You must load an image for the new food item."
+msgstr "Debes cargar una imagen para el alimento nuevo."
+
+#: NutritionActivity.py:273
+#, python-format
+msgid "%s has been loaded."
+msgstr "%s se ha cargado."
+
+#: game.py:34
+msgid "minimum"
+msgstr "mínimo"
+
+#: game.py:34
+msgid "moderate"
+msgstr "moderado"
+
+#: game.py:34
+msgid "most"
+msgstr "mucho"
+
+#: game.py:34
+msgid "unlimited"
+msgstr "sin límites"
+
+#: game.py:36
+msgid "banana"
+msgstr "banana"
+
+#: game.py:37
+msgid "apple"
+msgstr "manzana"
+
+#: game.py:38
+msgid "fish"
+msgstr "pescado"
+
+#: game.py:39
+msgid "corn"
+msgstr "maíz"
+
+#: game.py:40
+msgid "broccoli"
+msgstr "brócoli"
+
+#: game.py:41
+msgid "chicken"
+msgstr "pollo"
+
+#: game.py:42
+msgid "cheese"
+msgstr "queso"
+
+#: game.py:43
+msgid "orange"
+msgstr "naranja"
+
+#: game.py:44
+msgid "potato"
+msgstr "papa"
+
+#: game.py:45
+msgid "water"
+msgstr "agua"
+
+#: game.py:46
+msgid "tomato"
+msgstr "tomate"
+
+#: game.py:47
+msgid "cookie"
+msgstr "galleta"
+
+#: game.py:48
+msgid "beef"
+msgstr "carne"
+
+#: game.py:49
+msgid "egg"
+msgstr "huevo"
+
+# batata, boñiato, camote
+#: game.py:50
+msgid "sweetpotato"
+msgstr "batata"
+
+#: game.py:51
+msgid "tamale"
+msgstr "tamal"
+
+#: game.py:52
+msgid "bread"
+msgstr "pan"
+
+#: game.py:53
+msgid "rice and beans"
+msgstr "arroz y frijoles"
+
+#: game.py:54
+msgid "cake"
+msgstr "pastel"
+
+#: game.py:55
+msgid "balanced"
+msgstr "balanceado"
+
+#: game.py:55
+msgid "unbalanced"
+msgstr "desbalanceado"
+
+#: game.py:286
+#, python-format
+msgid "%d calories"
+msgstr "%d calorías."
