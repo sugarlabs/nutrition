@@ -115,6 +115,7 @@ class Game():
                 int(self._width / 2),
                 int(self._height / 2)))
         self._smile.set_label_attributes(36)
+        self._smile.set_margins(10, 0, 10, 0)
 
         self._frown = Sprite(self._sprites,
                              int(self._width / 4),
@@ -124,6 +125,7 @@ class Game():
                 int(self._width / 2),
                 int(self._height / 2)))
         self._frown.set_label_attributes(36)
+        self._frown.set_margins(10, 0, 10, 0)
 
         self._all_clear()
 
@@ -134,6 +136,7 @@ class Game():
                 int(350 * self._scale), int(100 * self._scale))
         self._word_cards.append(Sprite(self._sprites, 10, 10, pixbuf))
         self._word_cards[-1].set_label_attributes(36)
+        self._word_cards[-1].set_margins(10, 0, 10, 0)
         self._word_cards[-1].type = 'word'
 
     def picture_append(self, path):
