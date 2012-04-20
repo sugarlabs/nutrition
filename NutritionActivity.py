@@ -25,7 +25,7 @@ from sugar import mime
 
 from gettext import gettext as _
 
-from game import Game, GAME_DEFS
+from game import Game, FOOD
 from toolbar_utils import separator_factory, radio_factory, label_factory, \
     button_factory, entry_factory, combo_factory
 
@@ -39,7 +39,8 @@ LABELS = [_('Match the food to its name.'),
           _('How many calories are there?'),
           _('How much should you eat?'),
           _('Is this a well-balanced meal?')]
-PYRAMID = [_('sweets'), _('meat and dairy'), _('fruits and grains')]
+PYRAMID = [_('sweets'), _('dairy'), _('fruits'), _('meat'), _('grains'),
+           _('vegetables')]
 
 class NutritionActivity(activity.Activity):
     """ Simple nutrition game based on GCompris ImageID """
@@ -75,7 +76,7 @@ class NutritionActivity(activity.Activity):
                     pyramid = int(self.metadata['pyramid-%d' % (i)])
                     jobject = datastore.get(self.metadata['jobject-%d' % (i)])
                     _logger.debug(jobject.file_path)
-                    GAME_DEFS.append([name, calories, pyramid, 'apple.png'])
+                    FOOD.append([name, calories, pyramid, 'apple.png'])
                     self._game.word_card_append()
                     self._game.picture_append(jobject.file_path)
                     self._game.small_picture_append(jobject.file_path)
@@ -263,7 +264,7 @@ item.')
             return
 
         _logger.debug(self._custom_food_jobject.file_path)
-        GAME_DEFS.append([name, calories, pyramid, 'apple.png'])
+        FOOD.append([name, calories, pyramid, 'apple.png'])
         self._game.word_card_append()
         self._game.picture_append(self._custom_food_jobject.file_path)
         self._game.small_picture_append(self._custom_food_jobject.file_path)
