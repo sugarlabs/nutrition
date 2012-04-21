@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-14 07:11-0400\n"
-"PO-Revision-Date: 2012-04-14 18:32+0200\n"
+"POT-Creation-Date: 2012-04-21 00:32-0400\n"
+"PO-Revision-Date: 2012-04-21 18:30+0200\n"
 "Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,60 +37,72 @@ msgstr "Hvor meget bør jeg spise?"
 msgid "Is this a well-balanced meal?"
 msgstr "Er dette et måltid med god balance?"
 
-#: NutritionActivity.py:42
+#: NutritionActivity.py:42 game.py:35
 msgid "sweets"
 msgstr "slik"
 
-#: NutritionActivity.py:42
-msgid "meat and dairy"
-msgstr "kød og mælkeprodukter"
+#: NutritionActivity.py:42 game.py:35
+msgid "dairy"
+msgstr "mælkeprodukter"
 
-#: NutritionActivity.py:42
-msgid "fruits and grains"
-msgstr "frugt og kornprodukter"
+#: NutritionActivity.py:42 game.py:35
+msgid "fruits"
+msgstr "frugt"
 
-#: NutritionActivity.py:152 NutritionActivity.py:238 NutritionActivity.py:276
+#: NutritionActivity.py:42 game.py:36
+msgid "meat"
+msgstr "kød"
+
+#: NutritionActivity.py:42 game.py:36
+msgid "grains"
+msgstr "kornprodukter"
+
+#: NutritionActivity.py:43 game.py:36
+msgid "vegetables"
+msgstr "grøntsager"
+
+#: NutritionActivity.py:153 NutritionActivity.py:239 NutritionActivity.py:277
 msgid "food name"
 msgstr "navn på fødevare"
 
-#: NutritionActivity.py:154
+#: NutritionActivity.py:155
 msgid "Enter a name for the new food item."
 msgstr "Indtast et navn på den nye fødevare."
 
-#: NutritionActivity.py:157 NutritionActivity.py:277
+#: NutritionActivity.py:158 NutritionActivity.py:278
 msgid "calories"
 msgstr "kalorier"
 
-#: NutritionActivity.py:159
+#: NutritionActivity.py:160
 msgid "Enter the calories in for the new food item."
 msgstr "Indtast kalorieindholdet for den nye fødevare."
 
-#: NutritionActivity.py:166
+#: NutritionActivity.py:167
 msgid "Select level in the Food Pyramid."
 msgstr "Vælg niveau i madpyramiden."
 
-#: NutritionActivity.py:171
+#: NutritionActivity.py:172
 msgid "Load a picture of the new food item."
 msgstr "Indlæs et billede af den nye fødevare."
 
-#: NutritionActivity.py:178 NutritionActivity.py:240 NutritionActivity.py:248
-#: NutritionActivity.py:257 NutritionActivity.py:271
+#: NutritionActivity.py:179 NutritionActivity.py:241 NutritionActivity.py:249
+#: NutritionActivity.py:258 NutritionActivity.py:272
 msgid "Add a new food item."
 msgstr "Tilføj den nye fødevare."
 
-#: NutritionActivity.py:242
+#: NutritionActivity.py:243
 msgid "You must enter a name for the new food item."
 msgstr "Du skal indtaste et navn for den nye fødevare."
 
-#: NutritionActivity.py:250
+#: NutritionActivity.py:251
 msgid "You must enter calories for the new food item."
 msgstr "Du skal indtaste kalorier for den nye fødevare."
 
-#: NutritionActivity.py:259
+#: NutritionActivity.py:260
 msgid "You must load an image for the new food item."
 msgstr "Du skal indlæse et billede for den nye fødevare."
 
-#: NutritionActivity.py:273
+#: NutritionActivity.py:274
 #, python-format
 msgid "%s has been loaded."
 msgstr "%s er blevet indlæst."
@@ -104,6 +116,10 @@ msgid "moderate"
 msgstr "moderat"
 
 #: game.py:34
+msgid "more"
+msgstr "mest"
+
+#: game.py:34
 msgid "most"
 msgstr "mest"
 
@@ -111,91 +127,97 @@ msgstr "mest"
 msgid "unlimited"
 msgstr "ubegrænset"
 
-#: game.py:36
-msgid "banana"
-msgstr "banan"
-
-#: game.py:37
-msgid "apple"
-msgstr "æble"
-
-#: game.py:38
-msgid "fish"
-msgstr "fisk"
-
-#: game.py:39
-msgid "corn"
-msgstr "korn"
-
-#: game.py:40
-msgid "broccoli"
-msgstr "broccoli"
-
-#: game.py:41
-msgid "chicken"
-msgstr "kylling"
-
-#: game.py:42
-msgid "cheese"
-msgstr "ost"
-
-#: game.py:43
-msgid "orange"
-msgstr "appelsin"
-
-#: game.py:44
-msgid "potato"
-msgstr "kartoffel"
-
-#: game.py:45
+#: game.py:37 game.py:49
 msgid "water"
 msgstr "vand"
 
+#: game.py:40
+msgid "banana"
+msgstr "banan"
+
+#: game.py:41
+msgid "apple"
+msgstr "æble"
+
+#: game.py:42
+msgid "fish"
+msgstr "fisk"
+
+#: game.py:43
+msgid "corn"
+msgstr "korn"
+
+#: game.py:44
+msgid "broccoli"
+msgstr "broccoli"
+
+#: game.py:45
+msgid "chicken"
+msgstr "kylling"
+
 #: game.py:46
+msgid "cheese"
+msgstr "ost"
+
+#: game.py:47
+msgid "orange"
+msgstr "appelsin"
+
+#: game.py:48
+msgid "potato"
+msgstr "kartoffel"
+
+#: game.py:50
 msgid "tomato"
 msgstr "tomat"
 
-#: game.py:47
+#: game.py:51
 msgid "cookie"
 msgstr "kage"
 
-#: game.py:48
+#: game.py:52
 msgid "beef"
 msgstr "bøf"
 
-#: game.py:49
+#: game.py:53
 msgid "egg"
 msgstr "æg"
 
-#: game.py:50
+#: game.py:54
 msgid "sweetpotato"
 msgstr "sød kartoffel"
 
-#: game.py:51
+#: game.py:55
 msgid "tamale"
 msgstr "tamale"
 
-#: game.py:52
+#: game.py:56
 msgid "bread"
 msgstr "brød"
 
-#: game.py:53
+#: game.py:57
 msgid "rice and beans"
 msgstr "ris og bønner"
 
-#: game.py:54
+#: game.py:58
 msgid "cake"
 msgstr "kage"
 
-#: game.py:55
+#: game.py:59
 msgid "balanced"
 msgstr "balanceret"
 
-#: game.py:55
+#: game.py:59
 msgid "unbalanced"
 msgstr "ublanceret"
 
-#: game.py:286
+#: game.py:297
 #, python-format
 msgid "%d calories"
 msgstr "%d kalorier"
+
+#~ msgid "meat and dairy"
+#~ msgstr "kød og mælkeprodukter"
+
+#~ msgid "fruits and grains"
+#~ msgstr "frugt og kornprodukter"
