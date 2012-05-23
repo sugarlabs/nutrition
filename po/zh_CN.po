@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-21 00:32-0400\n"
-"PO-Revision-Date: 2012-04-20 02:39+0200\n"
-"Last-Translator: Xin <dram.wang@gmail.com>\n"
+"PO-Revision-Date: 2012-05-08 04:34+0200\n"
+"Last-Translator: lite <litekok@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -19,47 +19,47 @@ msgstr ""
 
 #: activity/activity.info:2
 msgid "Nutrition"
-msgstr ""
+msgstr "营养"
 
 #: NutritionActivity.py:38
 msgid "Match the food to its name."
-msgstr ""
+msgstr "把食物和名称配对"
 
 #: NutritionActivity.py:39
 msgid "How many calories are there?"
-msgstr ""
+msgstr "有多少卡路里？"
 
 #: NutritionActivity.py:40
 msgid "How much should you eat?"
-msgstr ""
+msgstr "你应该吃多少？"
 
 #: NutritionActivity.py:41
 msgid "Is this a well-balanced meal?"
-msgstr ""
+msgstr "这是营养平衡的吗？"
 
 #: NutritionActivity.py:42 game.py:35
 msgid "sweets"
-msgstr ""
+msgstr "甜食"
 
 #: NutritionActivity.py:42 game.py:35
 msgid "dairy"
-msgstr ""
+msgstr "乳制品"
 
 #: NutritionActivity.py:42 game.py:35
 msgid "fruits"
-msgstr ""
+msgstr "水果"
 
 #: NutritionActivity.py:42 game.py:36
 msgid "meat"
-msgstr ""
+msgstr "肉"
 
 #: NutritionActivity.py:42 game.py:36
 msgid "grains"
-msgstr ""
+msgstr "谷物"
 
 #: NutritionActivity.py:43 game.py:36
 msgid "vegetables"
-msgstr ""
+msgstr "蔬菜"
 
 #: NutritionActivity.py:153 NutritionActivity.py:239 NutritionActivity.py:277
 msgid "food name"
@@ -67,151 +67,151 @@ msgstr "食品名称"
 
 #: NutritionActivity.py:155
 msgid "Enter a name for the new food item."
-msgstr ""
+msgstr "输入新食物的名称。"
 
 #: NutritionActivity.py:158 NutritionActivity.py:278
 msgid "calories"
-msgstr ""
+msgstr "卡路里"
 
 #: NutritionActivity.py:160
 msgid "Enter the calories in for the new food item."
-msgstr ""
+msgstr "输入新食物的热量。"
 
 #: NutritionActivity.py:167
 msgid "Select level in the Food Pyramid."
-msgstr ""
+msgstr "选择食物金字塔中的等级。"
 
 #: NutritionActivity.py:172
 msgid "Load a picture of the new food item."
-msgstr ""
+msgstr "加载新食物的图片。"
 
 #: NutritionActivity.py:179 NutritionActivity.py:241 NutritionActivity.py:249
 #: NutritionActivity.py:258 NutritionActivity.py:272
 msgid "Add a new food item."
-msgstr ""
+msgstr "添加新食物。"
 
 #: NutritionActivity.py:243
 msgid "You must enter a name for the new food item."
-msgstr ""
+msgstr "你必须输入新食物的名称。"
 
 #: NutritionActivity.py:251
 msgid "You must enter calories for the new food item."
-msgstr ""
+msgstr "你必须输入新食物的热量。"
 
 #: NutritionActivity.py:260
 msgid "You must load an image for the new food item."
-msgstr ""
+msgstr "你必须为新食物加载一个图像。"
 
 #: NutritionActivity.py:274
 #, python-format
 msgid "%s has been loaded."
-msgstr ""
+msgstr "%s已被载入。"
 
 #: game.py:34
 msgid "minimum"
-msgstr ""
+msgstr "最小"
 
 #: game.py:34
 msgid "moderate"
-msgstr ""
+msgstr "中等"
 
 #: game.py:34
 msgid "more"
-msgstr ""
+msgstr "更多"
 
 #: game.py:34
 msgid "most"
-msgstr ""
+msgstr "最多"
 
 #: game.py:34
 msgid "unlimited"
-msgstr ""
+msgstr "无限多"
 
 #: game.py:37 game.py:49
 msgid "water"
-msgstr ""
+msgstr "水"
 
 #: game.py:40
 msgid "banana"
-msgstr ""
+msgstr "香蕉"
 
 #: game.py:41
 msgid "apple"
-msgstr ""
+msgstr "苹果"
 
 #: game.py:42
 msgid "fish"
-msgstr ""
+msgstr "鱼"
 
 #: game.py:43
 msgid "corn"
-msgstr ""
+msgstr "玉米"
 
 #: game.py:44
 msgid "broccoli"
-msgstr ""
+msgstr "西兰花"
 
 #: game.py:45
 msgid "chicken"
-msgstr ""
+msgstr "鸡肉"
 
 #: game.py:46
 msgid "cheese"
-msgstr ""
+msgstr "奶酪"
 
 #: game.py:47
 msgid "orange"
-msgstr ""
+msgstr "橙子"
 
 #: game.py:48
 msgid "potato"
-msgstr ""
+msgstr "土豆"
 
 #: game.py:50
 msgid "tomato"
-msgstr ""
+msgstr "西红柿"
 
 #: game.py:51
 msgid "cookie"
-msgstr ""
+msgstr "饼干"
 
 #: game.py:52
 msgid "beef"
-msgstr ""
+msgstr "牛肉"
 
 #: game.py:53
 msgid "egg"
-msgstr ""
+msgstr "鸡蛋"
 
 #: game.py:54
 msgid "sweetpotato"
-msgstr ""
+msgstr "红薯"
 
 #: game.py:55
 msgid "tamale"
-msgstr ""
+msgstr "玉米粽子"
 
 #: game.py:56
 msgid "bread"
-msgstr ""
+msgstr "面包"
 
 #: game.py:57
 msgid "rice and beans"
-msgstr ""
+msgstr "大米和豆类"
 
 #: game.py:58
 msgid "cake"
-msgstr ""
+msgstr "蛋糕"
 
 #: game.py:59
 msgid "balanced"
-msgstr ""
+msgstr "平衡"
 
 #: game.py:59
 msgid "unbalanced"
-msgstr ""
+msgstr "不平衡"
 
 #: game.py:297
 #, python-format
 msgid "%d calories"
-msgstr ""
+msgstr "%d 卡路里"
