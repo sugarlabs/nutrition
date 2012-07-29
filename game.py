@@ -20,7 +20,7 @@ from random import uniform
 from gettext import gettext as _
 
 import logging
-_logger = logging.getLogger('imageid-activity')
+_logger = logging.getLogger('nutrition-activity')
 
 try:
     from sugar.graphics import style
@@ -28,36 +28,18 @@ try:
 except ImportError:
     GRID_CELL_SIZE = 0
 
+from food import FOOD_DATA, PYRAMID, NAME, CALS, GROUP, IMAGE
+
 from sprites import Sprites, Sprite
 
 # ChooseMyPlate.gov
-LEVELS = [_('minimum'), _('moderate'), _('more'), _('most'), _('unlimited')]
-MYPLATE = [[_('sweets'), 0], [_('dairy'), 1], [_('fruits'), 2],
-           [_('meat'), 2], [_('grains'), 3], [_('vegetables'), 3],
-           [_('water'), 4]]
-
-# Food name; calories; myplate category, image file name
-FOOD = [[_('banana'), 105, 2, 'banana.png'],
-             [_('apple'), 72, 2, 'apple.png'],
-             [_('fish'), 58, 3, 'fish.png'],
-             [_('corn'), 96, 4, 'corn.png'],
-             [_('broccoli'), 55, 5, 'broccoli.png'],
-             [_('chicken'), 262, 3, 'chicken.png'],
-             [_('cheese'), 114, 1, 'cheese.png'],
-             [_('orange'), 62, 2, 'orange.png'],
-             [_('potato'), 159, 5, 'potato.png'],
-             [_('water'), 0, 6, 'water.png'],
-             [_('tomato'), 150, 5, 'tomato.png'],
-             [_('cookie'), 68, 0, 'cookie.png'],
-             [_('beef'), 284, 3, 'beef.png'],
-             [_('egg'), 77, 3, 'egg.png'],
-             [_('sweetpotato'), 169, 5, 'sweetpotato.png'],
-             [_('tamale'), 126, 5, 'nacatamal.png'],
-             [_('bread'), 69, 4, 'bread.png'],
-             [_('rice and beans'), 411, 4, 'rice-and-beans.png'],
-             [_('cake'), 387, 0, 'cake.png']]
-GAME4 = [_('balanced'), _('unbalanced')]
+MYPLATE = [[PYRAMID[0], 0], [PYRAMID[1], 1], [PYRAMID[2], 2],
+           [PYRAMID[3], 2], [PYRAMID[4], 3], [PYRAMID[5], 3]]
+QUANT = 1
+QUANTITIES = [_('minimum'), _('moderate'), _('more'), _('most')]
+BALANCE = [_('balanced'), _('unbalanced')]
 NCARDS = 5
+FOOD = []
 
 class Game():
 
@@ -79,39 +61,71 @@ class Game():
 
         self.level = 0
 
+        self._picture_cards = []
+        self._small_picture_cards = []
+        self._food_cards = []
+        self._group_cards = []
+        self._quantity_cards = []
+        self._balance_cards = []
+        self._background = None
+
         # Generate the sprites we'll need...
         self._sprites = Sprites(self._canvas)
-        self._backgrounds = []
-        for i in range(4):  # One background for each level
-            self._backgrounds.append(Sprite(
-                    self._sprites, 0, 0, gtk.gdk.pixbuf_new_from_file_at_size(
-                        os.path.join(self._path, 'images',
-                                     'background%d.png' % (i)),
-                        self._width, self._height)))
-            self._backgrounds[-1].set_layer(0)
-            self._backgrounds[-1].type = 'background'
-            self._backgrounds[-1].hide()
+        self._background = Sprite(
+            self._sprites, 0, 0, gtk.gdk.pixbuf_new_from_file_at_size(
+                os.path.join(self._path, 'images','background.png'),
+                self._width, self._height))
+        self._background.set_layer(0)
+        self._background.type = None
+        self._background.hide()
 
-        self._picture_cards = []
-        for i in FOOD:
-            self.picture_append(os.path.join(self._path, 'images', i[-1]))
-
-        self._small_picture_cards = []
-        for i in FOOD:
-            self.small_picture_append(os.path.join(self._path, 'images', i[-1]))
-
-        self._word_cards = []
         pixbuf = gtk.gdk.pixbuf_new_from_file_at_size(
             os.path.join(self._path, 'images', 'word-box.png'),
             int(350 * self._scale), int(100 * self._scale))
-        for i in FOOD:
-            self.word_card_append(pixbuf=pixbuf)
+
+        for i in range(len(FOOD_DATA) / 4):
+            FOOD.append([FOOD_DATA[i * 4 + NAME], FOOD_DATA[i * 4 + CALS],
+                         FOOD_DATA[i * 4 + GROUP], FOOD_DATA[i * 4 + IMAGE]])
+            self.picture_append(os.path.join(self._path, 'images',
+                                             FOOD_DATA[i * 4 + IMAGE]))
+            self.small_picture_append(os.path.join(self._path, 'images',
+                                                   FOOD_DATA[i * 4 + IMAGE]))
+            self.word_card_append(self._food_cards, pixbuf)
+            self._food_cards[-1].type = i
+            self._food_cards[-1].set_label(FOOD_DATA[i * 4 + NAME])
+
+        x = 10
+        dx, dy = self._food_cards[0].get_dimensions()
+
+        y = 10
+        for i in range(len(MYPLATE)):
+            self.word_card_append(self._group_cards, pixbuf)
+            self._group_cards[-1].type = i
+            self._group_cards[-1].set_label(MYPLATE[i][0])
+            self._group_cards[-1].move((x, y))
+            y += int(dy * 1.25)
+
+        y = 10
+        for i in range(len(QUANTITIES)):
+            self.word_card_append(self._quantity_cards, pixbuf)
+            self._quantity_cards[-1].type = i
+            self._quantity_cards[-1].set_label(QUANTITIES[i])
+            self._quantity_cards[-1].move((x, y))
+            y += int(dy * 1.25)
+
+        y = 10
+        for i in range(len(BALANCE)):
+            self.word_card_append(self._balance_cards, pixbuf)
+            self._balance_cards[-1].type = i
+            self._balance_cards[-1].set_label(BALANCE[i])
+            self._balance_cards[-1].move((x, y))
+            y += int(dy * 1.25)
 
         self._smile = Sprite(self._sprites,
                              int(self._width / 4),
                              int(self._height / 4),
                              gtk.gdk.pixbuf_new_from_file_at_size(
-                os.path.join(self._path, 'images', 'smiley_good.png'),
+                os.path.join(self._path, 'images', 'correct.png'),
                 int(self._width / 2),
                 int(self._height / 2)))
         self._smile.set_label_attributes(36)
@@ -121,23 +135,20 @@ class Game():
                              int(self._width / 4),
                              int(self._height / 4),
                              gtk.gdk.pixbuf_new_from_file_at_size(
-                os.path.join(self._path, 'images', 'smiley_bad.png'),
+                os.path.join(self._path, 'images', 'wrong.png'),
                 int(self._width / 2),
                 int(self._height / 2)))
         self._frown.set_label_attributes(36)
         self._frown.set_margins(10, 0, 10, 0)
 
+        self.build_food_groups()
+
         self._all_clear()
 
-    def word_card_append(self, pixbuf=None):
-        if pixbuf is None:
-            pixbuf = gtk.gdk.pixbuf_new_from_file_at_size(
-                os.path.join(self._path, 'images', 'word-box.png'),
-                int(350 * self._scale), int(100 * self._scale))
-        self._word_cards.append(Sprite(self._sprites, 10, 10, pixbuf))
-        self._word_cards[-1].set_label_attributes(36)
-        self._word_cards[-1].set_margins(10, 0, 10, 0)
-        self._word_cards[-1].type = 'word'
+    def word_card_append(self, card_list, pixbuf):
+        card_list.append(Sprite(self._sprites, 10, 10, pixbuf))
+        card_list[-1].set_label_attributes(36)
+        card_list[-1].set_margins(10, 0, 10, 0)
 
     def picture_append(self, path):
         self._picture_cards.append(
@@ -170,104 +181,133 @@ class Game():
             p.hide()
         for p in self._small_picture_cards:
             p.hide()
-        for i, w in enumerate(self._word_cards):
+        for i, w in enumerate(self._food_cards):
             w.set_label_color('black')
-            if self.level in [0, 1]:
-                w.set_label(FOOD[i][self.level])
-            else:
-                w.set_label('')
+            w.set_label(FOOD[i][NAME])
+            w.hide()
+        for i, w in enumerate(self._group_cards):
+            w.set_label_color('black')
+            w.set_label(MYPLATE[i][0])
+            w.hide()
+        for i, w in enumerate(self._quantity_cards):
+            w.set_label_color('black')
+            w.set_label(QUANTITIES[i])
+            w.hide()
+        for i, w in enumerate(self._balance_cards):
+            w.set_label_color('black')
+            w.set_label(BALANCE[i])
             w.hide()
         self._smile.hide()
         self._frown.hide()
 
-        self._backgrounds[self.level].set_layer(1)
+        self._background.set_layer(1)
+
+    def build_food_groups(self):
+        self._my_plate = [[], [], [], []]
+        for i, food in enumerate(FOOD):
+            self._my_plate[MYPLATE[food[GROUP]][QUANT]].append(i)
 
     def new_game(self):
         ''' Start a new game. '''
+        games = {0: self._name_that_food, 1: self._name_that_food_group,
+                 2: self._how_much_to_eat, 3: self._balanced_meal}
         self._all_clear()
-        if self.level in [0, 1, 2]:
-            self._games_123()
-        else:
-            self._games_4()
+        
+        games[self.level]()
+        
         self._frown.set_label('')
         self._smile.set_label('')
 
-    def _games_123(self):
-        x = 10  # some small offset from the left edge
-        y = 10  # some small offset from the top edge
-        dx, dy = self._word_cards[0].get_dimensions()
+    def _name_that_food(self):
+        ''' Choose food cards and one matching food picture '''
+        x = 10
+        y = 10
+        dx, dy = self._food_cards[0].get_dimensions()
 
-        # Select N cards
-        self._list = []
+        # Select some cards
+        word_list = []
         for i in range(NCARDS):
             j = int(uniform(0, len(FOOD)))
-            while j in self._list:
+            while j in word_list:
                 j = int(uniform(0, len(FOOD)))
-            self._list.append(j)
+            word_list.append(j)
 
+        _logger.debug(word_list)
         # Show the word cards from the list
-        j = 0
-        for i in self._list:
-            self._word_cards[i].set_layer(100)
-            self._word_cards[i].move((x, y))
-            if self.level == 2:
-                self._word_cards[i].set_label(LEVELS[j])
+        for i in word_list:
+            self._food_cards[i].set_layer(100)
+            self._food_cards[i].move((x, y))
             y += int(dy * 1.25)
-            j += 1
+
+        # Choose a random food image from the list and show it.
+        self._target = self._food_cards[
+            word_list[int(uniform(0, NCARDS))]].type
+        self._picture_cards[self._target].set_layer(100)
+
+    def _name_that_food_group(self):
+        ''' Show group cards and one food picture '''
+        for i in range(len(MYPLATE)):
+            self._group_cards[i].set_layer(100)
+
+        # Choose a random food image and show it.
+        self._target = int(uniform(0, len(FOOD)))
+        self._picture_cards[self._target].set_layer(100)
+
+    def _how_much_to_eat(self):
+        ''' Show quantity cards and one food picture '''
+        for i in range(len(QUANTITIES)):
+            self._quantity_cards[i].set_layer(100)
 
         # Choose a random image from the list and show it.
-        self._target = int(uniform(0, NCARDS))
-        self._picture_cards[self._list[self._target]].set_layer(100)
+        self._target = int(uniform(0, len(FOOD)))
+        self._picture_cards[self._target].set_layer(100)
 
-    def _games_4(self):
+    def _balanced_meal(self):
         ''' A well-balanced meal '''
-        # Fill the Food Pyramid
-        self._my_plate = [[], [], [], [], []]
-        for i, f in enumerate(FOOD):
-            self._my_plate[MYPLATE[f[2]][1]].append(i)
-
-        x = 10  # some small offset from the left edge
-        y = 10  # some small offset from the top edge
-        dx, dy = self._word_cards[0].get_dimensions()
-
-        # Show two word cards
         for i in range(2):
-            self._word_cards[i].set_layer(100)
-            self._word_cards[i].move((x, y))
-            self._word_cards[i].set_label(GAME4[i])
-            y += int(dy * 1.25)
+            self._balance_cards[i].set_layer(100)
 
+        # Determine how many foods from each group
         n = [0, 0, 0, 0]
         n[0] = int(uniform(0, 2.5))
         n[1] = int(uniform(0, 3 - n[0]))
         n[2] = 3 - n[0] - n[1]
         n[3] = 6 - n[0] - n[1] - n[2]
-        self._list = []
-        for i in range(n[0]):  # Sweets
-            self._list.append(self._my_plate[0][
-                    int(uniform(0, len(self._my_plate[0])))])
-        for i in range(n[1]):  # Dairy
-            self._list.append(self._my_plate[1][
-                    int(uniform(0, len(self._my_plate[1])))])
-        for i in range(n[2]):  # Protein and Fruits
-            self._list.append(self._my_plate[2][
-                    int(uniform(0, len(self._my_plate[2])))])
-        for i in range(n[3]):  # Veggies and Grains
-            self._list.append(self._my_plate[3][
-                    int(uniform(0, len(self._my_plate[3])))])
 
-        if n[0] < 2 and n[1] < 2 and n[2] < n[3]:  # Balanced meal
-            self._target = True
+        _logger.debug(n)
+
+        # Fill a plate with foods from different groups
+        meal = []
+        for i in range(n[0]):  # Sweets
+            j = int(uniform(0, len(self._my_plate[0])))
+            _logger.debug('0. %d %d' % (len(self._my_plate[0]), j))
+            meal.append(self._my_plate[0][j])
+        for i in range(n[1]):  # Dairy
+            j = int(uniform(0, len(self._my_plate[1])))
+            _logger.debug('1. %d %d' % (len(self._my_plate[1]), j))
+            meal.append(self._my_plate[1][j])
+        for i in range(n[2]):  # Protein and Fruits
+            j = int(uniform(0, len(self._my_plate[2])))
+            _logger.debug('2. %d %d' % (len(self._my_plate[2]), j))
+            meal.append(self._my_plate[2][j])
+        for i in range(n[3]):  # Veggies and Grains
+            j = int(uniform(0, len(self._my_plate[3])))
+            _logger.debug('3. %d %d' % (len(self._my_plate[3]), j))
+            meal.append(self._my_plate[3][j])
+        _logger.debug(meal)
+
+        if n[0] < 2 and n[1] < 2 and n[2] < n[3]:
+            self._target = 0  # Balanced meal
         else:
-            self._target = False
+            self._target = 1
 
         # Randomly position small cards
-        self._small_picture_cards[self._list[3] * 6].set_layer(100)
-        self._small_picture_cards[self._list[4] * 6 + 1].set_layer(100)
-        self._small_picture_cards[self._list[1] * 6 + 2].set_layer(100)
-        self._small_picture_cards[self._list[2] * 6 + 3].set_layer(100)
-        self._small_picture_cards[self._list[5] * 6 + 4].set_layer(100)
-        self._small_picture_cards[self._list[0] * 6 + 5].set_layer(100)
+        self._small_picture_cards[meal[3] * 6].set_layer(100)
+        self._small_picture_cards[meal[4] * 6 + 1].set_layer(100)
+        self._small_picture_cards[meal[1] * 6 + 2].set_layer(100)
+        self._small_picture_cards[meal[2] * 6 + 3].set_layer(100)
+        self._small_picture_cards[meal[5] * 6 + 4].set_layer(100)
+        self._small_picture_cards[meal[0] * 6 + 5].set_layer(100)
 
     def _button_press_cb(self, win, event):
         win.grab_focus()
@@ -275,45 +315,49 @@ class Game():
         spr = self._sprites.find_sprite((x, y))
         if spr == None:
             return
-        if spr.type != 'word':  # We only care about clicks on word cards
+        # We only care about clicks on word cards
+        if type(spr.type) != int:
             return
 
         # Which card was clicked? Set its label to red.
-        i = self._word_cards.index(spr)
-        self._word_cards[i].set_label_color('red')
-        if self.level in [0, 1]:
-            self._word_cards[i].set_label(FOOD[i][self.level])
-        elif self.level == 2:
-            j = self._list.index(i)
-            self._word_cards[i].set_label(LEVELS[j])
-        else:
-            self._word_cards[i].set_label(GAME4[i])
+        spr.set_label_color('red')
+        label = spr.labels[0]
+        spr.set_label(label)
 
-        # If the label matches the picture, smile
-        if self.level in [0, 1]:
-            if i == self._list[self._target]:
+        if self.level == 0:
+            if spr.type == self._target:
                 self._smile.set_layer(200)
-                if self.level == 0:
-                    self._smile.set_label(_('%d calories') % (
-                            FOOD[self._list[self._target]][1]))
             else:
                 self._frown.set_layer(200)
-                self._frown.set_label(
-                    FOOD[self._list[self._target]][self.level])
+            self._food_cards[self._target].set_label_color('blue')
+            label = self._food_cards[self._target].labels[0]
+            self._food_cards[self._target].set_label(label)
+        elif self.level == 1:
+            i = FOOD[self._target][GROUP]
+            if spr.type == i:
+                self._smile.set_layer(200)
+            else:
+                self._frown.set_layer(200)
+            self._group_cards[i].set_label_color('blue')
+            label = self._group_cards[i].labels[0]
+            self._group_cards[i].set_label(label)
         elif self.level == 2:
-            if j == MYPLATE[FOOD[self._list[self._target]][2]][1]:
+            i = MYPLATE[FOOD[self._target][GROUP]][QUANT]
+            if spr.type == i:
                 self._smile.set_layer(200)
             else:
                 self._frown.set_layer(200)
-                self._frown.set_label(
-                    LEVELS[MYPLATE[FOOD[self._list[self._target]][2]][1]])
+            self._quantity_cards[i].set_label_color('blue')
+            label = self._quantity_cards[i].labels[0]
+            self._quantity_cards[i].set_label(label)
         else:
-            if self._target and i == 0:
-                self._smile.set_layer(200)
-            elif not self._target and i == 1:
+            if self._target == spr.type:
                 self._smile.set_layer(200)
             else:
                 self._frown.set_layer(200)
+            self._balance_cards[self._target].set_label_color('blue')
+            label = self._balance_cards[self._target].labels[0]
+            self._balance_cards[self._target].set_label(label)
 
         # Play again
         gobject.timeout_add(2000, self.new_game)

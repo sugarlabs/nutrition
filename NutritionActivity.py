@@ -26,6 +26,7 @@ from sugar import mime
 from gettext import gettext as _
 
 from game import Game, FOOD
+from food import PYRAMID
 from toolbar_utils import separator_factory, radio_factory, label_factory, \
     button_factory, entry_factory, combo_factory
 
@@ -36,11 +37,10 @@ _logger = logging.getLogger('nutrition-activity')
 SERVICE = 'org.sugarlabs.NutritionActivity'
 IFACE = SERVICE
 LABELS = [_('Match the food to its name.'),
-          _('How many calories are there?'),
+          _('What is the food group?'),
           _('How much should you eat?'),
-          _('Is this a well-balanced meal?')]
-PYRAMID = [_('sweets'), _('dairy'), _('fruits'), _('meat'), _('grains'),
-           _('vegetables')]
+          _('Is this a well-balanced meal?'),
+          _('How many calories are there?')]  # Deprecated
 
 class NutritionActivity(activity.Activity):
     """ Simple nutrition game based on GCompris ImageID """
