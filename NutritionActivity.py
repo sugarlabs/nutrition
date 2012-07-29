@@ -38,9 +38,9 @@ SERVICE = 'org.sugarlabs.NutritionActivity'
 IFACE = SERVICE
 LABELS = [_('Match the food to its name.'),
           _('What is the food group?'),
+          _('Which has the most calories?'),
           _('How much should you eat?'),
-          _('Is this a well-balanced meal?'),
-          _('How many calories are there?')]  # Deprecated
+          _('Is this a well-balanced meal?')]
 
 class NutritionActivity(activity.Activity):
     """ Simple nutrition game based on GCompris ImageID """
@@ -77,11 +77,15 @@ class NutritionActivity(activity.Activity):
                     jobject = datastore.get(self.metadata['jobject-%d' % (i)])
                     _logger.debug(jobject.file_path)
                     FOOD.append([name, calories, pyramid, 'apple.png'])
-                    self._game.word_card_append()
+                    self._game.word_card_append(self._game.food_cards,
+                                                self._game.pixbuf)
+                    self._game.food_cards[-1].type = len(FOOD) - 1
+                    self._game.food_cards[-1].set_label(name)
                     self._game.picture_append(jobject.file_path)
                     self._game.small_picture_append(jobject.file_path)
                 except:
                     _logger.debug('Could not reload saved food item %d' % (i))
+            self._game.build_food_groups()
         else:
             _logger.debug('Counter not found in metadata.')
         self._game.new_game()
@@ -110,26 +114,33 @@ class NutritionActivity(activity.Activity):
             cb_arg=0,
             tooltip=_(LABELS[0]),
             group=None)
-        calorie_game_button = radio_factory(
-            'calorie-game',
+        group_game_button = radio_factory(
+            'group-game',
             toolbox.toolbar,
             self._level_cb,
             cb_arg=1,
             tooltip=_(LABELS[1]),
             group=name_game_button)
-        pyramid_game_button = radio_factory(
-            'pyramid-game',
+        calorie_game_button = radio_factory(
+            'calorie-game',
             toolbox.toolbar,
             self._level_cb,
             cb_arg=2,
             tooltip=_(LABELS[2]),
             group=name_game_button)
-        balance_game_button = radio_factory(
-            'balance-game',
+        pyramid_game_button = radio_factory(
+            'pyramid-game',
             toolbox.toolbar,
             self._level_cb,
             cb_arg=3,
             tooltip=_(LABELS[3]),
+            group=name_game_button)
+        balance_game_button = radio_factory(
+            'balance-game',
+            toolbox.toolbar,
+            self._level_cb,
+            cb_arg=4,
+            tooltip=_(LABELS[4]),
             group=name_game_button)
 
         separator_factory(toolbox.toolbar, False, True)
@@ -265,7 +276,10 @@ item.')
 
         _logger.debug(self._custom_food_jobject.file_path)
         FOOD.append([name, calories, pyramid, 'apple.png'])
-        self._game.word_card_append()
+        self._game.word_card_append(self._game.food_cards,
+                                    self._game.pixbuf)
+        self._game.food_cards[-1].type = len(FOOD) - 1
+        self._game.food_cards[-1].set_label(name)
         self._game.picture_append(self._custom_food_jobject.file_path)
         self._game.small_picture_append(self._custom_food_jobject.file_path)
         alert = NotifyAlert()
@@ -277,6 +291,7 @@ item.')
         self.name_entry.set_text(_('food name'))
         self.calories_entry.set_text(_('calories'))
         self._custom_food_image_path = None
+        self._game.build_food_groups()
         self._game.new_game()
         self.metadata['name-%d' % (self._custom_food_counter)] = name
         self.metadata['calories-%d' % (self._custom_food_counter)] = \
