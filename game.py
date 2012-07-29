@@ -366,7 +366,7 @@ class Game():
             self._group_cards[i].set_label_color('blue')
             label = self._group_cards[i].labels[0]
             self._group_cards[i].set_label(label)
-        if self.level == 2:
+        elif self.level == 2:
             if spr.type == self._target:
                 self._smile.set_layer(200)
             else:
@@ -383,7 +383,7 @@ class Game():
             self._quantity_cards[i].set_label_color('blue')
             label = self._quantity_cards[i].labels[0]
             self._quantity_cards[i].set_label(label)
-        else:
+        elif self.level == 4:
             if self._target == spr.type:
                 self._smile.set_layer(200)
             else:
@@ -391,6 +391,8 @@ class Game():
             self._balance_cards[self._target].set_label_color('blue')
             label = self._balance_cards[self._target].labels[0]
             self._balance_cards[self._target].set_label(label)
+        else:
+            _logger.debug('unknown play level %d' % (self.level))
 
         # Play again
         gobject.timeout_add(2000, self.new_game)
