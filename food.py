@@ -9,7 +9,7 @@ CALS = 1
 GROUP = 2
 IMAGE = 3
 FOOD_DATA = [
-_('avacado'), 151, 2, 'aguacate.png',
+_('avocado'), 151, 2, 'aguacate.png',
 _('celery'), 19, 5, 'apio.png',
 _('rice'), 343, 4, 'arroz.png',
 _('oats'), 387, 4, 'avena.png',
@@ -28,7 +28,7 @@ _('cherry'), 60, 2, 'cereza.png',
 _('pear squash'), 30, 5, 'chayote.png',
 _('chili pepper'), 23, 5, 'chile.png',
 _('sweet pepper'), 48, 5, 'chiltoma.png',
-_('coco'), 300, 2, 'coco.png',
+_('coconut'), 300, 2, 'coco.png',
 _('cookie'), 68, 0, 'cookie.png',
 _('cream'), 340, 1, 'crema.png',
 _('egg'), 77, 3, 'egg.png',
@@ -53,7 +53,7 @@ _('papaya'), 25, 2, 'papaya.png',
 _('cucumber'), 12, 5, 'pepino.png',
 _('pear'), 61, 2, 'pera.png',
 _('fish'), 91, 3, 'pez.png',
-_('pinapple'), 55, 2, 'pina.png',
+_('pineapple'), 55, 2, 'pina.png',
 #TRANS: Green pumpkin squash (source of seeds used in Central American)
 _('green pumpkin'), 16, 5, 'pipian.png',
 #TRANS: a cactus fruit
@@ -74,7 +74,7 @@ _('tomato'), 16, 5, 'tomate.png',
 _('wheat'), 345, 4, 'trigo.png',
 _('grape'), 68, 2, 'uvas.png',
 _('yogurt'), 38, 1, 'yogurt.png',
-_('yuca'), 120, 5, 'yuca.png',
+_('yucca'), 120, 5, 'yuca.png',
 _('carrot'), 37, 5, 'zanahoria.png',
 #TRANS: a soft, edible fruit native to Central America
 _('sapote'), 52, 2, 'zapote.png',
