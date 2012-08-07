@@ -67,6 +67,7 @@ class Game():
         self._group_cards = []
         self._quantity_cards = []
         self._balance_cards = []
+        self._last_twenty = []
         self._background = None
 
         # Generate the sprites we'll need...
@@ -242,6 +243,13 @@ class Game():
         # Choose a random food image from the list and show it.
         self._target = self.food_cards[
             word_list[int(uniform(0, NCARDS))]].type
+        while self._target in self._last_twenty:
+            self._target = self.food_cards[
+                word_list[int(uniform(0, NCARDS))]].type
+        self._last_twenty.append(self._target)
+        if len(self._last_twenty) > 20:
+            self._last_twenty.remove(self._last_twenty[0])
+            
         self._picture_cards[self._target].set_layer(100)
 
     def _name_that_food_group(self):
