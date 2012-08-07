@@ -1,0 +1,394 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-30 00:33-0400\n"
+"PO-Revision-Date: 2012-08-06 22:51+0200\n"
+"Last-Translator: anush.mkrtchyan <anush.mkrtchyan@ca1492.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: activity/activity.info:2
+msgid "Nutrition"
+msgstr "Սնուցում"
+
+#: NutritionActivity.py:39
+msgid "Match the food to its name."
+msgstr "Համաձայնեցրու սննունդը իր անվան հետ:"
+
+#: NutritionActivity.py:40
+msgid "What is the food group?"
+msgstr "Ի՞նչ է սննդի խումբը"
+
+#: NutritionActivity.py:41
+msgid "Which has the most calories?"
+msgstr "Ո՞րն ունի ամենաշատ կալորիա:"
+
+#: NutritionActivity.py:42
+msgid "How much should you eat?"
+msgstr "Ինչքա՞ն պետք է ուտես"
+
+#: NutritionActivity.py:43
+msgid "Is this a well-balanced meal?"
+msgstr "Արդյո՞ք սա հավասարակշռված կերակուր է"
+
+#: NutritionActivity.py:164 NutritionActivity.py:250 NutritionActivity.py:291
+msgid "food name"
+msgstr "Սննդի անունը"
+
+#: NutritionActivity.py:166
+msgid "Enter a name for the new food item."
+msgstr "Մուտքագրիր նոր սննդի անունը"
+
+#: NutritionActivity.py:169 NutritionActivity.py:292
+msgid "calories"
+msgstr "Կալորիա"
+
+#: NutritionActivity.py:171
+msgid "Enter the calories in for the new food item."
+msgstr "Մուտքագրել նոր սննդի կալորիաները"
+
+#: NutritionActivity.py:178
+msgid "Select level in the Food Pyramid."
+msgstr "Ընտրել մակարդակ Սննդի Բուրգում"
+
+#: NutritionActivity.py:183
+msgid "Load a picture of the new food item."
+msgstr "Բեռնել նոր սննդի նկարը"
+
+#: NutritionActivity.py:190 NutritionActivity.py:252 NutritionActivity.py:260
+#: NutritionActivity.py:269 NutritionActivity.py:286
+msgid "Add a new food item."
+msgstr "Ավելացնել նոր սնունդ"
+
+#: NutritionActivity.py:254
+msgid "You must enter a name for the new food item."
+msgstr "Պետք է մուտքագրես նոր սննդի անունը"
+
+#: NutritionActivity.py:262
+msgid "You must enter calories for the new food item."
+msgstr "Պետք է մուտքագրես ներ սննդի կալորիաները"
+
+#: NutritionActivity.py:271
+msgid "You must load an image for the new food item."
+msgstr "Պետք է բեռնես նոր սննդի պատկերը"
+
+#: NutritionActivity.py:288
+#, python-format
+msgid "%s has been loaded."
+msgstr "%s բեռնվել է"
+
+#: food.py:4
+msgid "sweets"
+msgstr "քաղցրավենիք"
+
+#: food.py:4
+msgid "dairy"
+msgstr "կաթնամթերք"
+
+#: food.py:4
+msgid "fruits"
+msgstr "մրգեր"
+
+#: food.py:4
+msgid "meat"
+msgstr "միս"
+
+#: food.py:4
+msgid "grains"
+msgstr "հացահատիկ"
+
+#: food.py:5
+msgid "vegetables"
+msgstr "բանջարեղեն"
+
+#: food.py:12
+msgid "avacado"
+msgstr "ավոկադո"
+
+#: food.py:13
+msgid "celery"
+msgstr "նեխուր"
+
+#: food.py:14
+msgid "rice"
+msgstr "բրինձ"
+
+#: food.py:15
+msgid "oats"
+msgstr "վարսակ"
+
+#: food.py:16
+msgid "pumpkin"
+msgstr "դդում"
+
+#: food.py:17
+msgid "banana"
+msgstr "բանան"
+
+#. TRANS: aubergine
+#: food.py:19
+msgid "eggplant"
+msgstr "սմբուկ"
+
+#: food.py:20
+msgid "bread"
+msgstr "հաց"
+
+#: food.py:21
+msgid "broccoli"
+msgstr "բրոկոլի"
+
+#: food.py:22
+msgid "cocoa"
+msgstr "կակաո"
+
+#: food.py:23
+msgid "cake"
+msgstr "տորթ"
+
+#: food.py:24
+msgid "barley"
+msgstr "գարի"
+
+#: food.py:25
+msgid "onion"
+msgstr "սոխ"
+
+#: food.py:26
+msgid "pork"
+msgstr "խոզի միս"
+
+#: food.py:27
+msgid "cherry"
+msgstr "բալ"
+
+#: food.py:28
+msgid "pear squash"
+msgstr ""
+
+#: food.py:29
+msgid "chili pepper"
+msgstr "չիլիական պղպեղ"
+
+#: food.py:30
+msgid "sweet pepper"
+msgstr "քաղցր պղպեղ"
+
+#: food.py:31
+msgid "coco"
+msgstr "կոկոս"
+
+#: food.py:32
+msgid "cookie"
+msgstr "թխվածք"
+
+#: food.py:33
+msgid "cream"
+msgstr "սերուցք"
+
+#: food.py:34
+msgid "egg"
+msgstr "ձու"
+
+#: food.py:35
+msgid "corn on the cob"
+msgstr "եգիպտացորնի հասկ"
+
+#: food.py:36
+msgid "strawberry"
+msgstr "ելակ"
+
+#: food.py:37
+msgid "guava"
+msgstr ""
+
+#: food.py:38
+msgid "milk"
+msgstr ""
+
+#: food.py:39
+msgid "lettuce"
+msgstr ""
+
+#: food.py:40
+msgid "lemon"
+msgstr ""
+
+#: food.py:41
+msgid "flax seed"
+msgstr ""
+
+#: food.py:42
+msgid "corn"
+msgstr ""
+
+#: food.py:43
+msgid "mandarin"
+msgstr ""
+
+#: food.py:44
+msgid "mango"
+msgstr ""
+
+#: food.py:45
+msgid "apple"
+msgstr ""
+
+#: food.py:46
+msgid "star fruit"
+msgstr ""
+
+#: food.py:47
+msgid "melon"
+msgstr ""
+
+#: food.py:48
+msgid "orange"
+msgstr ""
+
+#. TRANS: fruit of the sapodilla tree common to Central America
+#: food.py:50
+msgid "sapodilla"
+msgstr ""
+
+#: food.py:51
+msgid "potato"
+msgstr ""
+
+#: food.py:52
+msgid "papaya"
+msgstr ""
+
+#: food.py:53
+msgid "cucumber"
+msgstr ""
+
+#: food.py:54
+msgid "pear"
+msgstr ""
+
+#: food.py:55
+msgid "fish"
+msgstr ""
+
+#: food.py:56
+msgid "pinapple"
+msgstr ""
+
+#. TRANS: Green pumpkin squash (source of seeds used in Central American)
+#: food.py:58
+msgid "green pumpkin"
+msgstr ""
+
+#. TRANS: a cactus fruit
+#: food.py:60
+msgid "pitaya"
+msgstr ""
+
+#: food.py:61
+msgid "plantain"
+msgstr ""
+
+#: food.py:62
+msgid "chicken"
+msgstr ""
+
+#: food.py:63
+msgid "cheese"
+msgstr ""
+
+#: food.py:64
+msgid "radish"
+msgstr ""
+
+#: food.py:65
+msgid "beet"
+msgstr ""
+
+#: food.py:66
+msgid "cabbage"
+msgstr ""
+
+#: food.py:67
+msgid "beef"
+msgstr ""
+
+#: food.py:68
+msgid "rice and beans"
+msgstr ""
+
+#: food.py:69
+msgid "watermelon"
+msgstr ""
+
+#. TRANS: A seed used to make horchata (common in Central America)
+#: food.py:71
+msgid "jicaro"
+msgstr ""
+
+#: food.py:72
+msgid "tamale"
+msgstr ""
+
+#: food.py:73
+msgid "tomato"
+msgstr ""
+
+#: food.py:74
+msgid "wheat"
+msgstr ""
+
+#: food.py:75
+msgid "grape"
+msgstr ""
+
+#: food.py:76
+msgid "yogurt"
+msgstr ""
+
+#: food.py:77
+msgid "yuca"
+msgstr ""
+
+#: food.py:78
+msgid "carrot"
+msgstr ""
+
+#. TRANS: a soft, edible fruit native to Central America
+#: food.py:80
+msgid "sapote"
+msgstr ""
+
+#: game.py:39
+msgid "minimum"
+msgstr ""
+
+#: game.py:39
+msgid "moderate"
+msgstr ""
+
+#: game.py:39
+msgid "more"
+msgstr ""
+
+#: game.py:39
+msgid "most"
+msgstr ""
+
+#: game.py:40
+msgid "balanced"
+msgstr ""
+
+#: game.py:40
+msgid "unbalanced"
+msgstr ""
