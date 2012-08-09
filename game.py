@@ -58,6 +58,7 @@ class Game():
         self._height = gtk.gdk.screen_height()
         self._scale = self._width / 1200.
         self._target = 0
+        self._tries = 0
 
         self.level = 0
 
@@ -219,6 +220,7 @@ class Game():
         
         self._frown.set_label('')
         self._smile.set_label('')
+        self._tries = 0
 
     def _name_that_food(self):
         ''' Choose food cards and one matching food picture '''
@@ -360,51 +362,88 @@ class Game():
         if self.level == 0:
             if spr.type == self._target:
                 self._smile.set_layer(200)
+                self._tries = 3
             else:
                 self._frown.set_layer(200)
-            self.food_cards[self._target].set_label_color('blue')
-            label = self.food_cards[self._target].labels[0]
-            self.food_cards[self._target].set_label(label)
+                self._tries += 1
+            if self._tries == 3:
+                self.food_cards[self._target].set_label_color('blue')
+                label = self.food_cards[self._target].labels[0]
+                self.food_cards[self._target].set_label(label)
         elif self.level == 1:
             i = FOOD[self._target][GROUP]
             if spr.type == i:
                 self._smile.set_layer(200)
+                self._tries = 3
             else:
                 self._frown.set_layer(200)
-            self._group_cards[i].set_label_color('blue')
-            label = self._group_cards[i].labels[0]
-            self._group_cards[i].set_label(label)
+                self._tries += 1
+            if self._tries == 3:
+                self._group_cards[i].set_label_color('blue')
+                label = self._group_cards[i].labels[0]
+                self._group_cards[i].set_label(label)
         elif self.level == 2:
             if spr.type == self._target:
                 self._smile.set_layer(200)
+                self._tries = 3
             else:
                 self._frown.set_layer(200)
-            self.food_cards[self._target].set_label_color('blue')
-            label = self.food_cards[self._target].labels[0]
-            self.food_cards[self._target].set_label(label)
+                self._tries += 1
+            if self._tries == 3:
+                self.food_cards[self._target].set_label_color('blue')
+                label = self.food_cards[self._target].labels[0]
+                self.food_cards[self._target].set_label(label)
         elif self.level == 3:
             i = MYPLATE[FOOD[self._target][GROUP]][QUANT]
             if spr.type == i:
                 self._smile.set_layer(200)
+                self._tries = 3
             else:
                 self._frown.set_layer(200)
-            self._quantity_cards[i].set_label_color('blue')
-            label = self._quantity_cards[i].labels[0]
-            self._quantity_cards[i].set_label(label)
+                self._tries += 1
+            if self._tries == 3:
+                self._quantity_cards[i].set_label_color('blue')
+                label = self._quantity_cards[i].labels[0]
+                self._quantity_cards[i].set_label(label)
         elif self.level == 4:
             if self._target == spr.type:
                 self._smile.set_layer(200)
+                self._tries = 3
             else:
                 self._frown.set_layer(200)
-            self._balance_cards[self._target].set_label_color('blue')
-            label = self._balance_cards[self._target].labels[0]
-            self._balance_cards[self._target].set_label(label)
+                self._tries += 1
+            if self._tries == 3:
+                self._balance_cards[self._target].set_label_color('blue')
+                label = self._balance_cards[self._target].labels[0]
+                self._balance_cards[self._target].set_label(label)
         else:
             _logger.debug('unknown play level %d' % (self.level))
 
         # Play again
-        gobject.timeout_add(2000, self.new_game)
+        if self._tries == 3:
+            gobject.timeout_add(2000, self.new_game)
+        else:
+            gobject.timeout_add(1000, self._reset_game)
         return True
+
+    def _reset_game(self):
+        self._frown.hide()
+        if self.level in [0, 2]:
+            for i, w in enumerate(self.food_cards):
+                w.set_label_color('black')
+                w.set_label(FOOD[i][NAME])
+        elif self.level == 1:
+            for i, w in enumerate(self._group_cards):
+                w.set_label_color('black')
+                w.set_label(MYPLATE[i][0])
+        elif self.level == 3:
+            for i, w in enumerate(self._quantity_cards):
+                w.set_label_color('black')
+                w.set_label(QUANTITIES[i])
+        elif self.level == 4:
+            for i, w in enumerate(self._balance_cards):
+                w.set_label_color('black')
+                w.set_label(BALANCE[i])
 
     def _expose_cb(self, win, event):
         self.do_expose_event(event)
