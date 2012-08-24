@@ -88,13 +88,11 @@ class Game():
         for i in range(len(FOOD_DATA) / 4):
             FOOD.append([FOOD_DATA[i * 4 + NAME], FOOD_DATA[i * 4 + CALS],
                          FOOD_DATA[i * 4 + GROUP], FOOD_DATA[i * 4 + IMAGE]])
-            self.picture_append(os.path.join(self._path, 'images',
-                                             FOOD_DATA[i * 4 + IMAGE]))
-            self.small_picture_append(os.path.join(self._path, 'images',
-                                                   FOOD_DATA[i * 4 + IMAGE]))
-            self.word_card_append(self.food_cards, self.pixbuf)
-            self.food_cards[-1].type = i
-            self.food_cards[-1].set_label(FOOD_DATA[i * 4 + NAME])
+            self.food_cards.append(None)
+            self._picture_cards.append(None)
+            for j in range(6):
+                self._small_picture_cards.append(None)
+        self.allocate_food(0)
 
         x = 10
         dx, dy = self.food_cards[0].get_dimensions()
@@ -147,31 +145,46 @@ class Game():
 
         self._all_clear()
 
-    def word_card_append(self, card_list, pixbuf):
-        card_list.append(Sprite(self._sprites, 10, 10, pixbuf))
-        card_list[-1].set_label_attributes(36)
-        card_list[-1].set_margins(10, 0, 10, 0)
+    def allocate_food(self, i):
+        self.picture_append(os.path.join(self._path, 'images',
+                                         FOOD_DATA[i * 4 + IMAGE]), i)
+        self.small_picture_append(os.path.join(self._path, 'images',
+                                               FOOD_DATA[i * 4 + IMAGE]), i)
+        self.word_card_append(self.food_cards, self.pixbuf, i)
+        self.food_cards[i].type = i
+        self.food_cards[i].set_label(FOOD_DATA[i * 4 + NAME])
 
-    def picture_append(self, path):
-        self._picture_cards.append(
-            Sprite(self._sprites,
-                   int(self._width / 2.),
-                   int(self._height / 4.),
-                   gtk.gdk.pixbuf_new_from_file_at_size(
-                    path, int(self._width / 3.), int(9 * self._width / 12.))))
-        self._picture_cards[-1].type = 'picture'
+    def word_card_append(self, card_list, pixbuf, i=-1):
+        if i == -1:
+            card_list.append(Sprite(self._sprites, 10, 10, pixbuf))
+        else:
+            card_list[i] = Sprite(self._sprites, 10, 10, pixbuf)
+        card_list[i].set_label_attributes(36)
+        card_list[i].set_margins(10, 0, 10, 0)
+        card_list[i].hide()
 
-    def small_picture_append(self, path):
+    def picture_append(self, path, i):
+        self._picture_cards[i] = Sprite(
+            self._sprites,
+            int(self._width / 2.),
+            int(self._height / 4.),
+            gtk.gdk.pixbuf_new_from_file_at_size(
+                path, int(self._width / 3.), int(9 * self._width / 12.)))
+        self._picture_cards[i].type = 'picture'
+        self._picture_cards[i].hide()
+
+    def small_picture_append(self, path, i):
         x = int(self._width / 3.)
         y = int(self._height / 6.)
         for j in range(6):  # up to 6 of each card
-            self._small_picture_cards.append(
-                Sprite(self._sprites, x, y,
-                       gtk.gdk.pixbuf_new_from_file_at_size(
-                        path,
-                        int(self._width / 6.),
-                        int(3 * self._width / 8.))))
-            self._small_picture_cards[-1].type = 'picture'
+            self._small_picture_cards[i * 6 + j] = Sprite(
+                self._sprites, x, y,
+                gtk.gdk.pixbuf_new_from_file_at_size(
+                    path,
+                    int(self._width / 6.),
+                    int(3 * self._width / 8.)))
+            self._small_picture_cards[i * 6 + j].type = 'picture'
+            self._small_picture_cards[i * 6 + j].hide()
             x += int(self._width / 6.)
             if j == 2:
                 x = int(self._width / 3.)
@@ -180,13 +193,16 @@ class Game():
     def _all_clear(self):
         ''' Things to reinitialize when starting up a new game. '''
         for p in self._picture_cards:
-            p.hide()
+            if p is not None:
+                p.hide()
         for p in self._small_picture_cards:
-            p.hide()
+            if p is not None:
+                p.hide()
         for i, w in enumerate(self.food_cards):
-            w.set_label_color('black')
-            w.set_label(FOOD[i][NAME])
-            w.hide()
+            if w is not None:
+                w.set_label_color('black')
+                w.set_label(FOOD[i][NAME])
+                w.hide()
         for i, w in enumerate(self._group_cards):
             w.set_label_color('black')
             w.set_label(MYPLATE[i][0])
@@ -238,6 +254,8 @@ class Game():
 
         # Show the word cards from the list
         for i in word_list:
+            if self.food_cards[i] is None:
+                self.allocate_food(i)
             self.food_cards[i].set_layer(100)
             self.food_cards[i].move((x, y))
             y += int(dy * 1.25)
@@ -261,6 +279,8 @@ class Game():
 
         # Choose a random food image and show it.
         self._target = int(uniform(0, len(FOOD)))
+        if self.food_cards[self._target] is None:
+            self.allocate_food(self._target)
         self._picture_cards[self._target].set_layer(100)
 
     def _compare_calories(self):
@@ -276,6 +296,8 @@ class Game():
             while j in word_list:
                 j = int(uniform(0, len(FOOD)))
             word_list.append(j)
+            if self.food_cards[j] is None:
+                self.allocate_food(j)
 
         # Show the word cards from the list
         for i in word_list:
@@ -302,6 +324,8 @@ class Game():
 
         # Choose a random image from the list and show it.
         self._target = int(uniform(0, len(FOOD)))
+        if self.food_cards[self._target] is None:
+            self.allocate_food(self._target)
         self._picture_cards[self._target].set_layer(100)
 
     def _balanced_meal(self):
@@ -336,6 +360,9 @@ class Game():
         else:
             self._target = 1
 
+        for i in range(6):
+            if self.food_cards[meal[i]] is None:
+                self.allocate_food(meal[i])
         # Randomly position small cards
         self._small_picture_cards[meal[3] * 6].set_layer(100)
         self._small_picture_cards[meal[4] * 6 + 1].set_layer(100)
