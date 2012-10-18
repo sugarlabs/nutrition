@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-#Copyright (c) 2011,12 Walter Bender
-
+# Copyright (c) 2011,12 Walter Bender
+# Ported to GTK3:
+# Ignacio Rodríguez <ignaciorodriguez@sugarlabs.org>
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 3 of the License, or
@@ -10,9 +11,7 @@
 # along with this library; if not, write to the Free Software
 # Foundation, 51 Franklin Street, Suite 500 Boston, MA 02110-1335 USA
 
-
-import gtk
-import gobject
+from gi.repository import Gtk, Gdk, GObject, GdkPixbuf
 import cairo
 import os
 from random import uniform
@@ -23,7 +22,7 @@ import logging
 _logger = logging.getLogger('nutrition-activity')
 
 try:
-    from sugar.graphics import style
+    from sugar3.graphics import style
     GRID_CELL_SIZE = style.GRID_CELL_SIZE
 except ImportError:
     GRID_CELL_SIZE = 0
@@ -49,13 +48,12 @@ class Game():
         self._parent.show_all()
         self._path = path
 
-        self._canvas.set_flags(gtk.CAN_FOCUS)
-        self._canvas.add_events(gtk.gdk.BUTTON_PRESS_MASK)
-        self._canvas.connect("expose-event", self._expose_cb)
+        self._canvas.add_events(Gdk.EventMask.BUTTON_PRESS_MASK)
+        self._canvas.connect("draw", self.__draw_cb)
         self._canvas.connect("button-press-event", self._button_press_cb)
 
-        self._width = gtk.gdk.screen_width()
-        self._height = gtk.gdk.screen_height()
+        self._width = Gdk.Screen.width()
+        self._height = Gdk.Screen.height()
         self._scale = self._width / 1200.
         self._target = 0
         self._tries = 0
@@ -74,14 +72,14 @@ class Game():
         # Generate the sprites we'll need...
         self._sprites = Sprites(self._canvas)
         self._background = Sprite(
-            self._sprites, 0, 0, gtk.gdk.pixbuf_new_from_file_at_size(
+            self._sprites, 0, 0, GdkPixbuf.Pixbuf.new_from_file_at_size(
                 os.path.join(self._path, 'images','background.png'),
                 self._width, self._height))
         self._background.set_layer(0)
         self._background.type = None
         self._background.hide()
 
-        self.pixbuf = gtk.gdk.pixbuf_new_from_file_at_size(
+        self.pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(
             os.path.join(self._path, 'images', 'word-box.png'),
             int(350 * self._scale), int(100 * self._scale))
 
@@ -124,7 +122,7 @@ class Game():
         self._smile = Sprite(self._sprites,
                              int(self._width / 4),
                              int(self._height / 4),
-                             gtk.gdk.pixbuf_new_from_file_at_size(
+                             GdkPixbuf.Pixbuf.new_from_file_at_size(
                 os.path.join(self._path, 'images', 'correct.png'),
                 int(self._width / 2),
                 int(self._height / 2)))
@@ -134,7 +132,7 @@ class Game():
         self._frown = Sprite(self._sprites,
                              int(self._width / 4),
                              int(self._height / 4),
-                             gtk.gdk.pixbuf_new_from_file_at_size(
+                             GdkPixbuf.Pixbuf.new_from_file_at_size(
                 os.path.join(self._path, 'images', 'wrong.png'),
                 int(self._width / 2),
                 int(self._height / 2)))
@@ -168,7 +166,7 @@ class Game():
             self._sprites,
             int(self._width / 2.),
             int(self._height / 4.),
-            gtk.gdk.pixbuf_new_from_file_at_size(
+            GdkPixbuf.Pixbuf.new_from_file_at_size(
                 path, int(self._width / 3.), int(9 * self._width / 12.)))
         self._picture_cards[i].type = 'picture'
         self._picture_cards[i].hide()
@@ -179,7 +177,7 @@ class Game():
         for j in range(6):  # up to 6 of each card
             self._small_picture_cards[i * 6 + j] = Sprite(
                 self._sprites, x, y,
-                gtk.gdk.pixbuf_new_from_file_at_size(
+                GdkPixbuf.Pixbuf.new_from_file_at_size(
                     path,
                     int(self._width / 6.),
                     int(3 * self._width / 8.)))
@@ -448,9 +446,9 @@ class Game():
 
         # Play again
         if self._tries == 3:
-            gobject.timeout_add(2000, self.new_game)
+            GObject.timeout_add(2000, self.new_game)
         else:
-            gobject.timeout_add(1000, self._reset_game)
+            GObject.timeout_add(1000, self._reset_game)
         return True
 
     def _reset_game(self):
@@ -472,8 +470,8 @@ class Game():
                 w.set_label_color('black')
                 w.set_label(BALANCE[i])
 
-    def _expose_cb(self, win, event):
-        self.do_expose_event(event)
+    def __draw_cb(self, canvas, cr):
+        self._sprites.redraw_sprites(cr=cr)
 
     def do_expose_event(self, event):
         ''' Handle the expose-event by drawing '''
@@ -486,4 +484,4 @@ class Game():
         self._sprites.redraw_sprites(cr=cr)
 
     def _destroy_cb(self, win, event):
-        gtk.main_quit()
+        Gtk.main_quit()

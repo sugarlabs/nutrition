@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-10 00:34-0400\n"
-"PO-Revision-Date: 2012-08-13 07:27+0200\n"
+"POT-Creation-Date: 2012-07-30 00:33-0400\n"
+"PO-Revision-Date: 2012-07-30 17:01+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_US\n"
@@ -112,7 +112,7 @@ msgid "vegetables"
 msgstr "vegetables"
 
 #: food.py:12
-msgid "avocado"
+msgid "avacado"
 msgstr "avocado"
 
 #: food.py:13
@@ -185,7 +185,7 @@ msgid "sweet pepper"
 msgstr "sweet pepper"
 
 #: food.py:31
-msgid "coconut"
+msgid "coco"
 msgstr "coconut"
 
 #: food.py:32
@@ -227,6 +227,10 @@ msgstr "lemon"
 #: food.py:41
 msgid "flax seed"
 msgstr "flax seed"
+
+#: food.py:42
+msgid "corn"
+msgstr "corn"
 
 #: food.py:43
 msgid "mandarin"
@@ -278,7 +282,7 @@ msgid "fish"
 msgstr "fish"
 
 #: food.py:56
-msgid "pineapple"
+msgid "pinapple"
 msgstr "pineapple"
 
 #. TRANS: Green pumpkin squash (source of seeds used in Central American)
@@ -332,6 +336,10 @@ msgstr "watermelon"
 msgid "jicaro"
 msgstr "jicaro"
 
+#: food.py:72
+msgid "tamale"
+msgstr "tamale"
+
 #: food.py:73
 msgid "tomato"
 msgstr "tomato"
@@ -349,7 +357,7 @@ msgid "yogurt"
 msgstr "yogurt"
 
 #: food.py:77
-msgid "yucca"
+msgid "yuca"
 msgstr "yucca"
 
 #: food.py:78
@@ -384,15 +392,6 @@ msgstr "balanced"
 #: game.py:40
 msgid "unbalanced"
 msgstr "unbalanced"
-
-#~ msgid "coco"
-#~ msgstr "coconut"
-
-#~ msgid "corn"
-#~ msgstr "corn"
-
-#~ msgid "tamale"
-#~ msgstr "tamale"
 
 #~ msgid "How many calories are there?"
 #~ msgstr "How many calories are there?"

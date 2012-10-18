@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-10 00:34-0400\n"
-"PO-Revision-Date: 2012-08-10 16:36+0200\n"
+"POT-Creation-Date: 2012-04-21 00:32-0400\n"
+"PO-Revision-Date: 2012-05-08 04:34+0200\n"
 "Last-Translator: lite <litekok@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
@@ -21,391 +21,197 @@ msgstr ""
 msgid "Nutrition"
 msgstr "营养"
 
-#: NutritionActivity.py:39
+#: NutritionActivity.py:38
 msgid "Match the food to its name."
 msgstr "把食物和名称配对"
 
+#: NutritionActivity.py:39
+msgid "How many calories are there?"
+msgstr "有多少卡路里？"
+
 #: NutritionActivity.py:40
-msgid "What is the food group?"
-msgstr "是什么食物组？"
-
-#: NutritionActivity.py:41
-msgid "Which has the most calories?"
-msgstr "谁有最多的热量？"
-
-#: NutritionActivity.py:42
 msgid "How much should you eat?"
 msgstr "你应该吃多少？"
 
-#: NutritionActivity.py:43
+#: NutritionActivity.py:41
 msgid "Is this a well-balanced meal?"
 msgstr "这是营养平衡的吗？"
 
-#: NutritionActivity.py:164 NutritionActivity.py:250 NutritionActivity.py:291
+#: NutritionActivity.py:42 game.py:35
+msgid "sweets"
+msgstr "甜食"
+
+#: NutritionActivity.py:42 game.py:35
+msgid "dairy"
+msgstr "乳制品"
+
+#: NutritionActivity.py:42 game.py:35
+msgid "fruits"
+msgstr "水果"
+
+#: NutritionActivity.py:42 game.py:36
+msgid "meat"
+msgstr "肉"
+
+#: NutritionActivity.py:42 game.py:36
+msgid "grains"
+msgstr "谷物"
+
+#: NutritionActivity.py:43 game.py:36
+msgid "vegetables"
+msgstr "蔬菜"
+
+#: NutritionActivity.py:153 NutritionActivity.py:239 NutritionActivity.py:277
 msgid "food name"
 msgstr "食品名称"
 
-#: NutritionActivity.py:166
+#: NutritionActivity.py:155
 msgid "Enter a name for the new food item."
 msgstr "输入新食物的名称。"
 
-#: NutritionActivity.py:169 NutritionActivity.py:292
+#: NutritionActivity.py:158 NutritionActivity.py:278
 msgid "calories"
 msgstr "卡路里"
 
-#: NutritionActivity.py:171
+#: NutritionActivity.py:160
 msgid "Enter the calories in for the new food item."
 msgstr "输入新食物的热量。"
 
-#: NutritionActivity.py:178
+#: NutritionActivity.py:167
 msgid "Select level in the Food Pyramid."
 msgstr "选择食物金字塔中的等级。"
 
-#: NutritionActivity.py:183
+#: NutritionActivity.py:172
 msgid "Load a picture of the new food item."
 msgstr "加载新食物的图片。"
 
-#: NutritionActivity.py:190 NutritionActivity.py:252 NutritionActivity.py:260
-#: NutritionActivity.py:269 NutritionActivity.py:286
+#: NutritionActivity.py:179 NutritionActivity.py:241 NutritionActivity.py:249
+#: NutritionActivity.py:258 NutritionActivity.py:272
 msgid "Add a new food item."
 msgstr "添加新食物。"
 
-#: NutritionActivity.py:254
+#: NutritionActivity.py:243
 msgid "You must enter a name for the new food item."
 msgstr "你必须输入新食物的名称。"
 
-#: NutritionActivity.py:262
+#: NutritionActivity.py:251
 msgid "You must enter calories for the new food item."
 msgstr "你必须输入新食物的热量。"
 
-#: NutritionActivity.py:271
+#: NutritionActivity.py:260
 msgid "You must load an image for the new food item."
 msgstr "你必须为新食物加载一个图像。"
 
-#: NutritionActivity.py:288
+#: NutritionActivity.py:274
 #, python-format
 msgid "%s has been loaded."
 msgstr "%s已被载入。"
 
-#: food.py:4
-msgid "sweets"
-msgstr "甜食"
-
-#: food.py:4
-msgid "dairy"
-msgstr "乳制品"
-
-#: food.py:4
-msgid "fruits"
-msgstr "水果"
-
-#: food.py:4
-msgid "meat"
-msgstr "肉"
-
-#: food.py:4
-msgid "grains"
-msgstr "谷物"
-
-#: food.py:5
-msgid "vegetables"
-msgstr "蔬菜"
-
-#: food.py:12
-msgid "avocado"
-msgstr "鳄梨"
-
-#: food.py:13
-msgid "celery"
-msgstr "芹菜"
-
-#: food.py:14
-msgid "rice"
-msgstr "米饭"
-
-#: food.py:15
-msgid "oats"
-msgstr "燕麦"
-
-#: food.py:16
-msgid "pumpkin"
-msgstr "南瓜"
-
-#: food.py:17
-msgid "banana"
-msgstr "香蕉"
-
-#. TRANS: aubergine
-#: food.py:19
-msgid "eggplant"
-msgstr "茄子"
-
-#: food.py:20
-msgid "bread"
-msgstr "面包"
-
-#: food.py:21
-msgid "broccoli"
-msgstr "西兰花"
-
-#: food.py:22
-msgid "cocoa"
-msgstr "可可"
-
-#: food.py:23
-msgid "cake"
-msgstr "蛋糕"
-
-#: food.py:24
-msgid "barley"
-msgstr "大麦"
-
-#: food.py:25
-msgid "onion"
-msgstr "洋葱"
-
-#: food.py:26
-msgid "pork"
-msgstr "猪肉"
-
-#: food.py:27
-msgid "cherry"
-msgstr "樱桃"
-
-#: food.py:28
-msgid "pear squash"
-msgstr "梨壁球"
-
-#: food.py:29
-msgid "chili pepper"
-msgstr "辣椒"
-
-#: food.py:30
-msgid "sweet pepper"
-msgstr "甜椒"
-
-#: food.py:31
-msgid "coconut"
-msgstr "椰子"
-
-#: food.py:32
-msgid "cookie"
-msgstr "饼干"
-
-#: food.py:33
-msgid "cream"
-msgstr "奶油"
-
-#: food.py:34
-msgid "egg"
-msgstr "鸡蛋"
-
-#: food.py:35
-msgid "corn on the cob"
-msgstr "玉米棒"
-
-#: food.py:36
-msgid "strawberry"
-msgstr "草莓"
-
-#: food.py:37
-msgid "guava"
-msgstr "番石榴"
-
-#: food.py:38
-msgid "milk"
-msgstr "牛奶"
-
-#: food.py:39
-msgid "lettuce"
-msgstr "生菜"
-
-#: food.py:40
-msgid "lemon"
-msgstr "柠檬"
-
-#: food.py:41
-msgid "flax seed"
-msgstr "亚麻籽"
-
-#: food.py:43
-msgid "mandarin"
-msgstr "柑桔"
-
-#: food.py:44
-msgid "mango"
-msgstr "芒果"
-
-#: food.py:45
-msgid "apple"
-msgstr "苹果"
-
-#: food.py:46
-msgid "star fruit"
-msgstr "杨桃"
-
-#: food.py:47
-msgid "melon"
-msgstr "甜瓜"
-
-#: food.py:48
-msgid "orange"
-msgstr "橙子"
-
-#. TRANS: fruit of the sapodilla tree common to Central America
-#: food.py:50
-msgid "sapodilla"
-msgstr "人心果"
-
-#: food.py:51
-msgid "potato"
-msgstr "土豆"
-
-#: food.py:52
-msgid "papaya"
-msgstr "木瓜"
-
-#: food.py:53
-msgid "cucumber"
-msgstr "黄瓜"
-
-#: food.py:54
-msgid "pear"
-msgstr "梨"
-
-#: food.py:55
-msgid "fish"
-msgstr "鱼"
-
-#: food.py:56
-msgid "pineapple"
-msgstr "菠萝"
-
-#. TRANS: Green pumpkin squash (source of seeds used in Central American)
-#: food.py:58
-msgid "green pumpkin"
-msgstr "绿南瓜"
-
-#. TRANS: a cactus fruit
-#: food.py:60
-msgid "pitaya"
-msgstr "火龙果"
-
-#: food.py:61
-msgid "plantain"
-msgstr "芭蕉"
-
-#: food.py:62
-msgid "chicken"
-msgstr "鸡肉"
-
-#: food.py:63
-msgid "cheese"
-msgstr "奶酪"
-
-#: food.py:64
-msgid "radish"
-msgstr "萝卜"
-
-#: food.py:65
-msgid "beet"
-msgstr "甜菜"
-
-#: food.py:66
-msgid "cabbage"
-msgstr "卷心菜"
-
-#: food.py:67
-msgid "beef"
-msgstr "牛肉"
-
-#: food.py:68
-msgid "rice and beans"
-msgstr "大米和豆类"
-
-#: food.py:69
-msgid "watermelon"
-msgstr "西瓜"
-
-#. TRANS: A seed used to make horchata (common in Central America)
-#: food.py:71
-msgid "jicaro"
-msgstr "蒲瓜"
-
-#: food.py:73
-msgid "tomato"
-msgstr "西红柿"
-
-#: food.py:74
-msgid "wheat"
-msgstr "小麦"
-
-#: food.py:75
-msgid "grape"
-msgstr "葡萄"
-
-#: food.py:76
-msgid "yogurt"
-msgstr "酸奶"
-
-#: food.py:77
-msgid "yucca"
-msgstr "丝兰"
-
-#: food.py:78
-msgid "carrot"
-msgstr "胡萝卜"
-
-#. TRANS: a soft, edible fruit native to Central America
-#: food.py:80
-msgid "sapote"
-msgstr "香肉果"
-
-#: game.py:39
+#: game.py:34
 msgid "minimum"
 msgstr "最小"
 
-#: game.py:39
+#: game.py:34
 msgid "moderate"
 msgstr "中等"
 
-#: game.py:39
+#: game.py:34
 msgid "more"
 msgstr "更多"
 
-#: game.py:39
+#: game.py:34
 msgid "most"
 msgstr "最多"
 
+#: game.py:34
+msgid "unlimited"
+msgstr "无限多"
+
+#: game.py:37 game.py:49
+msgid "water"
+msgstr "水"
+
 #: game.py:40
+msgid "banana"
+msgstr "香蕉"
+
+#: game.py:41
+msgid "apple"
+msgstr "苹果"
+
+#: game.py:42
+msgid "fish"
+msgstr "鱼"
+
+#: game.py:43
+msgid "corn"
+msgstr "玉米"
+
+#: game.py:44
+msgid "broccoli"
+msgstr "西兰花"
+
+#: game.py:45
+msgid "chicken"
+msgstr "鸡肉"
+
+#: game.py:46
+msgid "cheese"
+msgstr "奶酪"
+
+#: game.py:47
+msgid "orange"
+msgstr "橙子"
+
+#: game.py:48
+msgid "potato"
+msgstr "土豆"
+
+#: game.py:50
+msgid "tomato"
+msgstr "西红柿"
+
+#: game.py:51
+msgid "cookie"
+msgstr "饼干"
+
+#: game.py:52
+msgid "beef"
+msgstr "牛肉"
+
+#: game.py:53
+msgid "egg"
+msgstr "鸡蛋"
+
+#: game.py:54
+msgid "sweetpotato"
+msgstr "红薯"
+
+#: game.py:55
+msgid "tamale"
+msgstr "玉米粽子"
+
+#: game.py:56
+msgid "bread"
+msgstr "面包"
+
+#: game.py:57
+msgid "rice and beans"
+msgstr "大米和豆类"
+
+#: game.py:58
+msgid "cake"
+msgstr "蛋糕"
+
+#: game.py:59
 msgid "balanced"
 msgstr "平衡"
 
-#: game.py:40
+#: game.py:59
 msgid "unbalanced"
 msgstr "不平衡"
 
-#~ msgid "coco"
-#~ msgstr "可可"
-
-#~ msgid "corn"
-#~ msgstr "玉米"
-
-#~ msgid "tamale"
-#~ msgstr "玉米粽子"
-
-#~ msgid "How many calories are there?"
-#~ msgstr "有多少卡路里？"
-
-#~ msgid "unlimited"
-#~ msgstr "无限多"
-
-#~ msgid "water"
-#~ msgstr "水"
-
-#~ msgid "sweetpotato"
-#~ msgstr "红薯"
-
+#: game.py:297
 #, python-format
-#~ msgid "%d calories"
-#~ msgstr "%d 卡路里"
+msgid "%d calories"
+msgstr "%d 卡路里"
