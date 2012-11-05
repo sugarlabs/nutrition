@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-30 00:33-0400\n"
-"PO-Revision-Date: 2012-08-06 22:51+0200\n"
+"POT-Creation-Date: 2012-08-10 00:34-0400\n"
+"PO-Revision-Date: 2012-08-09 22:04+0200\n"
 "Last-Translator: anush.mkrtchyan <anush.mkrtchyan@ca1492.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hy\n"
@@ -112,7 +112,8 @@ msgid "vegetables"
 msgstr "բանջարեղեն"
 
 #: food.py:12
-msgid "avacado"
+#, fuzzy
+msgid "avocado"
 msgstr "ավոկադո"
 
 #: food.py:13
@@ -185,8 +186,8 @@ msgid "sweet pepper"
 msgstr "քաղցր պղպեղ"
 
 #: food.py:31
-msgid "coco"
-msgstr "կոկոս"
+msgid "coconut"
+msgstr ""
 
 #: food.py:32
 msgid "cookie"
@@ -210,90 +211,88 @@ msgstr "ելակ"
 
 #: food.py:37
 msgid "guava"
-msgstr ""
+msgstr "գուավա"
 
 #: food.py:38
 msgid "milk"
-msgstr ""
+msgstr "կաթ"
 
 #: food.py:39
 msgid "lettuce"
-msgstr ""
+msgstr "մառոլ"
 
 #: food.py:40
 msgid "lemon"
-msgstr ""
+msgstr "կիտրոն"
 
 #: food.py:41
 msgid "flax seed"
-msgstr ""
-
-#: food.py:42
-msgid "corn"
-msgstr ""
+msgstr "կտավատի սերմ"
 
 #: food.py:43
 msgid "mandarin"
-msgstr ""
+msgstr "մանդարին"
 
 #: food.py:44
 msgid "mango"
-msgstr ""
+msgstr "մանգո"
 
 #: food.py:45
 msgid "apple"
-msgstr ""
+msgstr "խնձոր"
 
 #: food.py:46
 msgid "star fruit"
-msgstr ""
+msgstr "կարամբոլա"
 
 #: food.py:47
 msgid "melon"
-msgstr ""
+msgstr "սեխ"
 
 #: food.py:48
 msgid "orange"
-msgstr ""
+msgstr "նարինջ"
 
 #. TRANS: fruit of the sapodilla tree common to Central America
 #: food.py:50
 msgid "sapodilla"
-msgstr ""
+msgstr "սապոդիլա"
 
 #: food.py:51
 msgid "potato"
-msgstr ""
+msgstr "կարտոֆիլ"
 
 #: food.py:52
 msgid "papaya"
-msgstr ""
+msgstr "պապայա"
 
 #: food.py:53
 msgid "cucumber"
-msgstr ""
+msgstr "վարունգ"
 
 #: food.py:54
 msgid "pear"
-msgstr ""
+msgstr "տանձ"
 
 #: food.py:55
 msgid "fish"
-msgstr ""
+msgstr "ձուկ"
 
 #: food.py:56
-msgid "pinapple"
-msgstr ""
+#, fuzzy
+msgid "pineapple"
+msgstr "արքայախնձոր"
 
 #. TRANS: Green pumpkin squash (source of seeds used in Central American)
 #: food.py:58
 msgid "green pumpkin"
-msgstr ""
+msgstr "կանաչ դդում"
 
+# կակտուսի ծաղիկը
 #. TRANS: a cactus fruit
 #: food.py:60
 msgid "pitaya"
-msgstr ""
+msgstr "պիտայա"
 
 #: food.py:61
 msgid "plantain"
@@ -301,68 +300,64 @@ msgstr ""
 
 #: food.py:62
 msgid "chicken"
-msgstr ""
+msgstr "հավի միս"
 
 #: food.py:63
 msgid "cheese"
-msgstr ""
+msgstr "պանիր"
 
 #: food.py:64
 msgid "radish"
-msgstr ""
+msgstr "բողկ"
 
 #: food.py:65
 msgid "beet"
-msgstr ""
+msgstr "ճակնդեղ"
 
 #: food.py:66
 msgid "cabbage"
-msgstr ""
+msgstr "կաղամբ"
 
 #: food.py:67
 msgid "beef"
-msgstr ""
+msgstr "տավարի միս"
 
 #: food.py:68
 msgid "rice and beans"
-msgstr ""
+msgstr "բրինձ և լոբի"
 
 #: food.py:69
 msgid "watermelon"
-msgstr ""
+msgstr "ձմերուկ"
 
 #. TRANS: A seed used to make horchata (common in Central America)
 #: food.py:71
 msgid "jicaro"
 msgstr ""
 
-#: food.py:72
-msgid "tamale"
-msgstr ""
-
 #: food.py:73
 msgid "tomato"
-msgstr ""
+msgstr "լոլիկ"
 
 #: food.py:74
 msgid "wheat"
-msgstr ""
+msgstr "ցորեն"
 
 #: food.py:75
 msgid "grape"
-msgstr ""
+msgstr "խաղող"
 
 #: food.py:76
 msgid "yogurt"
-msgstr ""
+msgstr "յոգուրտ"
 
 #: food.py:77
-msgid "yuca"
+msgid "yucca"
 msgstr ""
 
 #: food.py:78
 msgid "carrot"
-msgstr ""
+msgstr "գազար"
 
 #. TRANS: a soft, edible fruit native to Central America
 #: food.py:80
@@ -371,24 +366,33 @@ msgstr ""
 
 #: game.py:39
 msgid "minimum"
-msgstr ""
+msgstr "նվազագույն"
 
 #: game.py:39
 msgid "moderate"
-msgstr ""
+msgstr "չափավոր"
 
 #: game.py:39
 msgid "more"
-msgstr ""
+msgstr "ավելին"
 
 #: game.py:39
 msgid "most"
-msgstr ""
+msgstr "ամենաշատ"
 
 #: game.py:40
 msgid "balanced"
-msgstr ""
+msgstr "հավասարակշռված"
 
 #: game.py:40
 msgid "unbalanced"
-msgstr ""
+msgstr "անհավասարակշիռ"
+
+#~ msgid "coco"
+#~ msgstr "կոկոս"
+
+#~ msgid "corn"
+#~ msgstr "եգիպտացորեն"
+
+#~ msgid "tamale"
+#~ msgstr "թամալ"
