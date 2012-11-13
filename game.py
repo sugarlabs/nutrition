@@ -161,28 +161,38 @@ class Game():
         card_list[i].set_margins(10, 0, 10, 0)
         card_list[i].hide()
 
-    def picture_append(self, path, i):
-        self._picture_cards[i] = Sprite(
+    def picture_append(self, path, i=-1):
+        spr = Sprite(
             self._sprites,
             int(self._width / 2.),
             int(self._height / 4.),
             GdkPixbuf.Pixbuf.new_from_file_at_size(
                 path, int(self._width / 3.), int(9 * self._width / 12.)))
+        if i == -1:
+            self._picture_cards.append(spr)
+        else:
+            self._picture_cards[i] = spr
         self._picture_cards[i].type = 'picture'
         self._picture_cards[i].hide()
 
-    def small_picture_append(self, path, i):
+    def small_picture_append(self, path, i=-1):
         x = int(self._width / 3.)
         y = int(self._height / 6.)
+        pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(
+            path,
+            int(self._width / 6.),
+            int(3 * self._width / 8.)) 
         for j in range(6):  # up to 6 of each card
-            self._small_picture_cards[i * 6 + j] = Sprite(
-                self._sprites, x, y,
-                GdkPixbuf.Pixbuf.new_from_file_at_size(
-                    path,
-                    int(self._width / 6.),
-                    int(3 * self._width / 8.)))
-            self._small_picture_cards[i * 6 + j].type = 'picture'
-            self._small_picture_cards[i * 6 + j].hide()
+            if i == -1:
+                self._small_picture_cards.append(Sprite(
+                self._sprites, x, y, pixbuf))
+                self._small_picture_cards[-1].type = 'picture'
+                self._small_picture_cards[-1].hide()
+            else:
+                self._small_picture_cards[i * 6 + j] = Sprite(
+                    self._sprites, x, y, pixbuf)
+                self._small_picture_cards[i * 6 + j].type = 'picture'
+                self._small_picture_cards[i * 6 + j].hide()
             x += int(self._width / 6.)
             if j == 2:
                 x = int(self._width / 3.)
