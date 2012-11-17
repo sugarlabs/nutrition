@@ -1,5 +1,7 @@
-#Copyright (c) 2011,12 Walter Bender
-
+# -*- coding: utf-8 -*-
+# Copyright (c) 2011,12 Walter Bender
+# Ported to GTK3: 
+# Ignacio Rodríguez <ignaciorodriguez@sugarlabs.org>
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 3 of the License, or
@@ -9,19 +11,17 @@
 # along with this library; if not, write to the Free Software
 # Foundation, 51 Franklin Street, Suite 500 Boston, MA 02110-1335 USA
 
-
-import gtk
-
-from sugar.activity import activity
-from sugar import profile
-from sugar.graphics.toolbarbox import ToolbarBox
-from sugar.activity.widgets import ActivityToolbarButton
-from sugar.graphics.toolbarbox import ToolbarButton
-from sugar.activity.widgets import StopButton
-from sugar.graphics.alert import NotifyAlert
-from sugar.graphics.objectchooser import ObjectChooser
-from sugar.datastore import datastore
-from sugar import mime
+from gi.repository import Gtk, Gdk
+from sugar3.activity import activity
+from sugar3 import profile
+from sugar3.graphics.toolbarbox import ToolbarBox
+from sugar3.activity.widgets import ActivityToolbarButton
+from sugar3.graphics.toolbarbox import ToolbarButton
+from sugar3.activity.widgets import StopButton
+from sugar3.graphics.alert import NotifyAlert
+from sugar3.graphics.objectchooser import ObjectChooser
+from sugar3.datastore import datastore
+from sugar3 import mime
 
 from gettext import gettext as _
 
@@ -56,9 +56,9 @@ class NutritionActivity(activity.Activity):
         self._custom_food_counter = 0
 
         # Create a canvas
-        canvas = gtk.DrawingArea()
-        canvas.set_size_request(gtk.gdk.screen_width(), \
-                                gtk.gdk.screen_height())
+        canvas = Gtk.DrawingArea()
+        canvas.set_size_request(Gdk.Screen.width(), \
+                                Gdk.Screen.height())
         self.set_canvas(canvas)
         canvas.show()
         self.show_all()
@@ -147,7 +147,7 @@ class NutritionActivity(activity.Activity):
         self._label = label_factory(toolbox.toolbar, LABELS[0])
 
         separator_factory(toolbox.toolbar, True, False)
-        tools_toolbar = gtk.Toolbar()
+        tools_toolbar = Gtk.Toolbar()
         tools_toolbar_button = ToolbarButton(
             page=tools_toolbar,
             icon_name='view-source')
@@ -216,11 +216,11 @@ class NutritionActivity(activity.Activity):
             except TypeError:
                 chooser = ObjectChooser(
                     None, self,
-                    gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT)
+                    Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT)
         if chooser is not None:
             try:
                 result = chooser.run()
-                if result == gtk.RESPONSE_ACCEPT:
+                if result == Gtk.ResponseType.ACCEPT:
                     jobject = chooser.get_selected_object()
                     if jobject and jobject.file_path:
                         name = jobject.metadata['title']

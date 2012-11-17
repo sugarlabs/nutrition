@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-10 00:34-0400\n"
-"PO-Revision-Date: 2012-08-10 16:36+0200\n"
+"POT-Creation-Date: 2012-11-06 00:35-0500\n"
+"PO-Revision-Date: 2012-11-11 03:51+0200\n"
 "Last-Translator: lite <litekok@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
@@ -17,7 +17,9 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
 msgid "Nutrition"
 msgstr "营养"
 
@@ -27,11 +29,11 @@ msgstr "把食物和名称配对"
 
 #: NutritionActivity.py:40
 msgid "What is the food group?"
-msgstr "是什么食物组？"
+msgstr "食物组是什么？"
 
 #: NutritionActivity.py:41
 msgid "Which has the most calories?"
-msgstr "谁有最多的热量？"
+msgstr "哪一个有最多的热量？"
 
 #: NutritionActivity.py:42
 msgid "How much should you eat?"
@@ -121,7 +123,7 @@ msgstr "芹菜"
 
 #: food.py:14
 msgid "rice"
-msgstr "米饭"
+msgstr "米"
 
 #: food.py:15
 msgid "oats"
@@ -174,7 +176,7 @@ msgstr "樱桃"
 
 #: food.py:28
 msgid "pear squash"
-msgstr "梨壁球"
+msgstr "佛手瓜"
 
 #: food.py:29
 msgid "chili pepper"
@@ -226,11 +228,11 @@ msgstr "柠檬"
 
 #: food.py:41
 msgid "flax seed"
-msgstr "亚麻籽"
+msgstr "亚麻种子"
 
 #: food.py:43
 msgid "mandarin"
-msgstr "柑桔"
+msgstr "普通话"
 
 #: food.py:44
 msgid "mango"
@@ -284,7 +286,7 @@ msgstr "菠萝"
 #. TRANS: Green pumpkin squash (source of seeds used in Central American)
 #: food.py:58
 msgid "green pumpkin"
-msgstr "绿南瓜"
+msgstr "绿色南瓜"
 
 #. TRANS: a cactus fruit
 #: food.py:60
@@ -293,7 +295,7 @@ msgstr "火龙果"
 
 #: food.py:61
 msgid "plantain"
-msgstr "芭蕉"
+msgstr "车前草"
 
 #: food.py:62
 msgid "chicken"
@@ -330,7 +332,7 @@ msgstr "西瓜"
 #. TRANS: A seed used to make horchata (common in Central America)
 #: food.py:71
 msgid "jicaro"
-msgstr "蒲瓜"
+msgstr "希卡罗"
 
 #: food.py:73
 msgid "tomato"
@@ -359,40 +361,31 @@ msgstr "胡萝卜"
 #. TRANS: a soft, edible fruit native to Central America
 #: food.py:80
 msgid "sapote"
-msgstr "香肉果"
+msgstr "美果榄"
 
-#: game.py:39
+#: game.py:38
 msgid "minimum"
 msgstr "最小"
 
-#: game.py:39
+#: game.py:38
 msgid "moderate"
 msgstr "中等"
 
-#: game.py:39
+#: game.py:38
 msgid "more"
 msgstr "更多"
 
-#: game.py:39
+#: game.py:38
 msgid "most"
 msgstr "最多"
 
-#: game.py:40
+#: game.py:39
 msgid "balanced"
 msgstr "平衡"
 
-#: game.py:40
+#: game.py:39
 msgid "unbalanced"
 msgstr "不平衡"
-
-#~ msgid "coco"
-#~ msgstr "可可"
-
-#~ msgid "corn"
-#~ msgstr "玉米"
-
-#~ msgid "tamale"
-#~ msgstr "玉米粽子"
 
 #~ msgid "How many calories are there?"
 #~ msgstr "有多少卡路里？"
@@ -403,8 +396,14 @@ msgstr "不平衡"
 #~ msgid "water"
 #~ msgstr "水"
 
+#~ msgid "corn"
+#~ msgstr "玉米"
+
 #~ msgid "sweetpotato"
 #~ msgstr "红薯"
+
+#~ msgid "tamale"
+#~ msgstr "玉米粽子"
 
 #, python-format
 #~ msgid "%d calories"
