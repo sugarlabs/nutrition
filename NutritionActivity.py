@@ -144,7 +144,7 @@ class NutritionActivity(activity.Activity):
             group=name_game_button)
 
         separator_factory(toolbox.toolbar, False, True)
-        self._label = label_factory(toolbox.toolbar, LABELS[0])
+        self._label = label_factory(toolbox.toolbar, LABELS[0], width=150)
 
         separator_factory(toolbox.toolbar, True, False)
         tools_toolbar = Gtk.Toolbar()

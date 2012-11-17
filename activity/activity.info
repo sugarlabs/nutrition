@@ -1,8 +1,9 @@
 [Activity]
 name = Nutrition
-activity_version = 7
+activity_version = 9
 license = GPLv3
 bundle_id = org.sugarlabs.NutritionActivity
 exec = sugar-activity NutritionActivity.NutritionActivity
 icon = activity-nutrition
 show_launcher = yes
+summary = a series of game about good habits for eating
