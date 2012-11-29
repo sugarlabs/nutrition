@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-10 00:34-0400\n"
+"POT-Creation-Date: 2012-11-06 00:35-0500\n"
 "PO-Revision-Date: 2012-08-20 22:36+0200\n"
 "Last-Translator: whe <heppew@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
 msgid "Nutrition"
 msgstr "Voeding"
 
@@ -361,26 +363,26 @@ msgstr "wortel"
 msgid "sapote"
 msgstr "sapote"
 
-#: game.py:39
+#: game.py:38
 msgid "minimum"
 msgstr "minimum"
 
-#: game.py:39
+#: game.py:38
 msgid "moderate"
 msgstr "gemiddeld"
 
-#: game.py:39
+#: game.py:38
 msgid "more"
 msgstr "meer"
 
-#: game.py:39
+#: game.py:38
 msgid "most"
 msgstr "meest"
 
-#: game.py:40
+#: game.py:39
 msgid "balanced"
 msgstr "gebalanceerd"
 
-#: game.py:40
+#: game.py:39
 msgid "unbalanced"
 msgstr "ongebalanceerd"
