@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-10 00:34-0400\n"
-"PO-Revision-Date: 2012-08-13 22:01+0200\n"
+"POT-Creation-Date: 2012-11-18 00:32-0500\n"
+"PO-Revision-Date: 2012-12-06 01:32+0200\n"
 "Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -17,9 +17,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
 msgid "Nutrition"
 msgstr "Ernæring"
+
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid "a series of game about good habits for eating"
+msgstr "en spilserie om gode spisevaner"
 
 #: NutritionActivity.py:39
 msgid "Match the food to its name."
@@ -361,27 +366,27 @@ msgstr "gulerod"
 msgid "sapote"
 msgstr "sapote"
 
-#: game.py:39
+#: game.py:38
 msgid "minimum"
 msgstr "minimum"
 
-#: game.py:39
+#: game.py:38
 msgid "moderate"
 msgstr "moderat"
 
-#: game.py:39
+#: game.py:38
 msgid "more"
 msgstr "mest"
 
-#: game.py:39
+#: game.py:38
 msgid "most"
 msgstr "mest"
 
-#: game.py:40
+#: game.py:39
 msgid "balanced"
 msgstr "balanceret"
 
-#: game.py:40
+#: game.py:39
 msgid "unbalanced"
 msgstr "ublanceret"
 
