@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-10 00:34-0400\n"
+"POT-Creation-Date: 2012-11-18 00:32-0500\n"
 "PO-Revision-Date: 2012-09-27 15:40+0200\n"
 "Last-Translator: Yannis <kiolalis@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
 msgid "Nutrition"
 msgstr "Διατροφή"
+
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid "a series of game about good habits for eating"
+msgstr ""
 
 #: NutritionActivity.py:39
 msgid "Match the food to its name."
@@ -361,26 +366,26 @@ msgstr "καρότο"
 msgid "sapote"
 msgstr "σαπότι"
 
-#: game.py:39
+#: game.py:38
 msgid "minimum"
 msgstr "ελάχιστο"
 
-#: game.py:39
+#: game.py:38
 msgid "moderate"
 msgstr "αρκετό"
 
-#: game.py:39
+#: game.py:38
 msgid "more"
 msgstr "πολύ"
 
-#: game.py:39
+#: game.py:38
 msgid "most"
 msgstr "πάρα πολύ"
 
-#: game.py:40
+#: game.py:39
 msgid "balanced"
 msgstr "ισορροπημένο"
 
-#: game.py:40
+#: game.py:39
 msgid "unbalanced"
 msgstr "μη ισορροπημένο"
