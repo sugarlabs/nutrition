@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-10 00:34-0400\n"
+"POT-Creation-Date: 2012-11-18 00:32-0500\n"
 "PO-Revision-Date: 2012-08-09 22:04+0200\n"
 "Last-Translator: anush.mkrtchyan <anush.mkrtchyan@ca1492.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
 msgid "Nutrition"
 msgstr "Սնուցում"
+
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid "a series of game about good habits for eating"
+msgstr ""
 
 #: NutritionActivity.py:39
 msgid "Match the food to its name."
@@ -364,27 +369,27 @@ msgstr "գազար"
 msgid "sapote"
 msgstr ""
 
-#: game.py:39
+#: game.py:38
 msgid "minimum"
 msgstr "նվազագույն"
 
-#: game.py:39
+#: game.py:38
 msgid "moderate"
 msgstr "չափավոր"
 
-#: game.py:39
+#: game.py:38
 msgid "more"
 msgstr "ավելին"
 
-#: game.py:39
+#: game.py:38
 msgid "most"
 msgstr "ամենաշատ"
 
-#: game.py:40
+#: game.py:39
 msgid "balanced"
 msgstr "հավասարակշռված"
 
-#: game.py:40
+#: game.py:39
 msgid "unbalanced"
 msgstr "անհավասարակշիռ"
 
