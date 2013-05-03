@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-11-18 00:32-0500\n"
-"PO-Revision-Date: 2012-08-09 22:04+0200\n"
-"Last-Translator: anush.mkrtchyan <anush.mkrtchyan@ca1492.com>\n"
+"PO-Revision-Date: 2013-04-24 20:41+0200\n"
+"Last-Translator: anushnur <anush.mkrtchyan@ca1492.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "Սնուցում"
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "a series of game about good habits for eating"
-msgstr ""
+msgstr "մի շարք խաղեր ուտելաձևի բարեկիրթ սովորույթների մասին"
 
 #: NutritionActivity.py:39
 msgid "Match the food to its name."
@@ -117,7 +117,6 @@ msgid "vegetables"
 msgstr "բանջարեղեն"
 
 #: food.py:12
-#, fuzzy
 msgid "avocado"
 msgstr "ավոկադո"
 
@@ -180,7 +179,7 @@ msgstr "բալ"
 
 #: food.py:28
 msgid "pear squash"
-msgstr ""
+msgstr "խո­շորապ­տուղ դդում "
 
 #: food.py:29
 msgid "chili pepper"
@@ -190,9 +189,10 @@ msgstr "չիլիական պղպեղ"
 msgid "sweet pepper"
 msgstr "քաղցր պղպեղ"
 
+# կոկոս
 #: food.py:31
 msgid "coconut"
-msgstr ""
+msgstr "Հնդընկույզ"
 
 #: food.py:32
 msgid "cookie"
@@ -284,7 +284,6 @@ msgid "fish"
 msgstr "ձուկ"
 
 #: food.py:56
-#, fuzzy
 msgid "pineapple"
 msgstr "արքայախնձոր"
 
@@ -301,7 +300,7 @@ msgstr "պիտայա"
 
 #: food.py:61
 msgid "plantain"
-msgstr ""
+msgstr "բանջարային բանան"
 
 #: food.py:62
 msgid "chicken"
@@ -338,7 +337,7 @@ msgstr "ձմերուկ"
 #. TRANS: A seed used to make horchata (common in Central America)
 #: food.py:71
 msgid "jicaro"
-msgstr ""
+msgstr "Դդումի տեսակ"
 
 #: food.py:73
 msgid "tomato"
@@ -358,7 +357,7 @@ msgstr "յոգուրտ"
 
 #: food.py:77
 msgid "yucca"
-msgstr ""
+msgstr "արմավաշուշան"
 
 #: food.py:78
 msgid "carrot"
