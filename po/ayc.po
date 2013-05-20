@@ -2,389 +2,390 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-11-18 00:32-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2013-04-29 08:52+0200\n"
+"Last-Translator: EdgarQuispeChambi <quispedgar@yahoo.es>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ayc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Nutrition"
-msgstr ""
+msgstr "Manq'asiña tuqita"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "a series of game about good habits for eating"
-msgstr ""
+msgstr "manq'asiña jichu kankaña tuqita kunaymana anatañanaka wakichata"
 
 #: NutritionActivity.py:39
 msgid "Match the food to its name."
-msgstr ""
+msgstr "sutipampi manq'aña mayachma."
 
 #: NutritionActivity.py:40
 msgid "What is the food group?"
-msgstr ""
+msgstr "¿Kawkïrisa manq'aña kastaxa?"
 
 #: NutritionActivity.py:41
 msgid "Which has the most calories?"
-msgstr ""
+msgstr "¿Kawkïrisa wali ch'amanchirinixa?"
 
 #: NutritionActivity.py:42
 msgid "How much should you eat?"
-msgstr ""
+msgstr "¿Kunapacha chiqana manq'añamaxa?"
 
 #: NutritionActivity.py:43
 msgid "Is this a well-balanced meal?"
-msgstr ""
+msgstr "¿Akati taqi kuna wali suma ch'amanchirini manq'axa?"
 
 #: NutritionActivity.py:164 NutritionActivity.py:250 NutritionActivity.py:291
 msgid "food name"
-msgstr ""
+msgstr "Manq'añana sutipa"
 
 #: NutritionActivity.py:166
 msgid "Enter a name for the new food item."
-msgstr ""
+msgstr "Yaqha manq'ataki maya suti qillqantma."
 
 #: NutritionActivity.py:169 NutritionActivity.py:292
 msgid "calories"
-msgstr ""
+msgstr "Ch'amanchirinaka"
 
 #: NutritionActivity.py:171
 msgid "Enter the calories in for the new food item."
-msgstr ""
+msgstr "yaqha manq'ana ch'amanchirinakapa qillqantma."
 
 #: NutritionActivity.py:178
 msgid "Select level in the Food Pyramid."
-msgstr ""
+msgstr "Manq'anaka siqipa wakisiri jajllma."
 
 #: NutritionActivity.py:183
 msgid "Load a picture of the new food item."
-msgstr ""
+msgstr "Yaqha manq'ana rixitapa apxataña."
 
 #: NutritionActivity.py:190 NutritionActivity.py:252 NutritionActivity.py:260
 #: NutritionActivity.py:269 NutritionActivity.py:286
 msgid "Add a new food item."
-msgstr ""
+msgstr "Yaqha manq'a yapxatma."
 
 #: NutritionActivity.py:254
 msgid "You must enter a name for the new food item."
-msgstr ""
+msgstr "Yaqha manq'ataki maya suti qillqantañamawa."
 
 #: NutritionActivity.py:262
 msgid "You must enter calories for the new food item."
-msgstr ""
+msgstr "Yaqha manq'ataki ch'amanchirinaka qillqantañamawa."
 
 #: NutritionActivity.py:271
 msgid "You must load an image for the new food item."
-msgstr ""
+msgstr "Yaqha manq'ataki maya uñjasïwi apxatañamawa."
 
 #: NutritionActivity.py:288
 #, python-format
 msgid "%s has been loaded."
-msgstr ""
+msgstr "%s wakichatawa apxatasi."
 
 #: food.py:4
 msgid "sweets"
-msgstr ""
+msgstr "muxsanaka"
 
 #: food.py:4
 msgid "dairy"
-msgstr ""
+msgstr "Lichi jusphanaka"
 
 #: food.py:4
 msgid "fruits"
-msgstr ""
+msgstr "puqutanaka"
 
 #: food.py:4
 msgid "meat"
-msgstr ""
+msgstr "aycha"
 
 #: food.py:4
 msgid "grains"
-msgstr ""
+msgstr "jamp'inaka"
 
 #: food.py:5
 msgid "vegetables"
-msgstr ""
+msgstr "ch'uxña laphinaka"
 
 #: food.py:12
 msgid "avocado"
-msgstr ""
+msgstr "palta puquta"
 
 #: food.py:13
 msgid "celery"
-msgstr ""
+msgstr "apio ali"
 
 #: food.py:14
 msgid "rice"
-msgstr ""
+msgstr "arusa juyra"
 
 #: food.py:15
 msgid "oats"
-msgstr ""
+msgstr "awina juyra"
 
 #: food.py:16
 msgid "pumpkin"
-msgstr ""
+msgstr "calabaza juyra"
 
 #: food.py:17
 msgid "banana"
-msgstr ""
+msgstr "latanusa puquta"
 
 #. TRANS: aubergine
 #: food.py:19
 msgid "eggplant"
-msgstr ""
+msgstr "berenjena puquta"
 
 #: food.py:20
 msgid "bread"
-msgstr ""
+msgstr "t'ant'a"
 
 #: food.py:21
 msgid "broccoli"
-msgstr ""
+msgstr "brócoli ali"
 
 #: food.py:22
 msgid "cocoa"
-msgstr ""
+msgstr "cocoa wallaqisiña"
 
 #: food.py:23
 msgid "cake"
-msgstr ""
+msgstr "muxsa t'ant'a"
 
 #: food.py:24
 msgid "barley"
-msgstr ""
+msgstr "yarana"
 
 #: food.py:25
 msgid "onion"
-msgstr ""
+msgstr "siwulla"
 
 #: food.py:26
 msgid "pork"
-msgstr ""
+msgstr "khuchi"
 
 #: food.py:27
 msgid "cherry"
-msgstr ""
+msgstr "cereza puquta"
 
 #: food.py:28
 msgid "pear squash"
-msgstr ""
+msgstr "pirasa calabaza puquta"
 
 #: food.py:29
 msgid "chili pepper"
-msgstr ""
+msgstr "wayk'a"
 
 #: food.py:30
 msgid "sweet pepper"
-msgstr ""
+msgstr "pimentón wayk'a"
 
 #: food.py:31
 msgid "coconut"
-msgstr ""
+msgstr "coco puquta"
 
 #: food.py:32
 msgid "cookie"
-msgstr ""
+msgstr "khaju t'ant'a qallu"
 
 #: food.py:33
 msgid "cream"
-msgstr ""
+msgstr "allpi"
 
 #: food.py:34
 msgid "egg"
-msgstr ""
+msgstr "k'awna"
 
 #: food.py:35
 msgid "corn on the cob"
-msgstr ""
+msgstr "tunqu wawa"
 
 #: food.py:36
 msgid "strawberry"
-msgstr ""
+msgstr "puquta qallu"
 
 #: food.py:37
 msgid "guava"
-msgstr ""
+msgstr "guayaba puquta"
 
 #: food.py:38
 msgid "milk"
-msgstr ""
+msgstr "lichi juspha"
 
 #: food.py:39
 msgid "lettuce"
-msgstr ""
+msgstr "lichuwasa"
 
 #: food.py:40
 msgid "lemon"
-msgstr ""
+msgstr "limuna"
 
 #: food.py:41
 msgid "flax seed"
-msgstr ""
+msgstr "linu puquta jatha"
 
 #: food.py:43
 msgid "mandarin"
-msgstr ""
+msgstr "mantarina"
 
 #: food.py:44
 msgid "mango"
-msgstr ""
+msgstr "manku puquta"
 
 #: food.py:45
 msgid "apple"
-msgstr ""
+msgstr "mansana"
 
 #: food.py:46
 msgid "star fruit"
-msgstr ""
+msgstr "carambola puquta"
 
 #: food.py:47
 msgid "melon"
-msgstr ""
+msgstr "melón puquta"
 
 #: food.py:48
 msgid "orange"
-msgstr ""
+msgstr "larankha"
 
 #. TRANS: fruit of the sapodilla tree common to Central America
 #: food.py:50
 msgid "sapodilla"
-msgstr ""
+msgstr "níspero puquta"
 
 #: food.py:51
 msgid "potato"
-msgstr ""
+msgstr "ch'uqi"
 
 #: food.py:52
 msgid "papaya"
-msgstr ""
+msgstr "papaya"
 
 #: food.py:53
 msgid "cucumber"
-msgstr ""
+msgstr "pipinu puquta"
 
 #: food.py:54
 msgid "pear"
-msgstr ""
+msgstr "pirasa"
 
 #: food.py:55
 msgid "fish"
-msgstr ""
+msgstr "chawlla"
 
 #: food.py:56
 msgid "pineapple"
-msgstr ""
+msgstr "ananá puquta"
 
 #. TRANS: Green pumpkin squash (source of seeds used in Central American)
 #: food.py:58
 msgid "green pumpkin"
-msgstr ""
+msgstr "ch'uxña kalawasa"
 
 #. TRANS: a cactus fruit
 #: food.py:60
 msgid "pitaya"
-msgstr ""
+msgstr "pitaya puquta"
 
 #: food.py:61
 msgid "plantain"
-msgstr ""
+msgstr "llantina"
 
 #: food.py:62
 msgid "chicken"
-msgstr ""
+msgstr "chhiwchhi"
 
 #: food.py:63
 msgid "cheese"
-msgstr ""
+msgstr "kisu"
 
 #: food.py:64
 msgid "radish"
-msgstr ""
+msgstr "rawanitu"
 
 #: food.py:65
 msgid "beet"
-msgstr ""
+msgstr "remolacha juyra"
 
 #: food.py:66
 msgid "cabbage"
-msgstr ""
+msgstr "ripullu"
 
 #: food.py:67
 msgid "beef"
-msgstr ""
+msgstr "aycha"
 
 #: food.py:68
 msgid "rice and beans"
-msgstr ""
+msgstr "arusampi phirijula"
 
 #: food.py:69
 msgid "watermelon"
-msgstr ""
+msgstr "santilla"
 
 #. TRANS: A seed used to make horchata (common in Central America)
 #: food.py:71
 msgid "jicaro"
-msgstr ""
+msgstr "jicaro juyra"
 
 #: food.py:73
 msgid "tomato"
-msgstr ""
+msgstr "tumati"
 
 #: food.py:74
 msgid "wheat"
-msgstr ""
+msgstr "tiriwu"
 
 #: food.py:75
 msgid "grape"
-msgstr ""
+msgstr "uwasa"
 
 #: food.py:76
 msgid "yogurt"
-msgstr ""
+msgstr "yujura lichi"
 
 #: food.py:77
 msgid "yucca"
-msgstr ""
+msgstr "yuka ch'uqi"
 
 #: food.py:78
 msgid "carrot"
-msgstr ""
+msgstr "sanawri"
 
 #. TRANS: a soft, edible fruit native to Central America
 #: food.py:80
 msgid "sapote"
-msgstr ""
+msgstr "zapote puquta"
 
 #: game.py:38
 msgid "minimum"
-msgstr ""
+msgstr "juk'ata"
 
 #: game.py:38
 msgid "moderate"
-msgstr ""
+msgstr "tantiyu"
 
 #: game.py:38
 msgid "more"
-msgstr ""
+msgstr "juk'ampi"
 
 #: game.py:38
 msgid "most"
-msgstr ""
+msgstr "walja"
 
 #: game.py:39
 msgid "balanced"
-msgstr ""
+msgstr "phuqata"
 
 #: game.py:39
 msgid "unbalanced"
-msgstr ""
+msgstr "jani phuqata"
