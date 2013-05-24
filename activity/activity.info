@@ -1,6 +1,6 @@
 [Activity]
 name = Nutrition
-activity_version = 11
+activity_version = 13
 license = GPLv3
 bundle_id = org.sugarlabs.NutritionActivity
 exec = sugar-activity NutritionActivity.NutritionActivity
