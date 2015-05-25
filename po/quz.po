@@ -1,0 +1,386 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-10 00:34-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: quz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
+
+#: activity/activity.info:2
+msgid "Nutrition"
+msgstr ""
+
+#: NutritionActivity.py:39
+msgid "Match the food to its name."
+msgstr ""
+
+#: NutritionActivity.py:40
+msgid "What is the food group?"
+msgstr ""
+
+#: NutritionActivity.py:41
+msgid "Which has the most calories?"
+msgstr ""
+
+#: NutritionActivity.py:42
+msgid "How much should you eat?"
+msgstr ""
+
+#: NutritionActivity.py:43
+msgid "Is this a well-balanced meal?"
+msgstr ""
+
+#: NutritionActivity.py:164 NutritionActivity.py:250 NutritionActivity.py:291
+msgid "food name"
+msgstr ""
+
+#: NutritionActivity.py:166
+msgid "Enter a name for the new food item."
+msgstr ""
+
+#: NutritionActivity.py:169 NutritionActivity.py:292
+msgid "calories"
+msgstr ""
+
+#: NutritionActivity.py:171
+msgid "Enter the calories in for the new food item."
+msgstr ""
+
+#: NutritionActivity.py:178
+msgid "Select level in the Food Pyramid."
+msgstr ""
+
+#: NutritionActivity.py:183
+msgid "Load a picture of the new food item."
+msgstr ""
+
+#: NutritionActivity.py:190 NutritionActivity.py:252 NutritionActivity.py:260
+#: NutritionActivity.py:269 NutritionActivity.py:286
+msgid "Add a new food item."
+msgstr ""
+
+#: NutritionActivity.py:254
+msgid "You must enter a name for the new food item."
+msgstr ""
+
+#: NutritionActivity.py:262
+msgid "You must enter calories for the new food item."
+msgstr ""
+
+#: NutritionActivity.py:271
+msgid "You must load an image for the new food item."
+msgstr ""
+
+#: NutritionActivity.py:288
+#, python-format
+msgid "%s has been loaded."
+msgstr ""
+
+#: food.py:4
+msgid "sweets"
+msgstr ""
+
+#: food.py:4
+msgid "dairy"
+msgstr ""
+
+#: food.py:4
+msgid "fruits"
+msgstr ""
+
+#: food.py:4
+msgid "meat"
+msgstr ""
+
+#: food.py:4
+msgid "grains"
+msgstr ""
+
+#: food.py:5
+msgid "vegetables"
+msgstr ""
+
+#: food.py:12
+msgid "avocado"
+msgstr ""
+
+#: food.py:13
+msgid "celery"
+msgstr ""
+
+#: food.py:14
+msgid "rice"
+msgstr ""
+
+#: food.py:15
+msgid "oats"
+msgstr ""
+
+#: food.py:16
+msgid "pumpkin"
+msgstr ""
+
+#: food.py:17
+msgid "banana"
+msgstr ""
+
+#. TRANS: aubergine
+#: food.py:19
+msgid "eggplant"
+msgstr ""
+
+#: food.py:20
+msgid "bread"
+msgstr ""
+
+#: food.py:21
+msgid "broccoli"
+msgstr ""
+
+#: food.py:22
+msgid "cocoa"
+msgstr ""
+
+#: food.py:23
+msgid "cake"
+msgstr ""
+
+#: food.py:24
+msgid "barley"
+msgstr ""
+
+#: food.py:25
+msgid "onion"
+msgstr ""
+
+#: food.py:26
+msgid "pork"
+msgstr ""
+
+#: food.py:27
+msgid "cherry"
+msgstr ""
+
+#: food.py:28
+msgid "pear squash"
+msgstr ""
+
+#: food.py:29
+msgid "chili pepper"
+msgstr ""
+
+#: food.py:30
+msgid "sweet pepper"
+msgstr ""
+
+#: food.py:31
+msgid "coconut"
+msgstr ""
+
+#: food.py:32
+msgid "cookie"
+msgstr ""
+
+#: food.py:33
+msgid "cream"
+msgstr ""
+
+#: food.py:34
+msgid "egg"
+msgstr ""
+
+#: food.py:35
+msgid "corn on the cob"
+msgstr ""
+
+#: food.py:36
+msgid "strawberry"
+msgstr ""
+
+#: food.py:37
+msgid "guava"
+msgstr ""
+
+#: food.py:38
+msgid "milk"
+msgstr ""
+
+#: food.py:39
+msgid "lettuce"
+msgstr ""
+
+#: food.py:40
+msgid "lemon"
+msgstr ""
+
+#: food.py:41
+msgid "flax seed"
+msgstr ""
+
+#: food.py:43
+msgid "mandarin"
+msgstr ""
+
+#: food.py:44
+msgid "mango"
+msgstr ""
+
+#: food.py:45
+msgid "apple"
+msgstr ""
+
+#: food.py:46
+msgid "star fruit"
+msgstr ""
+
+#: food.py:47
+msgid "melon"
+msgstr ""
+
+#: food.py:48
+msgid "orange"
+msgstr ""
+
+#. TRANS: fruit of the sapodilla tree common to Central America
+#: food.py:50
+msgid "sapodilla"
+msgstr ""
+
+#: food.py:51
+msgid "potato"
+msgstr ""
+
+#: food.py:52
+msgid "papaya"
+msgstr ""
+
+#: food.py:53
+msgid "cucumber"
+msgstr ""
+
+#: food.py:54
+msgid "pear"
+msgstr ""
+
+#: food.py:55
+msgid "fish"
+msgstr ""
+
+#: food.py:56
+msgid "pineapple"
+msgstr ""
+
+#. TRANS: Green pumpkin squash (source of seeds used in Central American)
+#: food.py:58
+msgid "green pumpkin"
+msgstr ""
+
+#. TRANS: a cactus fruit
+#: food.py:60
+msgid "pitaya"
+msgstr ""
+
+#: food.py:61
+msgid "plantain"
+msgstr ""
+
+#: food.py:62
+msgid "chicken"
+msgstr ""
+
+#: food.py:63
+msgid "cheese"
+msgstr ""
+
+#: food.py:64
+msgid "radish"
+msgstr ""
+
+#: food.py:65
+msgid "beet"
+msgstr ""
+
+#: food.py:66
+msgid "cabbage"
+msgstr ""
+
+#: food.py:67
+msgid "beef"
+msgstr ""
+
+#: food.py:68
+msgid "rice and beans"
+msgstr ""
+
+#: food.py:69
+msgid "watermelon"
+msgstr ""
+
+#. TRANS: A seed used to make horchata (common in Central America)
+#: food.py:71
+msgid "jicaro"
+msgstr ""
+
+#: food.py:73
+msgid "tomato"
+msgstr ""
+
+#: food.py:74
+msgid "wheat"
+msgstr ""
+
+#: food.py:75
+msgid "grape"
+msgstr ""
+
+#: food.py:76
+msgid "yogurt"
+msgstr ""
+
+#: food.py:77
+msgid "yucca"
+msgstr ""
+
+#: food.py:78
+msgid "carrot"
+msgstr ""
+
+#. TRANS: a soft, edible fruit native to Central America
+#: food.py:80
+msgid "sapote"
+msgstr ""
+
+#: game.py:39
+msgid "minimum"
+msgstr ""
+
+#: game.py:39
+msgid "moderate"
+msgstr ""
+
+#: game.py:39
+msgid "more"
+msgstr ""
+
+#: game.py:39
+msgid "most"
+msgstr ""
+
+#: game.py:40
+msgid "balanced"
+msgstr ""
+
+#: game.py:40
+msgid "unbalanced"
+msgstr ""
