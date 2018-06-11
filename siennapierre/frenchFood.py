@@ -1,0 +1,76 @@
+from gettext import gettext as _
+
+PYRAMID = [_('sucre'), _('laitier'), _('fruits'), _('viande'), _('céréales'),
+           _('légumes')]
+# name, calories, food pyramid group, image name
+NAME = 0
+CALS = 1
+GROUP = 2
+IMAGE = 3
+FOOD_DATA = [
+_('acovat'), 151, 2, 'aguacate.png',
+_('céleri'), 19, 5, 'apio.png',
+_('riz'), 343, 4, 'arroz.png',
+_('avoine'), 387, 4, 'avena.png',
+_('citrouille'), 37, 5, 'ayote.png',
+_('banane'), 90, 2, 'banano.png',
+_('aubergine'), 26, 5, 'berenjena.png',
+_('pain'), 69, 4, 'bread.png',
+_('brocoli'), 14, 5, 'brocoli.png',
+_('cacao'), 343, 4, 'cacao-fruto.png',
+_('gâteau'), 387, 0, 'cake.png',
+_('orge'), 350, 4, 'cebada.png',
+_('oignon'), 40, 5, 'cebolla.png',
+_('porc'), 194, 3, 'cerdo.png',
+_('cerise'), 60, 2, 'cereza.png',
+_('courge de poire'), 30, 5, 'chayote.png',
+_('piment'), 23, 5, 'chile.png',
+_('poivron'), 48, 5, 'chiltoma.png',
+_('noix de coco'), 300, 2, 'coco.png',
+_('biscuit'), 68, 0, 'cookie.png',
+_('créme'), 340, 1, 'crema.png',
+_('oeuf'), 77, 3, 'egg.png',
+_('maïs en épis'), 96, 5, 'elote.png',
+_('fraise'), 23, 2, 'fresa.png',
+_('goyave'), 55, 2, 'guayabas.png',
+_('lait'), 57, 1, 'leche.png',
+_('salade'), 19, 5, 'lechuga.png',
+_('citron'), 30, 2, 'limon.png',
+_('graine de lin'), 450, 4, 'linaza.png',
+_('blé'), 346, 4, 'maiz.png',
+_('mandarin'), 44, 2, 'mandarina.png',
+_('mangue'), 73, 2, 'mango.png',
+_('pomme'), 65, 2, 'manzana.png',
+_('carambole'), 63, 2, 'melocoton.png',
+_('melon'), 80, 2, 'melon.png',
+_('orange'), 38, 2, 'naranja.png',
+#TRANS: fruit of the sapodilla tree common to Central America
+_('sapotille'), 50, 2, 'nispero.png',
+_('patate'), 90, 5, 'papa.png',
+_('papaye'), 25, 2, 'papaya.png',
+_('concombre'), 12, 5, 'pepino.png',
+_('paire'), 61, 2, 'pera.png',
+_('poisson'), 91, 3, 'pez.png',
+_('ananas'), 55, 2, 'pina.png',
+#TRANS: Green pumpkin squash (source of seeds used in Central American)
+_('citrouille verte'), 16, 5, 'pipian.png',
+#TRANS: a cactus fruit
+_('pitaya'), 36, 2, 'pitaya.png',
+_('banane plantain'), 86, 5, 'platano.png',
+_('poulet'), 170, 3, 'pierna-de-pollo.png',
+_('fromage'), 07, 1, 'queso.png',
+_('radis'), 16, 5, 'rabano.png',
+_('betterave'),	43, 5, 'remolacha.png',
+_('chou'), 40, 5, 'repollo.png',
+_('boeuf'), 180, 3, 'res.png',
+_('riz et haricots'), 411, 4, 'rice-and-beans.png',
+_('pastéque'), 47, 2, 'sandia.png',
+_('tomate'), 16, 5, 'tomate.png',
+_('blé'), 345, 4, 'trigo.png',
+_('grain de raisin'), 68, 2, 'uvas.png',
+_('yaourt'), 38, 1, 'yogurt.png',
+_('yucca'), 120, 5, 'yuca.png',
+_('carotte'), 37, 5, 'zanahoria.png',
+#TRANS: a soft, edible fruit native to Central America
+_('sapote'), 52, 2, 'zapote.png',
+]
