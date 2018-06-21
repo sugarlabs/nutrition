@@ -1,11 +1,12 @@
 [Activity]
 name = Nutrition
 activity_version = 15
-license = GPLv3
+license = GPLv3+;MIT
 bundle_id = org.sugarlabs.NutritionActivity
 exec = sugar-activity NutritionActivity.NutritionActivity
 icon = activity-nutrition
 show_launcher = yes
-summary = a series of game about good habits for eating
-category = science game
-repository = https://github.com/walterbender/nutrition
+summary = A series of game about good habits for eating.
+tags = Science;Game
+repository = https://github.com/sugarlabs/nutrition
+url = https://help.sugarlabs.org/en/nutrition.html
