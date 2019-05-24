@@ -83,7 +83,7 @@ class Game():
             os.path.join(self._path, 'images', 'word-box.png'),
             int(350 * self._scale), int(100 * self._scale))
 
-        for i in range(len(FOOD_DATA) / 4):
+        for i in range(int(len(FOOD_DATA) / 4)):
             FOOD.append([FOOD_DATA[i * 4 + NAME], FOOD_DATA[i * 4 + CALS],
                          FOOD_DATA[i * 4 + GROUP], FOOD_DATA[i * 4 + IMAGE]])
             self.food_cards.append(None)
@@ -381,7 +381,7 @@ class Game():
 
     def _button_press_cb(self, win, event):
         win.grab_focus()
-        x, y = map(int, event.get_coords())
+        x, y = list(map(int, event.get_coords()))
         spr = self._sprites.find_sprite((x, y))
         if spr == None:
             return
