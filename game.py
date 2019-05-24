@@ -465,8 +465,9 @@ class Game():
         self._frown.hide()
         if self.level in [0, 2]:
             for i, w in enumerate(self.food_cards):
-                w.set_label_color('black')
-                w.set_label(FOOD[i][NAME])
+                if w is not None:
+                    w.set_label_color('black')
+                    w.set_label(FOOD[i][NAME])
         elif self.level == 1:
             for i, w in enumerate(self._group_cards):
                 w.set_label_color('black')
