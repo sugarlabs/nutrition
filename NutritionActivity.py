@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Copyright (c) 2011,12 Walter Bender
-# Ported to GTK3: 
+# Ported to GTK3:
 # Ignacio Rodríguez <ignaciorodriguez@sugarlabs.org>
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,7 +16,6 @@ gi.require_version('Gdk', '3.0')
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, Gdk
 from sugar3.activity import activity
-from sugar3 import profile
 from sugar3.graphics.toolbarbox import ToolbarBox
 from sugar3.activity.widgets import ActivityToolbarButton
 from sugar3.graphics.toolbarbox import ToolbarButton
@@ -45,6 +44,7 @@ LABELS = [_('Match the food to its name.'),
           _('How much should you eat?'),
           _('Is this a well-balanced meal?')]
 
+
 class NutritionActivity(activity.Activity):
     """ Simple nutrition game based on GCompris ImageID """
 
@@ -60,7 +60,7 @@ class NutritionActivity(activity.Activity):
 
         # Create a canvas
         canvas = Gtk.DrawingArea()
-        canvas.set_size_request(Gdk.Screen.width(), \
+        canvas.set_size_request(Gdk.Screen.width(),
                                 Gdk.Screen.height())
         self.set_canvas(canvas)
         canvas.show()
@@ -86,7 +86,7 @@ class NutritionActivity(activity.Activity):
                     self._game.food_cards[-1].set_label(name)
                     self._game.picture_append(jobject.file_path)
                     self._game.small_picture_append(jobject.file_path)
-                except:
+                except BaseException:
                     _logger.debug('Could not reload saved food item %d' % (i))
             self._game.build_food_groups()
         else:
@@ -117,28 +117,28 @@ class NutritionActivity(activity.Activity):
             cb_arg=0,
             tooltip=_(LABELS[0]),
             group=None)
-        group_game_button = radio_factory(
+        radio_factory(
             'group-game',
             toolbox.toolbar,
             self._level_cb,
             cb_arg=1,
             tooltip=_(LABELS[1]),
             group=name_game_button)
-        calorie_game_button = radio_factory(
+        radio_factory(
             'calorie-game',
             toolbox.toolbar,
             self._level_cb,
             cb_arg=2,
             tooltip=_(LABELS[2]),
             group=name_game_button)
-        pyramid_game_button = radio_factory(
+        radio_factory(
             'pyramid-game',
             toolbox.toolbar,
             self._level_cb,
             cb_arg=3,
             tooltip=_(LABELS[3]),
             group=name_game_button)
-        balance_game_button = radio_factory(
+        radio_factory(
             'balance-game',
             toolbox.toolbar,
             self._level_cb,
@@ -179,14 +179,14 @@ class NutritionActivity(activity.Activity):
             self._food_pyramid_cb,
             default=PYRAMID[2],
             tooltip=_('Select level in the Food Pyramid.'))
-        image_button = button_factory(
+        button_factory(
             'image-tools',
             tools_toolbar,
             self._load_image_cb,
             tooltip=_('Load a picture of the new food item.'))
 
         separator_factory(tools_toolbar, True, False)
-        create_button = button_factory(
+        button_factory(
             'new-food',
             tools_toolbar,
             self._create_custom_food_cb,
@@ -218,8 +218,8 @@ class NutritionActivity(activity.Activity):
                 chooser = ObjectChooser(parent=self, what_filter=None)
             except TypeError:
                 chooser = ObjectChooser(
-                    None, self,
-                    Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT)
+                    None, self, Gtk.DialogFlags.MODAL
+                    | Gtk.DialogFlags.DESTROY_WITH_PARENT)
         if chooser is not None:
             try:
                 result = chooser.run()
@@ -228,8 +228,8 @@ class NutritionActivity(activity.Activity):
                     if jobject and jobject.file_path:
                         name = jobject.metadata['title']
                         mime_type = jobject.metadata['mime_type']
-                        _logger.debug('result of choose: %s (%s)' % \
-                                          (name, str(mime_type)))
+                        _logger.debug('result of choose: %s (%s)' %
+                                      (name, str(mime_type)))
             finally:
                 chooser.destroy()
                 del chooser
@@ -245,7 +245,7 @@ class NutritionActivity(activity.Activity):
         name = self.name_entry.get_text()
         try:
             calories = int(self.calories_entry.get_text())
-        except:
+        except BaseException:
             _logger.debug(self.calories_entry.get_text)
             calories = None
         pyramid = self.food_spinner.get_active()
@@ -299,7 +299,8 @@ item.')
         self.metadata['name-%d' % (self._custom_food_counter)] = name
         self.metadata['calories-%d' % (self._custom_food_counter)] = \
             str(calories)
-        self.metadata['pyramid-%d' % (self._custom_food_counter)] = str(pyramid)
+        self.metadata['pyramid-%d' %
+                      (self._custom_food_counter)] = str(pyramid)
         self.metadata['jobject-%d' % (self._custom_food_counter)] = \
             self._custom_food_jobject.object_id
         self._custom_food_counter += 1
