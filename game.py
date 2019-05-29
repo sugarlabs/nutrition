@@ -12,7 +12,6 @@
 # Foundation, 51 Franklin Street, Suite 500 Boston, MA 02110-1335 USA
 
 from gi.repository import Gtk, Gdk, GObject, GdkPixbuf
-import cairo
 import os
 from random import uniform
 
@@ -39,6 +38,7 @@ QUANTITIES = [_('minimum'), _('moderate'), _('more'), _('most')]
 BALANCE = [_('balanced'), _('unbalanced')]
 NCARDS = 5
 FOOD = []
+
 
 class Game():
 
@@ -73,7 +73,7 @@ class Game():
         self._sprites = Sprites(self._canvas)
         self._background = Sprite(
             self._sprites, 0, 0, GdkPixbuf.Pixbuf.new_from_file_at_size(
-                os.path.join(self._path, 'images','background.png'),
+                os.path.join(self._path, 'images', 'background.png'),
                 self._width, self._height))
         self._background.set_layer(0)
         self._background.type = None
@@ -123,9 +123,12 @@ class Game():
                              int(self._width / 4),
                              int(self._height / 4),
                              GdkPixbuf.Pixbuf.new_from_file_at_size(
-                os.path.join(self._path, 'images', 'correct.png'),
-                int(self._width / 2),
-                int(self._height / 2)))
+                                 os.path.join(
+                                     self._path,
+                                     'images',
+                                     'correct.png'),
+                                 int(self._width / 2),
+                                 int(self._height / 2)))
         self._smile.set_label_attributes(36)
         self._smile.set_margins(10, 0, 10, 0)
 
@@ -133,9 +136,12 @@ class Game():
                              int(self._width / 4),
                              int(self._height / 4),
                              GdkPixbuf.Pixbuf.new_from_file_at_size(
-                os.path.join(self._path, 'images', 'wrong.png'),
-                int(self._width / 2),
-                int(self._height / 2)))
+                                 os.path.join(
+                                     self._path,
+                                     'images',
+                                     'wrong.png'),
+                                 int(self._width / 2),
+                                 int(self._height / 2)))
         self._frown.set_label_attributes(36)
         self._frown.set_margins(10, 0, 10, 0)
 
@@ -181,11 +187,11 @@ class Game():
         pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(
             path,
             int(self._width / 6.),
-            int(3 * self._width / 8.)) 
+            int(3 * self._width / 8.))
         for j in range(6):  # up to 6 of each card
             if i == -1:
                 self._small_picture_cards.append(Sprite(
-                self._sprites, x, y, pixbuf))
+                    self._sprites, x, y, pixbuf))
                 self._small_picture_cards[-1].type = 'picture'
                 self._small_picture_cards[-1].hide()
             else:
@@ -239,9 +245,9 @@ class Game():
                  2: self._compare_calories, 3: self._how_much_to_eat,
                  4: self._balanced_meal}
         self._all_clear()
-        
+
         games[self.level]()
-        
+
         self._frown.set_label('')
         self._smile.set_label('')
         self._tries = 0
@@ -277,7 +283,7 @@ class Game():
         self._last_twenty.append(self._target)
         if len(self._last_twenty) > 20:
             self._last_twenty.remove(self._last_twenty[0])
-            
+
         self._picture_cards[self._target].set_layer(100)
 
     def _name_that_food_group(self):
@@ -316,8 +322,8 @@ class Game():
         # Show food images
         self._target = word_list[0]
         for i in range(5):
-             if FOOD[word_list[i + 1]][CALS] > FOOD[self._target][CALS]:
-                 self._target = word_list[i + 1]
+            if FOOD[word_list[i + 1]][CALS] > FOOD[self._target][CALS]:
+                self._target = word_list[i + 1]
         self._small_picture_cards[word_list[0] * 6].set_layer(100)
         self._small_picture_cards[word_list[1] * 6 + 1].set_layer(100)
         self._small_picture_cards[word_list[2] * 6 + 2].set_layer(100)
@@ -383,10 +389,10 @@ class Game():
         win.grab_focus()
         x, y = list(map(int, event.get_coords()))
         spr = self._sprites.find_sprite((x, y))
-        if spr == None:
+        if spr is None:
             return
         # We only care about clicks on word cards
-        if type(spr.type) != int:
+        if not isinstance(spr.type, int):
             return
 
         # Which card was clicked? Set its label to red.
@@ -489,7 +495,7 @@ class Game():
         # Restrict Cairo to the exposed area
         cr = self._canvas.window.cairo_create()
         cr.rectangle(event.area.x, event.area.y,
-                event.area.width, event.area.height)
+                     event.area.width, event.area.height)
         cr.clip()
         # Refresh sprite list
         self._sprites.redraw_sprites(cr=cr)
