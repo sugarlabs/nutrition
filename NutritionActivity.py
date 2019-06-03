@@ -159,7 +159,6 @@ class NutritionActivity(activity.Activity):
         tools_toolbar_button.show()
 
         stop_button = StopButton(self)
-        stop_button.props.accelerator = '<Ctrl>q'
         toolbox.toolbar.insert(stop_button, -1)
         stop_button.show()
 
