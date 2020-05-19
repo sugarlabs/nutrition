@@ -1,5 +1,16 @@
 NEWS
 
+16
+
+* Refresh POT file (Jui Pradhan)
+* New Translations 
+* Remove Stop Accelerator (Aniket Mathur),
+* flake8 fixes (Aniket Mathur),
+* Port to python 3 (Aniket Mathur),
+* Fix PyGIWarnings (Aniket Mathur),
+* Update activity.info (Vipul Gupta),
+* Add and update README (rdrsadhu, James Cameron)
+
 15
 
 ENHACEMENT:

@@ -1,6 +1,6 @@
 [Activity]
 name = Nutrition
-activity_version = 15
+activity_version = 16
 license = GPLv3+;MIT
 bundle_id = org.sugarlabs.NutritionActivity
 exec = sugar-activity3 NutritionActivity.NutritionActivity
