@@ -6,267 +6,262 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-18 00:32-0500\n"
-"PO-Revision-Date: 2015-02-19 20:38+0000\n"
-"Last-Translator: Tymon <dwgipk@gmail.com>\n"
+"POT-Creation-Date: 2012-08-10 00:34-0400\n"
+"PO-Revision-Date: 2019-02-14 11:01+0000\n"
+"Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pl\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1424378330.000000\n"
+"X-POOTLE-MTIME: 1550142060.000000\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Nutrition"
-msgstr "Odżywianie"
-
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid "a series of game about good habits for eating"
-msgstr "seria gry o dobrych zwyczajach podczas jedzenia"
+msgstr "Mityba"
 
 #: NutritionActivity.py:39
 msgid "Match the food to its name."
-msgstr "Dopasuj jedzenie do nazwy."
+msgstr ""
 
 #: NutritionActivity.py:40
 msgid "What is the food group?"
-msgstr "Jaka jest grupa jedzenia?"
+msgstr ""
 
 #: NutritionActivity.py:41
 msgid "Which has the most calories?"
-msgstr "Które ma najwięcej kalorii?"
+msgstr ""
 
 #: NutritionActivity.py:42
 msgid "How much should you eat?"
-msgstr "Ile powinienem zjeść?"
+msgstr ""
 
 #: NutritionActivity.py:43
 msgid "Is this a well-balanced meal?"
-msgstr "Czy to zbalansowany posiłek?"
+msgstr ""
 
 #: NutritionActivity.py:164 NutritionActivity.py:250 NutritionActivity.py:291
 msgid "food name"
-msgstr "nazwa żywności"
+msgstr ""
 
 #: NutritionActivity.py:166
 msgid "Enter a name for the new food item."
-msgstr "Podaj nazwę dla nowego artykułu spożywczego."
+msgstr ""
 
 #: NutritionActivity.py:169 NutritionActivity.py:292
 msgid "calories"
-msgstr "kalorie"
+msgstr ""
 
 #: NutritionActivity.py:171
 msgid "Enter the calories in for the new food item."
-msgstr "Podaj kalorie dla nowego artykułu spożywczego."
+msgstr ""
 
 #: NutritionActivity.py:178
 msgid "Select level in the Food Pyramid."
-msgstr "Wybierz poziom Piramidy Żywieniowej."
+msgstr ""
 
 #: NutritionActivity.py:183
 msgid "Load a picture of the new food item."
-msgstr "Załaduj obrazek nowego artykułu spożywczego."
+msgstr ""
 
 #: NutritionActivity.py:190 NutritionActivity.py:252 NutritionActivity.py:260
 #: NutritionActivity.py:269 NutritionActivity.py:286
 msgid "Add a new food item."
-msgstr "Dodaj nowy artykuł spożywczy."
+msgstr ""
 
 #: NutritionActivity.py:254
 msgid "You must enter a name for the new food item."
-msgstr "Musisz podać nazwę dla nowego artykułu spożywczego."
+msgstr ""
 
 #: NutritionActivity.py:262
 msgid "You must enter calories for the new food item."
-msgstr "Musisz podać kalorie dla nowego artykułu spożywczego."
+msgstr ""
 
 #: NutritionActivity.py:271
 msgid "You must load an image for the new food item."
-msgstr "Musisz załadować obrazek dla nowego artykułu spożywczego."
+msgstr ""
 
 #: NutritionActivity.py:288
 #, python-format
 msgid "%s has been loaded."
-msgstr "%s został załadowany."
+msgstr ""
 
 #: food.py:4
 msgid "sweets"
-msgstr "słodycze"
+msgstr "saldainiai"
 
 #: food.py:4
 msgid "dairy"
-msgstr "nabiał"
+msgstr ""
 
 #: food.py:4
 msgid "fruits"
-msgstr "owoce"
+msgstr "vaisiai"
 
 #: food.py:4
 msgid "meat"
-msgstr "mięso"
+msgstr "mėsa"
 
 #: food.py:4
 msgid "grains"
-msgstr "zboża"
+msgstr "grūdai"
 
 #: food.py:5
 msgid "vegetables"
-msgstr "warzywa"
+msgstr "daržovės"
 
 #: food.py:12
 msgid "avocado"
-msgstr "awokado"
+msgstr "avokadas"
 
 #: food.py:13
 msgid "celery"
-msgstr "seler"
+msgstr "salieras"
 
 #: food.py:14
 msgid "rice"
-msgstr "ryż"
+msgstr "ryžiai"
 
 #: food.py:15
 msgid "oats"
-msgstr "owies"
+msgstr "avižai"
 
 #: food.py:16
 msgid "pumpkin"
-msgstr "dynia"
+msgstr "moliūgas"
 
 #: food.py:17
 msgid "banana"
-msgstr "banan"
+msgstr ""
 
 #. TRANS: aubergine
 #: food.py:19
 msgid "eggplant"
-msgstr "bakłażan"
+msgstr ""
 
 #: food.py:20
 msgid "bread"
-msgstr "chleb"
+msgstr "duona"
 
 #: food.py:21
 msgid "broccoli"
-msgstr "brokuły"
+msgstr "brokolis"
 
 #: food.py:22
 msgid "cocoa"
-msgstr "kakao"
+msgstr "kakava"
 
 #: food.py:23
 msgid "cake"
-msgstr "ciasto"
+msgstr "pyragas"
 
 #: food.py:24
 msgid "barley"
-msgstr "ledwo"
+msgstr "miežiai"
 
 #: food.py:25
 msgid "onion"
-msgstr "cebula"
+msgstr "svogūnas"
 
 #: food.py:26
 msgid "pork"
-msgstr "wieprzowina"
+msgstr "kiauliena"
 
 #: food.py:27
 msgid "cherry"
-msgstr "czereśnia"
+msgstr "vyšnia"
 
 #: food.py:28
 msgid "pear squash"
-msgstr "kolczoch jadalny"
+msgstr ""
 
 #: food.py:29
 msgid "chili pepper"
-msgstr "papryka chili"
+msgstr "aitrioji paprika"
 
 #: food.py:30
 msgid "sweet pepper"
-msgstr "słodka papryka"
+msgstr "saldžioji paprika"
 
 #: food.py:31
 msgid "coconut"
-msgstr "kokos"
+msgstr "kokosas"
 
 #: food.py:32
 msgid "cookie"
-msgstr "ciasteczko"
+msgstr "sausainis"
 
 #: food.py:33
 msgid "cream"
-msgstr "śmietana"
+msgstr "kremas"
 
 #: food.py:34
 msgid "egg"
-msgstr "jajko"
+msgstr "kiaušinis"
 
 #: food.py:35
 msgid "corn on the cob"
-msgstr "kolba kukurydzy"
+msgstr ""
 
 #: food.py:36
 msgid "strawberry"
-msgstr "truskawka"
+msgstr "braškė"
 
 #: food.py:37
 msgid "guava"
-msgstr "gujawa"
+msgstr "gvajava"
 
 #: food.py:38
 msgid "milk"
-msgstr "mleko"
+msgstr "pienas"
 
 #: food.py:39
 msgid "lettuce"
-msgstr "sałata"
+msgstr "salotos"
 
 #: food.py:40
 msgid "lemon"
-msgstr "cytryna"
+msgstr "citrina"
 
 #: food.py:41
 msgid "flax seed"
-msgstr "nasiono lnu"
+msgstr ""
 
 #: food.py:43
 msgid "mandarin"
-msgstr "mandarynka"
+msgstr "mandarinas"
 
 #: food.py:44
 msgid "mango"
-msgstr "mango"
+msgstr ""
 
 #: food.py:45
 msgid "apple"
-msgstr "jabłko"
+msgstr "obuolys"
 
 #: food.py:46
 msgid "star fruit"
-msgstr "oskomian pospolity"
+msgstr ""
 
 #: food.py:47
 msgid "melon"
-msgstr "melon"
+msgstr "melionas"
 
 #: food.py:48
 msgid "orange"
-msgstr "pomarańcza"
+msgstr "apelsinas"
 
 #. TRANS: fruit of the sapodilla tree common to Central America
 #: food.py:50
 msgid "sapodilla"
-msgstr "pigwa"
+msgstr ""
 
 #: food.py:51
 msgid "potato"
-msgstr "ziemniak"
+msgstr "bulvė"
 
 #: food.py:52
 msgid "papaya"
@@ -274,148 +269,120 @@ msgstr "papaja"
 
 #: food.py:53
 msgid "cucumber"
-msgstr "ogórek"
+msgstr "agurkas"
 
 #: food.py:54
 msgid "pear"
-msgstr "gruszka"
+msgstr "kriaušė"
 
 #: food.py:55
 msgid "fish"
-msgstr "ryba"
+msgstr "žuvis"
 
 #: food.py:56
 msgid "pineapple"
-msgstr "ananas"
+msgstr "ananasas"
 
 #. TRANS: Green pumpkin squash (source of seeds used in Central American)
 #: food.py:58
 msgid "green pumpkin"
-msgstr "zielona dynia"
+msgstr ""
 
 #. TRANS: a cactus fruit
 #: food.py:60
 msgid "pitaya"
-msgstr "pitaja"
+msgstr ""
 
 #: food.py:61
 msgid "plantain"
-msgstr "banan rajski"
+msgstr "gyslotis"
 
 #: food.py:62
 msgid "chicken"
-msgstr "kurczak"
+msgstr ""
 
 #: food.py:63
 msgid "cheese"
-msgstr "ser"
+msgstr "sūris"
 
 #: food.py:64
 msgid "radish"
-msgstr "rzodkiew"
+msgstr "ridikas"
 
 #: food.py:65
 msgid "beet"
-msgstr "burak"
+msgstr ""
 
 #: food.py:66
 msgid "cabbage"
-msgstr "kabaczek"
+msgstr "kopūstas"
 
 #: food.py:67
 msgid "beef"
-msgstr "wołowina"
+msgstr "jautiena"
 
 #: food.py:68
 msgid "rice and beans"
-msgstr "ryż i fasola"
+msgstr ""
 
 #: food.py:69
 msgid "watermelon"
-msgstr "arbuz"
+msgstr "arbūzas"
 
 #. TRANS: A seed used to make horchata (common in Central America)
 #: food.py:71
 msgid "jicaro"
-msgstr "tykwa meksykańska"
+msgstr ""
 
 #: food.py:73
 msgid "tomato"
-msgstr "pomidor"
+msgstr "pomidoras"
 
 #: food.py:74
 msgid "wheat"
-msgstr "pszenica"
+msgstr "kviečiai"
 
 #: food.py:75
 msgid "grape"
-msgstr "winogrona"
+msgstr "vynuogės"
 
 #: food.py:76
 msgid "yogurt"
-msgstr "jogurt"
+msgstr "jogurtas"
 
 #: food.py:77
 msgid "yucca"
-msgstr "jukka"
+msgstr "juka"
 
 #: food.py:78
 msgid "carrot"
-msgstr "marchewka"
+msgstr "morka"
 
 #. TRANS: a soft, edible fruit native to Central America
 #: food.py:80
 msgid "sapote"
-msgstr "sapota"
+msgstr ""
 
-#: game.py:38
+#: game.py:39
 msgid "minimum"
-msgstr "minimum"
+msgstr ""
 
-#: game.py:38
+#: game.py:39
 msgid "moderate"
-msgstr "umiarkowany"
+msgstr ""
 
-#: game.py:38
+#: game.py:39
 msgid "more"
-msgstr "więcej"
+msgstr "daugiau"
 
-#: game.py:38
+#: game.py:39
 msgid "most"
-msgstr "najwięcej"
+msgstr "daugiausiai"
 
-#: game.py:39
+#: game.py:40
 msgid "balanced"
-msgstr "zbalansowane"
+msgstr ""
 
-#: game.py:39
+#: game.py:40
 msgid "unbalanced"
-msgstr "niezbalansowane"
-
-#~ msgid "corn"
-#~ msgstr "kukurydza"
-
-#~ msgid "tamale"
-#~ msgstr "tamal"
-
-#~ msgid "How many calories are there?"
-#~ msgstr "Ile ma kalorii?"
-
-#~ msgid "unlimited"
-#~ msgstr "bez ograniczeń"
-
-#~ msgid "water"
-#~ msgstr "woda"
-
-#~ msgid "sweetpotato"
-#~ msgstr "batat"
-
-#, python-format
-#~ msgid "%d calories"
-#~ msgstr "%d kalorii"
-
-#~ msgid "meat and dairy"
-#~ msgstr "mięso i nabiał"
-
-#~ msgid "fruits and grains"
-#~ msgstr "owoce i ziarna"
+msgstr ""
