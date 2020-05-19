@@ -2,389 +2,388 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-18 00:32-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-08-10 00:34-0400\n"
+"PO-Revision-Date: 2017-04-02 23:54+0000\n"
+"Last-Translator: Anders <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1491177267.000000\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Nutrition"
-msgstr ""
-
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid "a series of game about good habits for eating"
-msgstr ""
+msgstr "Näringslära"
 
 #: NutritionActivity.py:39
 msgid "Match the food to its name."
-msgstr ""
+msgstr "Matcha matvaran med dess namn."
 
 #: NutritionActivity.py:40
 msgid "What is the food group?"
-msgstr ""
+msgstr "Vilken är livsmedelsgruppen?"
 
 #: NutritionActivity.py:41
 msgid "Which has the most calories?"
-msgstr ""
+msgstr "Vilken innehåller mest kalorier?"
 
 #: NutritionActivity.py:42
 msgid "How much should you eat?"
-msgstr ""
+msgstr "Hur mycket bör du äta?"
 
 #: NutritionActivity.py:43
 msgid "Is this a well-balanced meal?"
-msgstr ""
+msgstr "Är detta en välbalanserad måltid?"
 
 #: NutritionActivity.py:164 NutritionActivity.py:250 NutritionActivity.py:291
 msgid "food name"
-msgstr ""
+msgstr "matvarunamn"
 
 #: NutritionActivity.py:166
 msgid "Enter a name for the new food item."
-msgstr ""
+msgstr "Ange ett namn på den nya matvaran."
 
 #: NutritionActivity.py:169 NutritionActivity.py:292
 msgid "calories"
-msgstr ""
+msgstr "kalorier"
 
 #: NutritionActivity.py:171
 msgid "Enter the calories in for the new food item."
-msgstr ""
+msgstr "Ange kaloriantalet för den nya matvaran."
 
 #: NutritionActivity.py:178
 msgid "Select level in the Food Pyramid."
-msgstr ""
+msgstr "Välj nivå i matpyramiden."
 
 #: NutritionActivity.py:183
 msgid "Load a picture of the new food item."
-msgstr ""
+msgstr "Läs in en bild av den nya matvaran."
 
 #: NutritionActivity.py:190 NutritionActivity.py:252 NutritionActivity.py:260
 #: NutritionActivity.py:269 NutritionActivity.py:286
 msgid "Add a new food item."
-msgstr ""
+msgstr "Lägg till en ny matvara."
 
 #: NutritionActivity.py:254
 msgid "You must enter a name for the new food item."
-msgstr ""
+msgstr "Du måste ange ett namn på den nya matvaran."
 
 #: NutritionActivity.py:262
 msgid "You must enter calories for the new food item."
-msgstr ""
+msgstr "Du måste ange kaloriantal för den nya matvaran."
 
 #: NutritionActivity.py:271
 msgid "You must load an image for the new food item."
-msgstr ""
+msgstr "Du måste lägga till en bild för den nya matvaran."
 
 #: NutritionActivity.py:288
 #, python-format
 msgid "%s has been loaded."
-msgstr ""
+msgstr "%s har lästs in."
 
 #: food.py:4
 msgid "sweets"
-msgstr ""
+msgstr "sötsaker"
 
 #: food.py:4
 msgid "dairy"
-msgstr ""
+msgstr "mejeri"
 
 #: food.py:4
 msgid "fruits"
-msgstr ""
+msgstr "frukt"
 
 #: food.py:4
 msgid "meat"
-msgstr ""
+msgstr "kött"
 
 #: food.py:4
 msgid "grains"
-msgstr ""
+msgstr "spannmål"
 
 #: food.py:5
 msgid "vegetables"
-msgstr ""
+msgstr "grönsaker"
 
 #: food.py:12
 msgid "avocado"
-msgstr ""
+msgstr "avokado"
 
 #: food.py:13
 msgid "celery"
-msgstr ""
+msgstr "selleri"
 
 #: food.py:14
 msgid "rice"
-msgstr ""
+msgstr "ris"
 
 #: food.py:15
 msgid "oats"
-msgstr ""
+msgstr "havre"
 
 #: food.py:16
 msgid "pumpkin"
-msgstr ""
+msgstr "pumpa"
 
 #: food.py:17
 msgid "banana"
-msgstr ""
+msgstr "banan"
 
 #. TRANS: aubergine
 #: food.py:19
 msgid "eggplant"
-msgstr ""
+msgstr "äggplanta"
 
 #: food.py:20
 msgid "bread"
-msgstr ""
+msgstr "bröd"
 
 #: food.py:21
 msgid "broccoli"
-msgstr ""
+msgstr "broccoli"
 
 #: food.py:22
 msgid "cocoa"
-msgstr ""
+msgstr "kakao"
 
 #: food.py:23
 msgid "cake"
-msgstr ""
+msgstr "tårta"
 
 #: food.py:24
 msgid "barley"
-msgstr ""
+msgstr "korn"
 
 #: food.py:25
 msgid "onion"
-msgstr ""
+msgstr "lök"
 
 #: food.py:26
 msgid "pork"
-msgstr ""
+msgstr "fläsk"
 
 #: food.py:27
 msgid "cherry"
-msgstr ""
+msgstr "körsbär"
 
 #: food.py:28
 msgid "pear squash"
-msgstr ""
+msgstr "chayote"
 
 #: food.py:29
 msgid "chili pepper"
-msgstr ""
+msgstr "chilipeppar"
 
 #: food.py:30
 msgid "sweet pepper"
-msgstr ""
+msgstr "paprika"
 
 #: food.py:31
 msgid "coconut"
-msgstr ""
+msgstr "kokosnöt"
 
 #: food.py:32
 msgid "cookie"
-msgstr ""
+msgstr "kaka"
 
 #: food.py:33
 msgid "cream"
-msgstr ""
+msgstr "grädde"
 
 #: food.py:34
 msgid "egg"
-msgstr ""
+msgstr "ägg"
 
 #: food.py:35
 msgid "corn on the cob"
-msgstr ""
+msgstr "majskolv"
 
 #: food.py:36
 msgid "strawberry"
-msgstr ""
+msgstr "jordgubbe"
 
 #: food.py:37
 msgid "guava"
-msgstr ""
+msgstr "guava"
 
 #: food.py:38
 msgid "milk"
-msgstr ""
+msgstr "mjölk"
 
 #: food.py:39
 msgid "lettuce"
-msgstr ""
+msgstr "sallat"
 
 #: food.py:40
 msgid "lemon"
-msgstr ""
+msgstr "citron"
 
 #: food.py:41
 msgid "flax seed"
-msgstr ""
+msgstr "linfrö"
 
 #: food.py:43
 msgid "mandarin"
-msgstr ""
+msgstr "mandarin"
 
 #: food.py:44
 msgid "mango"
-msgstr ""
+msgstr "mango"
 
 #: food.py:45
 msgid "apple"
-msgstr ""
+msgstr "äpple"
 
 #: food.py:46
 msgid "star fruit"
-msgstr ""
+msgstr "stjärnfrukt"
 
 #: food.py:47
 msgid "melon"
-msgstr ""
+msgstr "melon"
 
 #: food.py:48
 msgid "orange"
-msgstr ""
+msgstr "apelsin"
 
 #. TRANS: fruit of the sapodilla tree common to Central America
 #: food.py:50
 msgid "sapodilla"
-msgstr ""
+msgstr "sapotill"
 
 #: food.py:51
 msgid "potato"
-msgstr ""
+msgstr "potatis"
 
 #: food.py:52
 msgid "papaya"
-msgstr ""
+msgstr "papaya"
 
 #: food.py:53
 msgid "cucumber"
-msgstr ""
+msgstr "gurka"
 
 #: food.py:54
 msgid "pear"
-msgstr ""
+msgstr "päron"
 
 #: food.py:55
 msgid "fish"
-msgstr ""
+msgstr "fisk"
 
 #: food.py:56
 msgid "pineapple"
-msgstr ""
+msgstr "ananas"
 
 #. TRANS: Green pumpkin squash (source of seeds used in Central American)
 #: food.py:58
 msgid "green pumpkin"
-msgstr ""
+msgstr "grön pumpa"
 
 #. TRANS: a cactus fruit
 #: food.py:60
 msgid "pitaya"
-msgstr ""
+msgstr "drakfrukt"
 
 #: food.py:61
 msgid "plantain"
-msgstr ""
+msgstr "kokbanan"
 
 #: food.py:62
 msgid "chicken"
-msgstr ""
+msgstr "kyckling"
 
 #: food.py:63
 msgid "cheese"
-msgstr ""
+msgstr "ost"
 
 #: food.py:64
 msgid "radish"
-msgstr ""
+msgstr "rädisa"
 
 #: food.py:65
 msgid "beet"
-msgstr ""
+msgstr "rödbeta"
 
 #: food.py:66
 msgid "cabbage"
-msgstr ""
+msgstr "vitkål"
 
 #: food.py:67
 msgid "beef"
-msgstr ""
+msgstr "nötkött"
 
 #: food.py:68
 msgid "rice and beans"
-msgstr ""
+msgstr "ris och bönor"
 
 #: food.py:69
 msgid "watermelon"
-msgstr ""
+msgstr "vattenmelon"
 
+# Frö av Crescentia alata
 #. TRANS: A seed used to make horchata (common in Central America)
 #: food.py:71
 msgid "jicaro"
-msgstr ""
+msgstr "jicaro"
 
 #: food.py:73
 msgid "tomato"
-msgstr ""
+msgstr "tomat"
 
 #: food.py:74
 msgid "wheat"
-msgstr ""
+msgstr "vete"
 
 #: food.py:75
 msgid "grape"
-msgstr ""
+msgstr "vindruvor"
 
 #: food.py:76
 msgid "yogurt"
-msgstr ""
+msgstr "yoghurt"
 
 #: food.py:77
 msgid "yucca"
-msgstr ""
+msgstr "maniok"
 
 #: food.py:78
 msgid "carrot"
-msgstr ""
+msgstr "morot"
 
 #. TRANS: a soft, edible fruit native to Central America
 #: food.py:80
 msgid "sapote"
-msgstr ""
+msgstr "sapote"
 
-#: game.py:38
+#: game.py:39
 msgid "minimum"
-msgstr ""
+msgstr "minimum"
 
-#: game.py:38
+#: game.py:39
 msgid "moderate"
-msgstr ""
+msgstr "måttligt"
 
-#: game.py:38
+#: game.py:39
 msgid "more"
-msgstr ""
+msgstr "mer"
 
-#: game.py:38
+#: game.py:39
 msgid "most"
-msgstr ""
+msgstr "mest"
 
-#: game.py:39
+#: game.py:40
 msgid "balanced"
-msgstr ""
+msgstr "balanserat"
 
-#: game.py:39
+#: game.py:40
 msgid "unbalanced"
-msgstr ""
+msgstr "obalanserat"

@@ -2,420 +2,387 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-18 00:32-0500\n"
-"PO-Revision-Date: 2015-02-19 20:38+0000\n"
-"Last-Translator: Tymon <dwgipk@gmail.com>\n"
+"POT-Creation-Date: 2012-08-10 00:34-0400\n"
+"PO-Revision-Date: 2017-04-10 04:20+0000\n"
+"Last-Translator: thuyn <thuy.hispvietnam@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pl\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1424378330.000000\n"
+"X-POOTLE-MTIME: 1491798055.000000\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Nutrition"
-msgstr "Odżywianie"
-
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid "a series of game about good habits for eating"
-msgstr "seria gry o dobrych zwyczajach podczas jedzenia"
+msgstr "Dinh dưỡng"
 
 #: NutritionActivity.py:39
 msgid "Match the food to its name."
-msgstr "Dopasuj jedzenie do nazwy."
+msgstr "Ghép thức ăn và tên của nó."
 
 #: NutritionActivity.py:40
 msgid "What is the food group?"
-msgstr "Jaka jest grupa jedzenia?"
+msgstr "Nhóm thức ăn là gì?"
 
 #: NutritionActivity.py:41
 msgid "Which has the most calories?"
-msgstr "Które ma najwięcej kalorii?"
+msgstr "Cái nào có nhiều calo nhất?"
 
 #: NutritionActivity.py:42
 msgid "How much should you eat?"
-msgstr "Ile powinienem zjeść?"
+msgstr "Bạn nên ăn bao nhiêu?"
 
 #: NutritionActivity.py:43
 msgid "Is this a well-balanced meal?"
-msgstr "Czy to zbalansowany posiłek?"
+msgstr "Đây có phải là bữa ăn cân bằng không?"
 
 #: NutritionActivity.py:164 NutritionActivity.py:250 NutritionActivity.py:291
 msgid "food name"
-msgstr "nazwa żywności"
+msgstr "tên thức ăn"
 
 #: NutritionActivity.py:166
 msgid "Enter a name for the new food item."
-msgstr "Podaj nazwę dla nowego artykułu spożywczego."
+msgstr "Nhập tên cho một thức ăn mới"
 
 #: NutritionActivity.py:169 NutritionActivity.py:292
 msgid "calories"
-msgstr "kalorie"
+msgstr "calo"
 
 #: NutritionActivity.py:171
 msgid "Enter the calories in for the new food item."
-msgstr "Podaj kalorie dla nowego artykułu spożywczego."
+msgstr "Nhập calo cho thức ăn mới"
 
 #: NutritionActivity.py:178
 msgid "Select level in the Food Pyramid."
-msgstr "Wybierz poziom Piramidy Żywieniowej."
+msgstr "Chọn mức độ cho Tháp Dinh Dưỡng"
 
 #: NutritionActivity.py:183
 msgid "Load a picture of the new food item."
-msgstr "Załaduj obrazek nowego artykułu spożywczego."
+msgstr "Tải hình ảnh của mẫu thức ăn mới"
 
 #: NutritionActivity.py:190 NutritionActivity.py:252 NutritionActivity.py:260
 #: NutritionActivity.py:269 NutritionActivity.py:286
 msgid "Add a new food item."
-msgstr "Dodaj nowy artykuł spożywczy."
+msgstr "Thêm một mẫu thức ăn mới"
 
 #: NutritionActivity.py:254
 msgid "You must enter a name for the new food item."
-msgstr "Musisz podać nazwę dla nowego artykułu spożywczego."
+msgstr "Bạn phải nhập tên cho mẫu thức ăn mới"
 
 #: NutritionActivity.py:262
 msgid "You must enter calories for the new food item."
-msgstr "Musisz podać kalorie dla nowego artykułu spożywczego."
+msgstr "Bạn phải nhập calo cho mẫu thức ăn mới"
 
 #: NutritionActivity.py:271
 msgid "You must load an image for the new food item."
-msgstr "Musisz załadować obrazek dla nowego artykułu spożywczego."
+msgstr "Bạn phải tải hình ảnh cho mẫu thức ăn mới"
 
 #: NutritionActivity.py:288
 #, python-format
 msgid "%s has been loaded."
-msgstr "%s został załadowany."
+msgstr "%s đã được tải"
 
 #: food.py:4
 msgid "sweets"
-msgstr "słodycze"
+msgstr "ngọt"
 
 #: food.py:4
 msgid "dairy"
-msgstr "nabiał"
+msgstr "sản phẩm từ sữa"
 
 #: food.py:4
 msgid "fruits"
-msgstr "owoce"
+msgstr "trái cây"
 
 #: food.py:4
 msgid "meat"
-msgstr "mięso"
+msgstr "thịt"
 
 #: food.py:4
 msgid "grains"
-msgstr "zboża"
+msgstr "ngũ cốc"
 
 #: food.py:5
 msgid "vegetables"
-msgstr "warzywa"
+msgstr "rau"
 
 #: food.py:12
 msgid "avocado"
-msgstr "awokado"
+msgstr "bơ"
 
 #: food.py:13
 msgid "celery"
-msgstr "seler"
+msgstr "cần tây"
 
 #: food.py:14
 msgid "rice"
-msgstr "ryż"
+msgstr "gạo"
 
 #: food.py:15
 msgid "oats"
-msgstr "owies"
+msgstr "yến mạch"
 
 #: food.py:16
 msgid "pumpkin"
-msgstr "dynia"
+msgstr "bí đỏ"
 
 #: food.py:17
 msgid "banana"
-msgstr "banan"
+msgstr "chuốt"
 
 #. TRANS: aubergine
 #: food.py:19
 msgid "eggplant"
-msgstr "bakłażan"
+msgstr "cà tím"
 
 #: food.py:20
 msgid "bread"
-msgstr "chleb"
+msgstr "bánh mì"
 
 #: food.py:21
 msgid "broccoli"
-msgstr "brokuły"
+msgstr "bông cải"
 
 #: food.py:22
 msgid "cocoa"
-msgstr "kakao"
+msgstr "ca cao"
 
 #: food.py:23
 msgid "cake"
-msgstr "ciasto"
+msgstr "bánh bông lan"
 
 #: food.py:24
 msgid "barley"
-msgstr "ledwo"
+msgstr "yến mạch"
 
 #: food.py:25
 msgid "onion"
-msgstr "cebula"
+msgstr "hành"
 
 #: food.py:26
 msgid "pork"
-msgstr "wieprzowina"
+msgstr "thịt heo"
 
 #: food.py:27
 msgid "cherry"
-msgstr "czereśnia"
+msgstr "cherry"
 
 #: food.py:28
 msgid "pear squash"
-msgstr "kolczoch jadalny"
+msgstr "su su"
 
 #: food.py:29
 msgid "chili pepper"
-msgstr "papryka chili"
+msgstr "ớt"
 
 #: food.py:30
 msgid "sweet pepper"
-msgstr "słodka papryka"
+msgstr "ớt chuông"
 
 #: food.py:31
 msgid "coconut"
-msgstr "kokos"
+msgstr "dừa"
 
 #: food.py:32
 msgid "cookie"
-msgstr "ciasteczko"
+msgstr "bánh quy"
 
 #: food.py:33
 msgid "cream"
-msgstr "śmietana"
+msgstr "kem"
 
 #: food.py:34
 msgid "egg"
-msgstr "jajko"
+msgstr "trứng"
 
 #: food.py:35
 msgid "corn on the cob"
-msgstr "kolba kukurydzy"
+msgstr "trái bắp"
 
 #: food.py:36
 msgid "strawberry"
-msgstr "truskawka"
+msgstr "dâu Tây"
 
 #: food.py:37
 msgid "guava"
-msgstr "gujawa"
+msgstr "ổi"
 
 #: food.py:38
 msgid "milk"
-msgstr "mleko"
+msgstr "sữa"
 
 #: food.py:39
 msgid "lettuce"
-msgstr "sałata"
+msgstr "xà lách"
 
 #: food.py:40
 msgid "lemon"
-msgstr "cytryna"
+msgstr "chanh"
 
 #: food.py:41
 msgid "flax seed"
-msgstr "nasiono lnu"
+msgstr "hạt lanh"
 
 #: food.py:43
 msgid "mandarin"
-msgstr "mandarynka"
+msgstr "quýt"
 
 #: food.py:44
 msgid "mango"
-msgstr "mango"
+msgstr "xoài"
 
 #: food.py:45
 msgid "apple"
-msgstr "jabłko"
+msgstr "táo"
 
 #: food.py:46
 msgid "star fruit"
-msgstr "oskomian pospolity"
+msgstr "khế"
 
 #: food.py:47
 msgid "melon"
-msgstr "melon"
+msgstr "dưa"
 
 #: food.py:48
 msgid "orange"
-msgstr "pomarańcza"
+msgstr "cam"
 
 #. TRANS: fruit of the sapodilla tree common to Central America
 #: food.py:50
 msgid "sapodilla"
-msgstr "pigwa"
+msgstr "sa bô chê"
 
 #: food.py:51
 msgid "potato"
-msgstr "ziemniak"
+msgstr "khoai tây"
 
 #: food.py:52
 msgid "papaya"
-msgstr "papaja"
+msgstr "đu đủ"
 
 #: food.py:53
 msgid "cucumber"
-msgstr "ogórek"
+msgstr "dưa chuột"
 
 #: food.py:54
 msgid "pear"
-msgstr "gruszka"
+msgstr "lê"
 
 #: food.py:55
 msgid "fish"
-msgstr "ryba"
+msgstr "cá"
 
 #: food.py:56
 msgid "pineapple"
-msgstr "ananas"
+msgstr "thơm"
 
 #. TRANS: Green pumpkin squash (source of seeds used in Central American)
 #: food.py:58
 msgid "green pumpkin"
-msgstr "zielona dynia"
+msgstr "bí xanh"
 
 #. TRANS: a cactus fruit
 #: food.py:60
 msgid "pitaya"
-msgstr "pitaja"
+msgstr "thanh long"
 
 #: food.py:61
 msgid "plantain"
-msgstr "banan rajski"
+msgstr "chuối"
 
 #: food.py:62
 msgid "chicken"
-msgstr "kurczak"
+msgstr "thịt gà"
 
 #: food.py:63
 msgid "cheese"
-msgstr "ser"
+msgstr "phô mai"
 
 #: food.py:64
 msgid "radish"
-msgstr "rzodkiew"
+msgstr "củ cải trắng"
 
 #: food.py:65
 msgid "beet"
-msgstr "burak"
+msgstr "củ dền"
 
 #: food.py:66
 msgid "cabbage"
-msgstr "kabaczek"
+msgstr "bắp cải"
 
 #: food.py:67
 msgid "beef"
-msgstr "wołowina"
+msgstr "thịt bò"
 
 #: food.py:68
 msgid "rice and beans"
-msgstr "ryż i fasola"
+msgstr "gạo và đậu"
 
 #: food.py:69
 msgid "watermelon"
-msgstr "arbuz"
+msgstr "dưa hấu"
 
 #. TRANS: A seed used to make horchata (common in Central America)
 #: food.py:71
 msgid "jicaro"
-msgstr "tykwa meksykańska"
+msgstr "quả đào tiên"
 
 #: food.py:73
 msgid "tomato"
-msgstr "pomidor"
+msgstr "cà chua"
 
 #: food.py:74
 msgid "wheat"
-msgstr "pszenica"
+msgstr "lúa mì"
 
 #: food.py:75
 msgid "grape"
-msgstr "winogrona"
+msgstr "nho"
 
 #: food.py:76
 msgid "yogurt"
-msgstr "jogurt"
+msgstr "sữa chua"
 
 #: food.py:77
 msgid "yucca"
-msgstr "jukka"
+msgstr "khoai mì"
 
 #: food.py:78
 msgid "carrot"
-msgstr "marchewka"
+msgstr "cà rốt"
 
 #. TRANS: a soft, edible fruit native to Central America
 #: food.py:80
 msgid "sapote"
-msgstr "sapota"
+msgstr "sa bô chê"
 
-#: game.py:38
+#: game.py:39
 msgid "minimum"
-msgstr "minimum"
+msgstr "nhỏ nhất"
 
-#: game.py:38
+#: game.py:39
 msgid "moderate"
-msgstr "umiarkowany"
+msgstr "trung bình"
 
-#: game.py:38
+#: game.py:39
 msgid "more"
-msgstr "więcej"
+msgstr "nhiều"
 
-#: game.py:38
+#: game.py:39
 msgid "most"
-msgstr "najwięcej"
+msgstr "nhiều nhất"
 
-#: game.py:39
+#: game.py:40
 msgid "balanced"
-msgstr "zbalansowane"
+msgstr "cân bằng"
 
-#: game.py:39
+#: game.py:40
 msgid "unbalanced"
-msgstr "niezbalansowane"
-
-#~ msgid "corn"
-#~ msgstr "kukurydza"
-
-#~ msgid "tamale"
-#~ msgstr "tamal"
-
-#~ msgid "How many calories are there?"
-#~ msgstr "Ile ma kalorii?"
-
-#~ msgid "unlimited"
-#~ msgstr "bez ograniczeń"
-
-#~ msgid "water"
-#~ msgstr "woda"
-
-#~ msgid "sweetpotato"
-#~ msgstr "batat"
-
-#, python-format
-#~ msgid "%d calories"
-#~ msgstr "%d kalorii"
-
-#~ msgid "meat and dairy"
-#~ msgstr "mięso i nabiał"
-
-#~ msgid "fruits and grains"
-#~ msgstr "owoce i ziarna"
+msgstr "không cân bằng"

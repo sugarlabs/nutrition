@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-18 00:32-0500\n"
+"POT-Creation-Date: 2012-08-10 00:34-0400\n"
 "PO-Revision-Date: 2012-12-03 01:24+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#. TRANS: "name" option from activity.info file
+#: activity/activity.info:2
 msgid "Nutrition"
 msgstr "Nutrition"
-
-#. TRANS: "summary" option from activity.info file
-#. TRANS: "description" option from activity.info file
-msgid "a series of game about good habits for eating"
-msgstr "a series of game about good habits for eating"
 
 #: NutritionActivity.py:39
 msgid "Match the food to its name."
@@ -366,29 +361,32 @@ msgstr "carrot"
 msgid "sapote"
 msgstr "sapote"
 
-#: game.py:38
+#: game.py:39
 msgid "minimum"
 msgstr "minimum"
 
-#: game.py:38
+#: game.py:39
 msgid "moderate"
 msgstr "moderate"
 
-#: game.py:38
+#: game.py:39
 msgid "more"
 msgstr "more"
 
-#: game.py:38
+#: game.py:39
 msgid "most"
 msgstr "most"
 
-#: game.py:39
+#: game.py:40
 msgid "balanced"
 msgstr "balanced"
 
-#: game.py:39
+#: game.py:40
 msgid "unbalanced"
 msgstr "unbalanced"
+
+#~ msgid "a series of game about good habits for eating"
+#~ msgstr "a series of game about good habits for eating"
 
 #~ msgid "coco"
 #~ msgstr "coconut"
