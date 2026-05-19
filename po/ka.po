@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-19 19:09+0530\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-05-19 12:28+0000\n"
+"Last-Translator: NF <rkavt@smartprojects.ge>\n"
+"Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
+"sugar-activities/nutrition/ka/>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.2\n"
 
 #: activity/activity.info:2
 msgid "Nutrition"
@@ -145,7 +148,7 @@ msgstr ""
 
 #: food.py:20
 msgid "bread"
-msgstr ""
+msgstr "პური"
 
 #: food.py:21
 msgid "broccoli"
@@ -241,7 +244,7 @@ msgstr ""
 
 #: food.py:45
 msgid "apple"
-msgstr ""
+msgstr "ვაშლი"
 
 #: food.py:46
 msgid "star fruit"
@@ -304,7 +307,7 @@ msgstr ""
 
 #: food.py:63
 msgid "cheese"
-msgstr ""
+msgstr "ყველი"
 
 #: food.py:64
 msgid "radish"
