@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-19 19:09+0530\n"
-"PO-Revision-Date: 2026-06-15 04:31+0000\n"
+"PO-Revision-Date: 2026-06-15 04:38+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/nutrition/ka/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: activity/activity.info:2
 msgid "Nutrition"
-msgstr ""
+msgstr "კვება"
 
 #: activity/activity.info:3
 msgid "A series of game about good habits for eating."
@@ -57,7 +57,7 @@ msgstr ""
 
 #: NutritionActivity.py:171 NutritionActivity.py:294
 msgid "calories"
-msgstr ""
+msgstr "კალორია"
 
 #: NutritionActivity.py:173
 msgid "Enter the calories in for the new food item."
@@ -95,27 +95,27 @@ msgstr ""
 
 #: food.py:4
 msgid "sweets"
-msgstr ""
+msgstr "ტკბილეული"
 
 #: food.py:4
 msgid "dairy"
-msgstr ""
+msgstr "რძის პროდუქტები"
 
 #: food.py:4
 msgid "fruits"
-msgstr ""
+msgstr "ხილი"
 
 #: food.py:4
 msgid "meat"
-msgstr ""
+msgstr "ხორცი"
 
 #: food.py:4
 msgid "grains"
-msgstr ""
+msgstr "მარცვლეული"
 
 #: food.py:5
 msgid "vegetables"
-msgstr ""
+msgstr "ბოსტნეული"
 
 #: food.py:12
 msgid "avocado"
