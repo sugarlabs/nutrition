@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-19 19:09+0530\n"
-"PO-Revision-Date: 2026-05-19 12:28+0000\n"
+"PO-Revision-Date: 2026-06-15 04:31+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/nutrition/ka/>\n"
@@ -139,7 +139,7 @@ msgstr ""
 
 #: food.py:17
 msgid "banana"
-msgstr ""
+msgstr "ბანანი"
 
 #. TRANS: aubergine
 #: food.py:19
@@ -256,7 +256,7 @@ msgstr ""
 
 #: food.py:48
 msgid "orange"
-msgstr ""
+msgstr "ნარინჯისფერი"
 
 #. TRANS: fruit of the sapodilla tree common to Central America
 #: food.py:50
