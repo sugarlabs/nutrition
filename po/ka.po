@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-19 19:09+0530\n"
-"PO-Revision-Date: 2026-06-15 04:38+0000\n"
+"PO-Revision-Date: 2026-06-15 05:10+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/nutrition/ka/>\n"
@@ -119,23 +119,23 @@ msgstr "ბოსტნეული"
 
 #: food.py:12
 msgid "avocado"
-msgstr ""
+msgstr "ავოკადო"
 
 #: food.py:13
 msgid "celery"
-msgstr ""
+msgstr "ნიახური"
 
 #: food.py:14
 msgid "rice"
-msgstr ""
+msgstr "ბრინჯი"
 
 #: food.py:15
 msgid "oats"
-msgstr ""
+msgstr "ბურღულეული"
 
 #: food.py:16
 msgid "pumpkin"
-msgstr ""
+msgstr "გოგრა"
 
 #: food.py:17
 msgid "banana"
@@ -144,7 +144,7 @@ msgstr "ბანანი"
 #. TRANS: aubergine
 #: food.py:19
 msgid "eggplant"
-msgstr ""
+msgstr "ბადრიჯანი"
 
 #: food.py:20
 msgid "bread"
@@ -152,31 +152,31 @@ msgstr "პური"
 
 #: food.py:21
 msgid "broccoli"
-msgstr ""
+msgstr "ბროკოლი"
 
 #: food.py:22
 msgid "cocoa"
-msgstr ""
+msgstr "კაკაო"
 
 #: food.py:23
 msgid "cake"
-msgstr ""
+msgstr "ნამცხვარი"
 
 #: food.py:24
 msgid "barley"
-msgstr ""
+msgstr "ქერი"
 
 #: food.py:25
 msgid "onion"
-msgstr ""
+msgstr "ხახვი"
 
 #: food.py:26
 msgid "pork"
-msgstr ""
+msgstr "ღორის ხორცი"
 
 #: food.py:27
 msgid "cherry"
-msgstr ""
+msgstr "ალუბალი"
 
 #: food.py:28
 msgid "pear squash"
@@ -192,19 +192,19 @@ msgstr ""
 
 #: food.py:31
 msgid "coconut"
-msgstr ""
+msgstr "ქოქოსი"
 
 #: food.py:32
 msgid "cookie"
-msgstr ""
+msgstr "პატარა ნამცხვარი"
 
 #: food.py:33
 msgid "cream"
-msgstr ""
+msgstr "ნაღები"
 
 #: food.py:34
 msgid "egg"
-msgstr ""
+msgstr "კვერცხი"
 
 #: food.py:35
 msgid "corn on the cob"
@@ -212,23 +212,23 @@ msgstr ""
 
 #: food.py:36
 msgid "strawberry"
-msgstr ""
+msgstr "მარწყვი"
 
 #: food.py:37
 msgid "guava"
-msgstr ""
+msgstr "გუავა"
 
 #: food.py:38
 msgid "milk"
-msgstr ""
+msgstr "რძე"
 
 #: food.py:39
 msgid "lettuce"
-msgstr ""
+msgstr "სალათის ფოთოლი"
 
 #: food.py:40
 msgid "lemon"
-msgstr ""
+msgstr "ლიმონი"
 
 #: food.py:41
 msgid "flax seed"
@@ -236,11 +236,11 @@ msgstr ""
 
 #: food.py:43
 msgid "mandarin"
-msgstr ""
+msgstr "მანდარინი"
 
 #: food.py:44
 msgid "mango"
-msgstr ""
+msgstr "მანგო"
 
 #: food.py:45
 msgid "apple"
@@ -252,40 +252,40 @@ msgstr ""
 
 #: food.py:47
 msgid "melon"
-msgstr ""
+msgstr "ნესვი"
 
 #: food.py:48
 msgid "orange"
-msgstr "ნარინჯისფერი"
+msgstr "ფორთოხალი"
 
 #. TRANS: fruit of the sapodilla tree common to Central America
 #: food.py:50
 msgid "sapodilla"
-msgstr ""
+msgstr "საპოდილა"
 
 #: food.py:51
 msgid "potato"
-msgstr ""
+msgstr "კარტოფილი"
 
 #: food.py:52
 msgid "papaya"
-msgstr ""
+msgstr "პაპაია"
 
 #: food.py:53
 msgid "cucumber"
-msgstr ""
+msgstr "კიტრი"
 
 #: food.py:54
 msgid "pear"
-msgstr ""
+msgstr "მსხალი"
 
 #: food.py:55
 msgid "fish"
-msgstr ""
+msgstr "თევზი"
 
 #: food.py:56
 msgid "pineapple"
-msgstr ""
+msgstr "ანანასი"
 
 #. TRANS: Green pumpkin squash (source of seeds used in Central American)
 #: food.py:58
@@ -295,15 +295,15 @@ msgstr ""
 #. TRANS: a cactus fruit
 #: food.py:60
 msgid "pitaya"
-msgstr ""
+msgstr "პიტაია"
 
 #: food.py:61
 msgid "plantain"
-msgstr ""
+msgstr "პლანტაინი"
 
 #: food.py:62
 msgid "chicken"
-msgstr ""
+msgstr "ქათამი"
 
 #: food.py:63
 msgid "cheese"
@@ -311,19 +311,19 @@ msgstr "ყველი"
 
 #: food.py:64
 msgid "radish"
-msgstr ""
+msgstr "ბოლოკი"
 
 #: food.py:65
 msgid "beet"
-msgstr ""
+msgstr "ჭარხალი"
 
 #: food.py:66
 msgid "cabbage"
-msgstr ""
+msgstr "კომბოსტო"
 
 #: food.py:67
 msgid "beef"
-msgstr ""
+msgstr "ძროხის ხორცი"
 
 #: food.py:68
 msgid "rice and beans"
@@ -331,62 +331,62 @@ msgstr ""
 
 #: food.py:69
 msgid "watermelon"
-msgstr ""
+msgstr "საზამთრო"
 
 #. TRANS: A seed used to make horchata (common in Central America)
 #: food.py:71
 msgid "jicaro"
-msgstr ""
+msgstr "ხიკარო"
 
 #: food.py:73
 msgid "tomato"
-msgstr ""
+msgstr "პომიდორი"
 
 #: food.py:74
 msgid "wheat"
-msgstr ""
+msgstr "ხორბალი"
 
 #: food.py:75
 msgid "grape"
-msgstr ""
+msgstr "ყურძენი"
 
 #: food.py:76
 msgid "yogurt"
-msgstr ""
+msgstr "იოგურტი"
 
 #: food.py:77
 msgid "yucca"
-msgstr ""
+msgstr "იუკა"
 
 #: food.py:78
 msgid "carrot"
-msgstr ""
+msgstr "სტაფილო"
 
 #. TRANS: a soft, edible fruit native to Central America
 #: food.py:80
 msgid "sapote"
-msgstr ""
+msgstr "საპოტე"
 
 #: game.py:37
 msgid "minimum"
-msgstr ""
+msgstr "მინიმუმი"
 
 #: game.py:37
 msgid "moderate"
-msgstr ""
+msgstr "ზომიერი"
 
 #: game.py:37
 msgid "more"
-msgstr ""
+msgstr "მეტი"
 
 #: game.py:37
 msgid "most"
-msgstr ""
+msgstr "უმეტესი"
 
 #: game.py:38
 msgid "balanced"
-msgstr ""
+msgstr "დაბალანსებული"
 
 #: game.py:38
 msgid "unbalanced"
-msgstr ""
+msgstr "დაუბალანსებელი"
