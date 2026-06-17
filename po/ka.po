@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-19 19:09+0530\n"
-"PO-Revision-Date: 2026-06-15 05:10+0000\n"
+"PO-Revision-Date: 2026-06-17 04:37+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/nutrition/ka/>\n"
@@ -29,31 +29,31 @@ msgstr ""
 
 #: NutritionActivity.py:41
 msgid "Match the food to its name."
-msgstr ""
+msgstr "შეუსაბამეთ საჭმელი მის სახელს."
 
 #: NutritionActivity.py:42
 msgid "What is the food group?"
-msgstr ""
+msgstr "რა არის საჭმლის ჯგუფი?"
 
 #: NutritionActivity.py:43
 msgid "Which has the most calories?"
-msgstr ""
+msgstr "რომელს აქვს ყველაზე მეტი კალორია?"
 
 #: NutritionActivity.py:44
 msgid "How much should you eat?"
-msgstr ""
+msgstr "რამდენი უნდა მიირთვათ?"
 
 #: NutritionActivity.py:45
 msgid "Is this a well-balanced meal?"
-msgstr ""
+msgstr "არის ეს კარგი ბალანსის მქონე კერძი?"
 
 #: NutritionActivity.py:166 NutritionActivity.py:252 NutritionActivity.py:293
 msgid "food name"
-msgstr ""
+msgstr "საჭმლის სახელი"
 
 #: NutritionActivity.py:168
 msgid "Enter a name for the new food item."
-msgstr ""
+msgstr "შეიყვანეთ ახალი საჭმლის სახელი."
 
 #: NutritionActivity.py:171 NutritionActivity.py:294
 msgid "calories"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: NutritionActivity.py:180
 msgid "Select level in the Food Pyramid."
-msgstr ""
+msgstr "აირჩიეთ დონე საჭმლის პირამიდაში."
 
 #: NutritionActivity.py:185
 msgid "Load a picture of the new food item."
@@ -74,7 +74,7 @@ msgstr ""
 #: NutritionActivity.py:192 NutritionActivity.py:254 NutritionActivity.py:262
 #: NutritionActivity.py:271 NutritionActivity.py:288
 msgid "Add a new food item."
-msgstr ""
+msgstr "ახალი საჭმლის დამატება."
 
 #: NutritionActivity.py:256
 msgid "You must enter a name for the new food item."
@@ -91,7 +91,7 @@ msgstr ""
 #: NutritionActivity.py:290
 #, python-format
 msgid "%s has been loaded."
-msgstr ""
+msgstr "%s ჩაიტვირთა."
 
 #: food.py:4
 msgid "sweets"
@@ -180,15 +180,15 @@ msgstr "ალუბალი"
 
 #: food.py:28
 msgid "pear squash"
-msgstr ""
+msgstr "მექსიკური კიტრი"
 
 #: food.py:29
 msgid "chili pepper"
-msgstr ""
+msgstr "მწარე წიწაკა"
 
 #: food.py:30
 msgid "sweet pepper"
-msgstr ""
+msgstr "ტკბილი წიწაკა"
 
 #: food.py:31
 msgid "coconut"
@@ -208,7 +208,7 @@ msgstr "კვერცხი"
 
 #: food.py:35
 msgid "corn on the cob"
-msgstr ""
+msgstr "სიმინდის ტარო"
 
 #: food.py:36
 msgid "strawberry"
@@ -232,7 +232,7 @@ msgstr "ლიმონი"
 
 #: food.py:41
 msgid "flax seed"
-msgstr ""
+msgstr "სელის თესლი"
 
 #: food.py:43
 msgid "mandarin"
@@ -248,7 +248,7 @@ msgstr "ვაშლი"
 
 #: food.py:46
 msgid "star fruit"
-msgstr ""
+msgstr "კარამბოლა"
 
 #: food.py:47
 msgid "melon"
@@ -290,7 +290,7 @@ msgstr "ანანასი"
 #. TRANS: Green pumpkin squash (source of seeds used in Central American)
 #: food.py:58
 msgid "green pumpkin"
-msgstr ""
+msgstr "მწვანე გოგრა"
 
 #. TRANS: a cactus fruit
 #: food.py:60
@@ -327,7 +327,7 @@ msgstr "ძროხის ხორცი"
 
 #: food.py:68
 msgid "rice and beans"
-msgstr ""
+msgstr "ბრინჯი და ლობიო"
 
 #: food.py:69
 msgid "watermelon"
