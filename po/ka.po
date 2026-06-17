@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-19 19:09+0530\n"
-"PO-Revision-Date: 2026-06-17 04:37+0000\n"
+"PO-Revision-Date: 2026-06-17 09:05+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/nutrition/ka/>\n"
@@ -61,7 +61,7 @@ msgstr "კალორია"
 
 #: NutritionActivity.py:173
 msgid "Enter the calories in for the new food item."
-msgstr ""
+msgstr "შეიყვანეთ კალორიები ახალი საჭმლისთვის."
 
 #: NutritionActivity.py:180
 msgid "Select level in the Food Pyramid."
@@ -69,7 +69,7 @@ msgstr "აირჩიეთ დონე საჭმლის პირამ
 
 #: NutritionActivity.py:185
 msgid "Load a picture of the new food item."
-msgstr ""
+msgstr "სურათის ჩატვირთვა ახალი საჭმლისთვის."
 
 #: NutritionActivity.py:192 NutritionActivity.py:254 NutritionActivity.py:262
 #: NutritionActivity.py:271 NutritionActivity.py:288
@@ -78,15 +78,15 @@ msgstr "ახალი საჭმლის დამატება."
 
 #: NutritionActivity.py:256
 msgid "You must enter a name for the new food item."
-msgstr ""
+msgstr "ახალი საჭმლისთვის სახელის შეყვანა აუცილებელია."
 
 #: NutritionActivity.py:264
 msgid "You must enter calories for the new food item."
-msgstr ""
+msgstr "ახალი საჭმლისთვის კალორიების შეყვანა აუცილებელია."
 
 #: NutritionActivity.py:273
 msgid "You must load an image for the new food item."
-msgstr ""
+msgstr "ახალი საჭმლისთვის სურათის ჩატვირთვა აუცილებელია."
 
 #: NutritionActivity.py:290
 #, python-format
